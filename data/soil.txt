@@ -1,0 +1,161 @@
+NIGERIA SOIL TYPES AND MANAGEMENT GUIDE
+
+SOIL TYPES BY REGION
+
+SANDY SOILS (Common in Sokoto, Kebbi, Kano, Jigawa, Yobe, Borno)
+Characteristics: Light, loose, drains quickly, low water retention
+pH range: 6.0-7.5
+Nutrient level: Low — nutrients wash out easily
+Best crops: Groundnut, cowpea, millet, onion, watermelon
+Management:
+- Add organic matter (compost, manure) to improve water retention
+- Apply fertilizer in small split doses to reduce leaching
+- Mulch surface to reduce evaporation
+- Irrigate frequently but lightly
+Problems: Drought stress, nutrient deficiency, wind erosion
+Improvement: Apply 5-10 tonnes compost per hectare every season
+
+LOAMY SOILS (Common in Kaduna, Niger, Kwara, Benue, Plateau, Nassarawa)
+Characteristics: Best agricultural soil, balanced sand/silt/clay mix
+pH range: 5.5-7.0
+Nutrient level: Medium to high
+Best crops: Maize, yam, cassava, soybean, sorghum, vegetables
+Management:
+- Maintain organic matter with crop residue incorporation
+- Rotate crops to maintain fertility
+- Apply balanced NPK fertilizer
+- Avoid compaction by heavy machinery
+Problems: Erosion on slopes, compaction if over-tilled
+Improvement: Practice minimum tillage, maintain cover crops
+
+CLAY SOILS (Common in Kebbi, Niger lowlands, river floodplains, Lagos, Delta)
+Characteristics: Heavy, sticky when wet, hard when dry, high water retention
+pH range: 5.5-7.5
+Nutrient level: High but may be locked up
+Best crops: Rice, sugarcane, vegetables with irrigation management
+Management:
+- Improve drainage with ridges and furrows
+- Add sand and organic matter to improve structure
+- Avoid working when waterlogged
+- Apply lime if pH below 5.5
+Problems: Waterlogging, poor drainage, hard pans, difficult tillage
+Improvement: Deep ploughing, add organic matter, install drainage channels
+
+LATERITE SOILS (Common in Oyo, Ogun, Osun, Ondo, Enugu, Anambra)
+Characteristics: Reddish color, compacted, low fertility, iron-rich
+pH range: 5.0-6.5 (often acidic)
+Nutrient level: Low, especially phosphorus
+Best crops: Cassava, yam, cowpea, oil palm
+Management:
+- Apply lime to raise pH if below 5.5
+- Heavy organic matter application essential
+- Phosphorus fertilizer important
+- Avoid burning bush — destroys soil structure
+Problems: High acidity, low phosphorus, surface crusting, erosion
+Improvement: Apply 2-4 tonnes lime per hectare, add compost
+
+ALLUVIAL SOILS (River floodplains — Niger, Benue, Hadejia, Sokoto rivers)
+Characteristics: Deposited by rivers, very fertile, rich in minerals
+pH range: 6.0-7.5
+Nutrient level: High
+Best crops: Rice, sugarcane, vegetables, maize
+Management:
+- Manage flood timing for rice cultivation
+- Drain properly after flooding
+- Minimal fertilizer needed if flooded regularly
+- Control waterweeds
+Problems: Flood damage, waterlogging, difficult access in rainy season
+Improvement: Flood management infrastructure, drainage canals
+
+SOIL pH GUIDE FOR NIGERIAN FARMERS
+
+pH BELOW 5.0 (Very acidic — problem soil)
+Symptoms: Poor crop growth, aluminum toxicity, purple leaves in maize
+Treatment: Apply agricultural lime at 2-4 tonnes per hectare
+Wait: 4-6 weeks after liming before planting
+Common in: Rainforest zone, derived savanna
+
+pH 5.0-5.5 (Acidic)
+Symptoms: Reduced nutrient uptake, poor legume nodulation
+Treatment: Apply lime at 1-2 tonnes per hectare
+Suitable crops: Cassava, yam, oil palm, rubber
+
+pH 5.5-6.5 (Slightly acidic — ideal for most crops)
+Symptoms: Good nutrient availability, healthy plant growth
+Treatment: Maintain with organic matter, balanced fertilizer
+Suitable crops: Maize, cassava, yam, sorghum, cowpea, groundnut
+
+pH 6.5-7.0 (Neutral — best for most crops)
+Symptoms: Maximum nutrient availability
+Treatment: Maintain organic matter levels
+Suitable crops: All Nigerian food crops
+
+pH 7.0-8.0 (Alkaline)
+Symptoms: Iron and manganese deficiency, yellowing leaves
+Treatment: Apply sulfur or acidifying fertilizers
+Common in: Far north near Lake Chad, irrigated soils
+Suitable crops: Onion, tomato, sorghum, cotton
+
+FERTILIZER GUIDE FOR NIGERIAN SOILS
+
+NPK 15-15-15 (General purpose)
+Use for: Maize, sorghum, vegetables at planting
+Rate: 200-300 kg per hectare
+Timing: Apply at planting or 2 weeks after germination
+Cost: Approximately N18,000-22,000 per 50kg bag
+
+NPK 20-10-10 (Nitrogen-heavy for leafy growth)
+Use for: Maize top dressing, leafy vegetables
+Rate: 150-200 kg per hectare
+Timing: 4-6 weeks after planting
+
+UREA (46% Nitrogen — for top dressing)
+Use for: Maize, rice, sorghum after establishment
+Rate: 100-150 kg per hectare
+Timing: 6-8 weeks after planting, never at planting
+Caution: Do not apply during heavy rain — leaches out
+
+SINGLE SUPERPHOSPHATE (18% Phosphorus)
+Use for: Groundnut, cowpea, soybean at planting
+Rate: 200 kg per hectare
+Benefit: Promotes root development and nodulation
+
+ORGANIC FERTILIZERS
+Poultry manure: Apply 5-10 tonnes per hectare, best for vegetables
+Cow dung: Apply 10-15 tonnes per hectare, good for all crops
+Compost: Apply 5-10 tonnes per hectare, improves soil structure
+Timing: Apply organic manure 2-3 weeks before planting
+
+SOIL TESTING
+Where to test: NAERLS offices, state ADP offices, universities
+Cost: Approximately N3,000-8,000 per sample
+What to test: pH, NPK levels, organic matter, micronutrients
+Frequency: Every 2-3 years or when yields decline
+Interpretation: Take results to extension officer for recommendations
+
+SOIL HEALTH INDICATORS
+
+HEALTHY SOIL SIGNS
+- Earthworms present when digging
+- Dark color indicating organic matter
+- Crumbly texture, not hard or sticky
+- Pleasant earthy smell
+- Water soaks in rather than running off
+- Good crop growth without excess fertilizer
+
+UNHEALTHY SOIL SIGNS
+- Hard, crusty surface after rain
+- Water pools on surface instead of soaking in
+- Very pale or reddish color
+- No earthworms visible
+- Crops yellow despite fertilizer application
+- Soil blows away in wind or washes in rain
+
+SOIL CONSERVATION PRACTICES
+Contour farming: Plant across slopes not up-down to reduce erosion
+Terracing: Build level steps on steep slopes
+Cover cropping: Plant cowpea or mucuna between seasons
+Mulching: Cover soil with straw, leaves, or plastic
+Minimum tillage: Reduce ploughing to maintain soil structure
+Crop rotation: Change crops each season to break pest cycles
+Agroforestry: Plant trees between crops for shade and leaf litter
