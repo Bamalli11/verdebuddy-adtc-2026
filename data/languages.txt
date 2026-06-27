@@ -1,89 +1,297 @@
-HAUSA AGRICULTURAL TERMS
-Noma = Farming
+HAUSA AGRICULTURAL LANGUAGE GUIDE
+(Source: Zaar-English-Hausa Dictionary + agricultural research)
+ 
+CORE HAUSA FARMING VOCABULARY
+Noma = Farming / Agriculture
+Dan noma = Farmer
 Gonar masara = Maize farm
-Rani = Dry season
-Damina = Rainy season
-Kasa = Soil/Land
+Gona = Farm / Field
+Kasa = Soil / Land
 Tsaba = Seeds
 Taki = Fertilizer
-Ruwa = Water
+Ruwa = Water / Rain
+Ruwan sama = Rainfall
 Amfanin gona = Crops
 Girbi = Harvest
+Lokacin girbi = Harvest season (Kaka)
+Shuka = To plant / To sow
+Noman ban ruwa = Irrigation farming
+Fadama = Marshy farmland (used for rice, sugarcane)
+Rani = Dry season
+Damina = Rainy season
+Bazara = Hot season before rains
+Kasuwa = Market
+Farashin kasuwa = Market price
+Siyarwa = Selling
+Riba = Profit
+Asara = Loss
+Adana = Storage
+Kwari = Pest / Insect
+Cuta = Disease
+Magani = Medicine / Treatment
 Dawa = Sorghum
 Gero = Millet
-Gyada = Groundnut
-Wake = Cowpea
+Masara = Maize / Corn
 Shinkafa = Rice
+Gyada = Groundnut
+Wake = Cowpea / Beans
 Alkama = Wheat
 Dankali = Sweet potato
 Tumatur = Tomato
 Albasa = Onion
-Farashin kasuwa = Market price
-Kasuwa = Market
-Riba = Profit
-Noman ban ruwa = Irrigation farming
-
-HAUSA COMMON FARMING QUESTIONS AND ANSWERS
-Yaushe zan shuka masara a Kano? = When should I plant maize in Kano?
-Wane taki ya fi kyau? = Which fertilizer is best?
-Yaya zan kare gonar daga kwari? = How do I protect my farm from pests?
-Menene farashin shinkafa a kasuwa? = What is the price of rice in the market?
-Yaya zan inganta kasan noma? = How do I improve my farmland soil?
-
-YORUBA AGRICULTURAL TERMS
-Ogbin = Farming
-Ile = Soil/Land
-Irugbin = Seeds
+Barkono = Pepper / Chili
+Rogo = Cassava
+Gari = Cassava flour
+Doya = Yam
+Karkashi = Under the ground (root crops)
+Rubu = Barn / Granary
+Rumbu = Granary / Storage silo
+Taki na halitta = Organic fertilizer
+Taki na masana'anta = Chemical fertilizer
+Fari = Drought
+Ambaliyar ruwa = Flood
+Iska = Wind / Harmattan
+Sanyi = Cold / Cool weather
+Zafi = Heat / Hot weather
+pH na kasa = Soil pH
+Inganta kasa = Improve soil
+Noman zamani = Modern farming
+Noman gargajiya = Traditional farming
+Tallace-tallace = Marketing
+Hakar kasa = Soil excavation / Digging
+Tokar itace = Wood ash (soil amendment)
+Tsutsotsi = Earthworms (sign of healthy soil)
+ 
+HAUSA CROP DISEASES AND PESTS
+Cutar mosaic = Mosaic virus disease
+Karaya = Wilting disease
+Boka = Stem borer pest
+Fara = Locust
+Kaska = Scabies / Skin disease (in animals)
+Kwari na gona = Farm insects/pests
+Feshin magani = Spraying pesticide
+Maganin kwari = Pesticide / Insecticide
+Maganin fungi = Fungicide
+ 
+HAUSA MARKET AND PRICES
+Kilo = Kilogram
+Jaka = Bag / Sack
+Danki = Bundle
+Farashin = Price
+Rahusa = Cheap / Low price
+Tsada = Expensive / High price
+Bargain = Ciniki
+Dillali = Market broker / Agent
+Kanti = Shop
+Ajiya = Savings / Reserve stock
+Sayar da = To sell
+Saya = To buy
+Kwata = Quarter measure
+Rabi = Half measure
+ 
+HAUSA WEATHER TERMS
+Damina = Rainy season (May-October north)
+Rani = Dry season (November-April)
+Bazara = Hot dry season before first rains
+Harmattan = Iska ta arewa (north wind)
+Ruwan sama = Rain
+Tsawa = Thunder
+Walkar lantarki = Lightning
+Girgizar kasa = Earthquake
+Sanyi = Cold
+Guguwa = Storm / Strong wind
+Hazo = Fog / Mist
+Bakin giwa = Dark rain clouds
+ 
+CORRECT HAUSA RESPONSES FOR COMMON FARMING QUESTIONS
+ 
+Q: Yaushe zan shuka masara a Kano?
+A: A Kano, lokacin shuka masara na farko shi ne watan Maris zuwa Afrilu. Lokacin na biyu kuma shi ne watan Yuli zuwa Agusta. Ka tabbata kasa tana da danshi mai kyau kafin ka shuka. Yi amfani da nau'in SAMMAZ 15 ko SAMMAZ 27 saboda sun fi dacewa da yankin arewa.
+ 
+Q: Wane taki ya fi kyau don masara?
+A: Don masara, yi amfani da NPK 15-15-15 a lokacin shuka. Bayan makonni shida, kara da Urea don inganta girman hatsi. Adadin da ake bukata shi ne kilogiram 200-300 a kowace hekta.
+ 
+Q: Yaya zan inganta kasan noma?
+A: Don inganta kasa, ka kara da takin gargajiya kamar takin shanu ko takin kaji. Ka yi amfani da takin kwampost kilogiram 5,000-10,000 a kowace hekta. Idan kasa tana da acidity mai yawa, ka kara da lemun kasa (lime) ton 1-2 a hekta.
+ 
+Q: Yaya zan kare gonar daga kwari?
+A: Don kare gona daga kwari, ka yi amfani da maganin kwari da aka yarda da shi. Ka duba gonar kullum don ganin alamun cutuka da wuri. Ka yi jujjuyawar amfanin gona kowace shekara don rage cututtuka.
+ 
+Q: Menene farashin masara a kasuwa?
+A: Farashin masara ya bambanta da lokaci. Bayan girbi (Oktoba-Disamba), farashin kan kasance naira 18,000-25,000 a kowane jaka na kilogiram 100. A lokacin karancin (Afrilu-Agusta), farashin kan kai naira 35,000-55,000. Mafi kyawun lokacin sayarwa shi ne Afrilu zuwa Yuli.
+ 
+Q: Wadanne nau'in dawa ne suka fi dacewa da yankin arewa?
+A: A yankin arewa, nau'in dawa da suka fi dacewa sun hada da SAMSORG 14, SAMSORG 17, da SK 5912. Wadannan nau'i sun jure fari kuma suna samar da yawan kaka mai kyau.
+ 
+---
+ 
+YORUBA AGRICULTURAL LANGUAGE GUIDE
+(Source: Fakinlede Yoruba-English Dictionary + agricultural research)
+ 
+CORE YORUBA FARMING VOCABULARY
+Ogbin = Farming / Agriculture
+Agbe = Farmer
+Oko = Farm (low tone) — Note: oko with different tone means projectile
+Ile = Soil / Land / Earth
+Irugbin = Seeds / Planting
 Ajile = Fertilizer
 Omi = Water
+Ojo = Rain
+Ikore = Harvest
+Akoko ikore = Harvest season
+Gbin = To plant / To sow
+Nomi = Irrigation
 Odun gbigbona = Dry season
 Odun ojo = Rainy season
-Ikore = Harvest
-Oka = Maize
+Oja = Market
+Owo oja = Market price
+Ere = Profit
+Adanu = Loss
+Ipamopo = Storage
+Kokoro = Pest / Insect
+Arun = Disease
+Oogun = Medicine / Treatment
+Oka = Maize / Corn (also Agbado)
+Agbado = Corn / Maize
 Ege = Sorghum
-Epa = Groundnut
-Ewa = Beans/Cowpea
+Epa = Groundnut / Peanut
+Ewa = Beans / Cowpea
 Iresi = Rice
 Tomati = Tomato
 Alubosa = Onion
+Ata = Pepper / Chili
 Isu = Yam
-Agbado = Corn
-Oja = Market
-Ere = Profit
-Idiyele oja = Market price
-
-YORUBA COMMON FARMING QUESTIONS AND ANSWERS
-Nigba wo ni mo le gbin oka ni Oyo? = When can I plant maize in Oyo?
-Ajile wo ni o dara ju? = Which fertilizer is best?
-Bawo ni mo se le daabobo oko mi lowo kokoro? = How do I protect my farm from pests?
-Kini idiyele iresi ni oja? = What is the price of rice in the market?
-Bawo ni mo se le mu ile oko dara sii? = How do I improve my farmland soil?
-
-IGBO AGRICULTURAL TERMS
+Rogo = Cassava (also Ege rogo)
+Gari = Cassava flour
+Ogede = Plantain / Banana
+Eyin = Egg
+Isimi = Rest period (fallow)
+Ile oko = Farmland
+Igbo = Forest / Bush
+Ipile = Foundation / Base (root system)
+Omi ojo = Rainwater
+Orun = Sun / Sunshine
+Afefe = Wind / Breeze
+Otutu = Cold / Cool weather
+Ooru = Heat / Hot weather
+Ipo ile = Soil condition / Land status
+Iwe imo ogbin = Agricultural knowledge
+Ero igbalode = Modern equipment / Technology
+ 
+YORUBA CROP DISEASES AND PESTS
+Arun mosaic = Mosaic virus
+Kokoro jijeki = Stem borer
+Esusu = Locust
+Aran ile = Earthworm (beneficial)
+Oogun kokoro = Pesticide
+Oogun olu = Fungicide
+Fifa oogun = Spraying pesticide
+ 
+YORUBA MARKET AND PRICES
+Kilo = Kilogram
+Apo = Bag / Sack
+Owo = Money / Price
+Owo din = Cheap price
+Owo gbowo = Expensive price
+Taja = Seller / Trader
+Onibara = Buyer / Customer
+Oja gbogbo = General market
+Owo ere = Profit money
+Fipamo = To store / To keep
+ 
+YORUBA WEATHER TERMS
+Odun ojo = Rainy season
+Odun gbigbona = Dry season
+Ojo = Rain
+Aranmo = Harmattan
+Efufu = Storm / Strong wind
+Ara = Thunder
+Monomono = Lightning
+Orun gbigbo = Hot sun
+Iyipada ojo = Weather change
+Ipele omi = Water level
+ 
+CORRECT YORUBA RESPONSES FOR COMMON FARMING QUESTIONS
+ 
+Q: Nigba wo ni mo le gbin oka ni Oyo?
+A: Ni Oyo, o le gbin oka ni akoko ojo akoko (Osu Keta si Kerin) tabi akoko ojo keji (Osu Kesan si Kewa). Ri daju pe ile rere ati tutu ṣaaju gbigbin. Lo irugbin bi SAMMAZ 15 tabi OBA SUPER 2 ti o dara fun agbegbe guusu-iwoorun Nigeria.
+ 
+Q: Ajile wo ni o dara fun tomati ni ilu Plateau?
+A: Fun tomati ni Plateau state, lo NPK 20-10-10 ni akoko gbigbin. Ni igba ti eso n dagba, fi calcium nitrate kun. Lo milimita omi lojumo nipasẹ eto agbe bi drip irrigation. Irugbin ti o dara pẹlu Roma VF ati Beske.
+ 
+Q: Bawo ni mo se le mu ile oko dara si?
+A: Fi ajile adayeba kun ile rẹ bii ajile adie tabi malu - tona 5-10 fun hektari. Lo compost lati mu ile dara ati mu omi duro ninu ile. Ti pH ile ba wa ni isale 5.5, fi orombo wewe (lime) kun lati mu ile dara si.
+ 
+Q: Kini idiyele oka ni oja?
+A: Iye oka yato si akoko. Lẹhin ikore (Osu Kewa si Osu Kejila), iye le wa ni naira 18,000-25,000 fun apo 100kg. Ni akoko aipe (Osu Kerin si Kejo), iye le de naira 35,000-55,000. Akoko ti o dara julọ lati ta ni Osu Kerin si Keje fun ere ti o pọ.
+ 
+Q: Bawo ni mo se le daabo bo oko mi lowo kokoro?
+A: Ṣayẹwo oko rẹ lojoojumọ lati ri kokoro tabi arun ni kutukutu. Lo oogun kokoro ti a fọwọsi nigba ti o ba nilo. Yi irugbin pada lọdọọdun lati dinku arun ati kokoro. Tọju ìmọtótó oko rẹ nipa yiyọ koriko kuro.
+ 
+---
+ 
+IGBO AGRICULTURAL LANGUAGE GUIDE
+(Basic terms — full dictionary pending)
+ 
+CORE IGBO FARMING VOCABULARY
 Oru ugbo = Farming
-Ala = Soil/Land
+Onye ugbo = Farmer
+Ugbo = Farm / Farmland
+Ala = Soil / Land / Earth
 Mkpuru osisi = Seeds
 Nzu ugbo = Fertilizer
 Mmiri = Water
-Okochi = Dry season
-Ozuzo = Rainy season
+Ozuzo = Rain
 Ire ugbo = Harvest
-Oka = Maize
-Ede = Cocoyam
--Ahia = Market
+Aka ire = Harvest time
+Kuo / Aku = To plant
+Ihe omumu ugbo = Crops
+Ahia = Market
+Ego ahia = Market price
 Uru = Profit
-Onye ugbo = Farmer
+Ofu = Loss
+Echekwa ihe = Storage
+Ife oji = Pest / Insect
+Oria = Disease
+Ogwu = Medicine / Treatment
+Oka = Maize / Corn
 Ji = Yam
-Agwa = Beans/Cowpea
-Ofe onugbu = Bitter leaf
+Ede = Cocoyam
+Agwa = Beans / Cowpea
+Ris = Rice
+Akidi = Groundnut
 Tometo = Tomato
 Yabasi = Onion
-Ris = Rice
-Opi ugbo = Farmland
-
-IGBO COMMON FARMING QUESTIONS AND ANSWERS
-Kedu mgbe m ga-aku oka n'Anambra? = When should I plant maize in Anambra?
-Kedu nzu ugbo kachasị mma? = Which fertilizer is best?
-Kedu ka m ga-echebe ugbo m site n'ife oji? = How do I protect my farm from pests?
-Kedu ego a na-ere ris n'ahia? = What is the price of rice in the market?
-Kedu ka m ga-eme ka ala ugbo m dị mma? = How do I improve my farmland soil?
+Ose = Pepper
+Akpu / Ege = Cassava
+Garri = Cassava flour
+Ogede = Plantain
+Okochi = Dry season
+Mmiri ozuzo = Rainy season
+Oge nkea = This season
+Ihe ọ bụ ugbo = Agricultural produce
+ 
+IGBO WEATHER TERMS
+Okochi = Dry season
+Mmiri ozuzo = Rainy season
+Ozuzo = Rain
+Ifufe = Wind / Harmattan
+Oku anyanwu = Hot sun / Heat
+Oyi = Cold / Cool
+Ebe mmiri = Flood
+Olileanya ihu igwe = Weather forecast
+ 
+CORRECT IGBO RESPONSES FOR COMMON FARMING QUESTIONS
+ 
+Q: Kedu mgbe m ga-aku oka n'Anambra?
+A: N'Anambra, oge kachasị mma iji kuo oka bụ n'oge ozuzo mbụ (Onwa Atọ ruo Anọ) ma ọ bụ oge ozuzo nke abụọ (Onwa Itoolu ruo Iri). Jide n'aka na ala dị ọcha tupu i kuo mkpuru. Jiri ụdị oka dị ka SAMMAZ 15 nke dị mma maka ọdịniọha dị ka nke Anambra.
+ 
+Q: Kedu nzu ugbo kachasị mma maka ji?
+A: Maka ji, jiri NPK 15-15-15 mgbe i na-eku ya. Tinye nzu ahịa mmadụ (organic fertilizer) dị ka ihe nkụ ọkụkọ ma ọ bụ anụ ụlọ — tọn 5-10 maka hekta ọ bụla. Nke a ga-eme ka ala dịkwuo ọcha ma weta ọtụtụ ihe ọmụmụ.
+ 
+Q: Kedu ego a na-ere oka n'ahia ugbu a?
+A: Ọnụ ahịa oka na-agbanwe n'oge. Mgbe e sechara ya (Ọktọba-Disemba), ọnụ ahịa na-abụ naira 18,000-25,000 maka akpa 100kg. N'oge ụghọ (Eprel-Ọgọst), ọnụ ahịa nwere ike ruo naira 35,000-55,000. Oge kachasị mma ire bụ Eprel ruo Julaị maka uru karịa.
+ 
+Q: Kedu ka m ga-echebe ugbo m site n'ife oji?
+A: Lelee ugbo gị kwa ụbọchị ịchọta ife oji ma ọ bụ oria n'oge ya. Jiri ọgwụ ife oji a kwadoro ya mgbe ọ dị mkpa. Gbanwee ihe ọ bụ i kuo kwa afọ iji belata oria na ife oji. Jide n'aka na ugbo gị dị ọcha site na iwepụ ahịhịa ọjọọ.
+ 
