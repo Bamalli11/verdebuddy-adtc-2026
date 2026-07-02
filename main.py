@@ -1,24 +1,44 @@
-from llama_cpp import Llama
-from sentence_transformers import SentenceTransformer
-import chromadb, os, json
+import os
+os.environ["HF_HUB_OFFLINE"] = "1"
+os.environ["TRANSFORMERS_OFFLINE"] = "1"
+import json
 from socketserver import ThreadingMixIn
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
+import subprocess, threading
 print("Loading VerdeBuddy...")
-llm = Llama(model_path="model/qwen2.5-1.5b-instruct-q4_k_m.gguf",
-    n_ctx=2048, n_threads=4, n_gpu_layers=0, n_batch=512, verbose=False)
-embedder = SentenceTransformer("all-MiniLM-L6-v2")
-client = chromadb.Client()
-collection = client.create_collection("agri_knowledge")
+worker = subprocess.Popen(
+    ["python3", "/home/servi/VerdeBuddy/worker.py"],
+    stdin=subprocess.PIPE, stdout=subprocess.PIPE, text=True
+)
+# Wait for worker ready
+worker.stdout.readline()
+worker_lock = threading.Lock()
+
+def llm_ask(prompt):
+    with worker_lock:
+        worker.stdin.write(json.dumps({"prompt": prompt}) + "\n")
+        worker.stdin.flush()
+        line = worker.stdout.readline()
+        return json.loads(line)["answer"]
+# Simple keyword-based RAG
+docs = []
 for fn in os.listdir("data"):
     if fn.endswith(".txt"):
         with open(os.path.join("data", fn)) as f:
             content = f.read()
-        for i, chunk in enumerate(content.split("\n\n")):
+        for chunk in content.split("\n\n"):
             if chunk.strip():
-                collection.add(documents=[chunk],
-                    embeddings=[embedder.encode(chunk).tolist()],
-                    ids=[fn + "_" + str(i)])
+                docs.append(chunk.strip())
+
+def retrieve(query, n=2):
+    q = query.lower()
+    scored = []
+    for doc in docs:
+        score = sum(1 for w in q.split() if w in doc.lower())
+        scored.append((score, doc))
+    scored.sort(reverse=True)
+    return [d for s,d in scored[:n] if s > 0] or [docs[0]]
 print("VerdeBuddy is ready!")
 
 SYSTEM = "You are VerdeBuddy, an offline AI for Nigerian farmers. Answer about crops, soil, weather, market prices. Max 3 sentences. Use only provided context."
@@ -32,14 +52,9 @@ def ask(query):
     if any(w in q for w in HAUSA): note = " Reply in Hausa."
     elif any(w in q for w in YORUBA): note = " Reply in Yoruba."
     elif any(w in q for w in IGBO): note = " Reply in Igbo."
-    emb = embedder.encode(query).tolist()
-    res = collection.query(query_embeddings=[emb], n_results=2)
-    ctx = "\n\n".join(res["documents"][0])[:500]
-    r = llm.create_chat_completion(messages=[
-        {"role": "system", "content": SYSTEM + note},
-        {"role": "user", "content": "Context:\n" + ctx + "\n\nQuestion: " + query}
-    ], max_tokens=150, temperature=0.2)
-    return r["choices"][0]["message"]["content"]
+    ctx = " ".join(retrieve(query))[:300]
+    prompt = "<|im_start|>system\n" + SYSTEM + note + "<|im_end|>\n<|im_start|>user\nContext: " + ctx + "\nQuestion: " + query + "<|im_end|>\n<|im_start|>assistant\n"
+    return llm_ask(prompt)
 
 
 PAGE = open('/home/servi/VerdeBuddy/templates/page.html').read()
@@ -74,7 +89,10 @@ class H(BaseHTTPRequestHandler):
         if self.path == "/ask":
             n = int(self.headers["Content-Length"])
             body = json.loads(self.rfile.read(n))
-            ans = ask(body.get("question", ""))
+            try:
+                ans = ask(body.get("question", ""))
+            except Exception as e:
+                ans = "Sorry, I could not process that. Please try again."
             self.send_response(200)
             self.send_header("Content-type", "application/json")
             self.end_headers()
