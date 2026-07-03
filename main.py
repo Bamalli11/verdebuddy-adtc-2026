@@ -49,9 +49,9 @@ IGBO = ["kedu","mgbe","ole","gini","ebe","aku","ugbo","ahia","nzu","ozuzo","onye
 def ask(query):
     q = query.lower()
     note = ""
-    if any(w in q for w in HAUSA): note = " Reply in Hausa."
-    elif any(w in q for w in YORUBA): note = " Reply in Yoruba."
-    elif any(w in q for w in IGBO): note = " Reply in Igbo."
+    if any(w in q for w in HAUSA): note = " The farmer speaks Hausa. Reply entirely in Hausa. Do not repeat words."
+    elif any(w in q for w in YORUBA): note = " The farmer speaks Yoruba. Reply entirely in Yoruba. Do not repeat words."
+    elif any(w in q for w in IGBO): note = " The farmer speaks Igbo. Reply entirely in Igbo. Do not repeat words."
     ctx = " ".join(retrieve(query))[:300]
     prompt = "<|im_start|>system\n" + SYSTEM + note + "<|im_end|>\n<|im_start|>user\nContext: " + ctx + "\nQuestion: " + query + "<|im_end|>\n<|im_start|>assistant\n"
     return llm_ask(prompt)
