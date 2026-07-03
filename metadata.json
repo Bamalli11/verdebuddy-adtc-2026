@@ -1,7 +1,12 @@
 {
   "team_id": "VerdeBuddy",
   "domain": "agriculture",
-  "language_scope": ["en", "ha", "yo", "ig"],
+  "language_scope": [
+    "en",
+    "ha",
+    "yo",
+    "ig"
+  ],
   "african_alpha_claim": true,
   "budget_laptop_claim": true,
   "submitter": {
@@ -28,7 +33,7 @@
     "name": "qwen2.5-1.5b-instruct-q4_k_m",
     "runtime": "llama.cpp",
     "quantization": "GGUF Q4_K_M",
-    "parameters_estimate": "3.8B",
+    "parameters_estimate": "1.5B",
     "packaging": "binary_bundle"
   },
   "_runtime": {

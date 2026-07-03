@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0.0",
+  "profiler_version": "adtc-profiler 0.1.0",
+  "submission": {
+    "team_id": "VerdeBuddy",
+    "domain": "agriculture",
+    "language_scope": [
+      "en",
+      "ha",
+      "yo",
+      "ig"
+    ],
+    "african_alpha_claim": true,
+    "budget_laptop_claim": true,
+    "submitter": {
+      "name": "Nana-Aisha Bamalli",
+      "email": "bamalliaeesha@gmail.com",
+      "github_handle": "Bamalli11"
+    },
+    "cross_disciplinary_pairing": {
+      "discipline": "agriculture",
+      "load_bearing": true,
+      "description": "VerdeBuddy is an offline AI assistant for Nigerian farmers that integrates crop advisory, soil health analysis, seasonal weather patterns, and commodity market pricing into a single conversational interface. It supports English, Hausa, Yoruba, and Igbo languages and runs entirely on an 8GB laptop with no internet connection."
+    },
+    "test_prompts": [
+      {
+        "prompt_id": "tp_001",
+        "prompt": "My tomato plants in Kano are showing yellow leaves after last week's rain. What disease is this, what soil treatment do I need, and should I delay harvest given current market prices?"
+      },
+      {
+        "prompt_id": "tp_002",
+        "prompt": "I want to plant cassava in Oyo state next month. What variety suits my soil, what rainfall should I expect, and what is a fair price to sell at this season?"
+      }
+    ],
+    "model": {
+      "name": "qwen2.5-1.5b-instruct-q4_k_m",
+      "runtime": "llama.cpp",
+      "quantization": "GGUF Q4_K_M",
+      "parameters_estimate": "1.5B",
+      "packaging": "binary_bundle"
+    }
+  },
+  "environment": {
+    "measured_on": "participant_laptop",
+    "cpu_model": "Intel(R) Core(TM) i7-6500U CPU @ 2.50GHz",
+    "ram_gb": 5.8,
+    "gpu": "none",
+    "os": "Ubuntu 26.04 LTS"
+  },
+  "throughput": {
+    "tokens_per_second_generation": 8.0,
+    "first_token_latency_ms": 24472.28,
+    "prompt_tokens": 512,
+    "generated_tokens": 128
+  },
+  "memory": {
+    "peak_rss_mb": 1821.87,
+    "steady_state_rss_mb": 1736.61,
+    "peak_vms_mb": 2283.77
+  },
+  "accuracy": [],
+  "cpu_thermal": {
+    "cpu_percent_p99": 54.6,
+    "core_temp_c_peak": null,
+    "throttled": false
+  },
+  "reproducibility": {
+    "git_commit_sha": "5f3b00b72469",
+    "docker_image_digest": "unknown",
+    "random_seed": 42
+  },
+  "model_info": {
+    "params_count": null,
+    "context_length": 32768,
+    "architecture": "qwen2",
+    "claimed_params_estimate": "1.5B",
+    "params_match": true
+  }
+}
