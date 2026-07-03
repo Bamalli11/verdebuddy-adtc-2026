@@ -2,6 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<link rel="manifest" href="/static/manifest.json">
+<meta name="theme-color" content="#4CAF50">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-icon" href="/static/icons/icon-192.png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>VerdeBuddy</title>
 <link rel="stylesheet" href="/static/style.css">
@@ -84,5 +89,12 @@ setInterval(drop,900);for(var i=0;i<8;i++)drop();
 
 <script src="/static/app.js"></script>
 <div id="copyright">&copy; 2026 VerdeBuddy &mdash; Offline AI for Nigerian Farmers</div>
+<script>
+if("serviceWorker" in navigator){
+  navigator.serviceWorker.register("/static/sw.js").then(function(){
+    console.log("VerdeBuddy SW registered");
+  });
+}
+</script>
 </body>
 </html>

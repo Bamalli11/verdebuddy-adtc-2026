@@ -14,7 +14,7 @@ for line in sys.stdin:
     data = json.loads(line)
     prompt = data["prompt"]
     try:
-        r = llm(prompt, max_tokens=50, temperature=0.4, repeat_penalty=1.3, stop=["<|im_end|>", "Human:", "Question:"])
+        r = llm(prompt, max_tokens=200, temperature=0.4, repeat_penalty=1.3, stop=["<|im_end|>", "Human:", "Question:"])
         ans = r["choices"][0]["text"].strip()
         if not ans:
              ans = "Babu bayani a yanzu. Don Allah sake gwadawa."
