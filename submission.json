@@ -48,24 +48,24 @@
     "os": "Ubuntu 26.04 LTS"
   },
   "throughput": {
-    "tokens_per_second_generation": 8.0,
-    "first_token_latency_ms": 24472.28,
+    "tokens_per_second_generation": 7.94,
+    "first_token_latency_ms": 24404.02,
     "prompt_tokens": 512,
     "generated_tokens": 128
   },
   "memory": {
-    "peak_rss_mb": 1821.87,
-    "steady_state_rss_mb": 1736.61,
-    "peak_vms_mb": 2283.77
+    "peak_rss_mb": 1821.76,
+    "steady_state_rss_mb": 1737.34,
+    "peak_vms_mb": 2283.91
   },
   "accuracy": [],
   "cpu_thermal": {
-    "cpu_percent_p99": 54.6,
+    "cpu_percent_p99": 53.4,
     "core_temp_c_peak": null,
     "throttled": false
   },
   "reproducibility": {
-    "git_commit_sha": "5f3b00b72469",
+    "git_commit_sha": "a9906b26d488",
     "docker_image_digest": "unknown",
     "random_seed": 42
   },

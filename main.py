@@ -53,9 +53,15 @@ def ask(query):
     elif any(w in q for w in YORUBA): note = " The farmer speaks Yoruba. Reply entirely in Yoruba. Do not repeat words."
     elif any(w in q for w in IGBO): note = " The farmer speaks Igbo. Reply entirely in Igbo. Do not repeat words."
     ctx = " ".join(retrieve(query))[:300]
-    prompt = "<|im_start|>system\n" + SYSTEM + note + "<|im_end|>\n<|im_start|>user\nContext: " + ctx + "\nQuestion: " + query + "<|im_end|>\n<|im_start|>assistant\n"
+    examples = ""
+    if "Hausa" in note:
+        examples = "\nExample Q: Yaushe zan shuka masara?\nExample A: Shuka masara a farkon damina, watanni na Mayu zuwa Yuni. Tabbatar da ruwan sama ya isa kafin shuka."
+    elif "Yoruba" in note:
+        examples = "\nExample Q: Nigba wo ni mo le gbin oka?\nExample A: Gbin oka ni ibere akoko ojo, ni osu Karun tabi Efa. Ri daju pe ile tutu to."
+    elif "Igbo" in note:
+        examples = "\nExample Q: Kedu mgbe m ga-akuo oka?\nExample A: Kuo oka na mmalite oge ozuzo, na onwa Mei ma ọ bụ Jun. Jide n'aka na ala dị mmiri."
+    prompt = "<|im_start|>system\n" + SYSTEM + note + examples + "<|im_end|>\n<|im_start|>user\nContext: " + ctx + "\nQuestion: " + query + "<|im_end|>\n<|im_start|>assistant\n"
     return llm_ask(prompt)
-
 
 PAGE = open('/home/servi/VerdeBuddy/templates/page.html').read()
 

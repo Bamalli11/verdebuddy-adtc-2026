@@ -14,8 +14,19 @@ for line in sys.stdin:
     data = json.loads(line)
     prompt = data["prompt"]
     try:
-        r = llm(prompt, max_tokens=60, temperature=0.1, stop=["<|im_end|>", "Human:", "Question:"])
+        r = llm(prompt, max_tokens=50, temperature=0.4, repeat_penalty=1.3, stop=["<|im_end|>", "Human:", "Question:"])
         ans = r["choices"][0]["text"].strip()
+        if not ans:
+             ans = "Babu bayani a yanzu. Don Allah sake gwadawa."
+        words = ans.split()
+        clean = []
+        for i, w in enumerate(words):
+            if i >= 3 and words[i-3:i].count(w) >= 2:
+               break
+            clean.append(w)
+        ans = " ".join(clean)
+
+       
     except Exception as e:
         ans = "Sorry, please try again."
     print(json.dumps({"answer": ans}), flush=True)
