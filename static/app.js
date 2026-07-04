@@ -1,3 +1,95 @@
+
+// Export chat
+function exportChat(){
+  var ms = msgs.querySelectorAll('.msg');
+  if(ms.length === 0){ alert('No chat to export.'); return; }
+  var text = 'VerdeBuddy Chat Export\n' + new Date().toLocaleString() + '\n\n';
+  ms.forEach(function(m){
+    var bbl = m.querySelector('.bbl');
+    if(!bbl) return;
+    var who = m.classList.contains('u') ? 'Farmer' : 'VerdeBuddy';
+    text += who + ': ' + bbl.textContent + '\n\n';
+  });
+  var a = document.createElement('a');
+  a.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(text);
+  a.download = 'verdebuddy-chat-' + Date.now() + '.txt';
+  a.click();
+}
+
+// Offline indicator
+function updateNetStatus(){
+  var dot = document.getElementById('net-dot');
+  var label = document.getElementById('net-label');
+  if(!dot) return;
+  if(navigator.onLine){
+    dot.style.background='#FFA500';
+    label.textContent='Online';
+  } else {
+    dot.style.background='#4CAF50';
+    label.textContent='Offline Ready';
+  }
+}
+window.addEventListener('online', updateNetStatus);
+window.addEventListener('offline', updateNetStatus);
+setTimeout(updateNetStatus, 500);
+
+// Language toggle
+var activeLang = 'en';
+function setLang(lang){
+  activeLang = lang;
+  document.querySelectorAll('.lang-btn').forEach(function(b){
+    b.style.background = b.dataset.lang === lang ? 'rgba(76,175,80,0.4)' : 'rgba(12,50,8,0.7)';
+  });
+}
+
+// Voice input
+function startVoice(){
+  if(!('webkitSpeechRecognition' in window || 'SpeechRecognition' in window)){
+    alert('Voice input not supported in this browser.');
+    return;
+  }
+  var SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  var r = new SR();
+  var langMap = {en:'en-NG', ha:'ha-NG', yo:'yo', ig:'ig'};
+  r.lang = langMap[activeLang] || 'en-NG';
+  r.interimResults = false;
+  r.maxAlternatives = 1;
+  var micBtn = document.getElementById('mic-btn');
+  if(micBtn) micBtn.textContent = '🔴';
+  r.onresult = function(e){
+    inp.value = e.results[0][0].transcript;
+    if(micBtn) micBtn.textContent = '🎤';
+    doSend();
+  };
+  r.onerror = function(){ if(micBtn) micBtn.textContent = '🎤'; };
+  r.onend = function(){ if(micBtn) micBtn.textContent = '🎤'; };
+  r.start();
+}
+
+// Suggested follow-ups
+var followups = {
+  en: ['What fertilizer should I use?','When is the best time to sell?','How do I treat this disease?'],
+  ha: ['Wane taki zan yi amfani?','Yaushe lokacin siyarwa?','Yaya zan magance wannan cuta?'],
+  yo: ['Ajile wo ni mo lo?','Nigba wo ni akoko tita?','Bawo ni mo se wo arun yi?'],
+  ig: ['Nri ala ole m ga-eji?','Kedu mgbe oge ire?','Kedu otu m ga-esi gwoo oria a?']
+};
+function showFollowups(){
+  var existing = document.getElementById('followup-bar');
+  if(existing) existing.remove();
+  var fq = followups[activeLang] || followups.en;
+  var bar = document.createElement('div');
+  bar.id = 'followup-bar';
+  bar.style.cssText = 'display:flex;gap:8px;flex-wrap:wrap;padding:6px 12px;';
+  fq.forEach(function(q){
+    var btn = document.createElement('button');
+    btn.textContent = q;
+    btn.style.cssText = 'background:rgba(12,50,8,0.8);border:1px solid #1a5c2a;color:#90d090;border-radius:20px;padding:4px 12px;font-size:.75em;cursor:pointer;';
+    btn.onclick = function(){ inp.value = q; doSend(); };
+    bar.appendChild(btn);
+  });
+  msgs.appendChild(bar);
+  msgs.scrollTop = msgs.scrollHeight;
+}
 inp.addEventListener('input', function(){
   inp.style.height = 'auto';
   inp.style.height = Math.min(inp.scrollHeight, 110) + 'px';
@@ -112,6 +204,7 @@ function doSend(){
     .then(function(data){
       removeTyping();
       addMsg('b', data.answer || 'Sorry, something went wrong.');
+      showFollowups();
       sbtn.disabled = false;
       setTimeout(saveChat, 200);
     })
