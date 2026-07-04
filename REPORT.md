@@ -2,7 +2,7 @@
 
 ## 1. Problem
 
-Nigeria has over 36 million smallholder farmers who make daily decisions about planting, soil management, pest control, and market timing without reliable access to advisory services. Agricultural extension officers are scarce, with the national ratio sitting at approximately one officer per 3,000 farmers. In much of the Sudan Savanna and Guinea Savanna belts, where the majority of food production takes place, internet connectivity is intermittent at best and entirely absent at worst.
+Nigeria has over 36 million smallholder farmers who make daily decisions about planting, soil management, pest control, and market timing without access to reliable advisory services. Agricultural extension officers are scarce, with the national ratio sitting at approximately one officer per 3,000 farmers. In much of the Sudan Savanna and Guinea Savanna belts, where the majority of food production takes place, internet connectivity is intermittent at best and entirely absent at worst.
 
 Existing agricultural apps assume a stable cloud connection and are rarely available in local languages. When connectivity fails, so does the tool. VerdeBuddy was built to eliminate that dependency entirely. It runs a complete agricultural AI advisor offline on a standard laptop, requiring no internet connection during inference. Farmers can ask questions in English, Hausa, Yoruba, or Igbo and receive practical, grounded advice on crops, soil health, weather patterns, and market prices at any time, from any location.
 
@@ -11,7 +11,7 @@ The primary target users are smallholder farmers across Nigeria's six geopolitic
 
 ## 2. Design Decisions
 
-### Model Selection: Qwen2.5-1.5B-Instruct (Q4_K_M GGUF, approximately 1 GB)
+### Model: Qwen2.5-1.5B-Instruct (Q4_K_M GGUF, approximately 1 GB)
 
 Qwen2.5-1.5B-Instruct was selected after evaluating several small open-source models against four criteria: instruction-following quality, multilingual capability, RAM footprint, and CPU inference speed.
 
@@ -22,57 +22,73 @@ Qwen2.5-1.5B-Instruct was selected after evaluating several small open-source mo
 | Phi-3-mini-4k | 3.8B | ~2.4 GB | Strong | No (too slow on CPU) |
 | Qwen2.5-3B | 3B | ~2.0 GB | Strong | No (RAM concern) |
 
-Qwen2.5-1.5B offered the best overall balance. It delivers strong instruction-following at roughly 1 GB RAM, leaving comfortable headroom for the operating system, RAG pipeline, and embedding model within the 8 GB hardware target. Its multilingual pretraining also gives it reasonable handling of Hausa, Yoruba, and Igbo vocabulary without any fine-tuning.
+Qwen2.5-1.5B offered the best overall balance. It delivers strong instruction-following at roughly 1 GB RAM, leaving comfortable headroom for the operating system and application overhead within the 8 GB hardware target.
 
 The Q4_K_M quantization level was chosen because it preserves most of the model's reasoning quality while reducing RAM usage by approximately 75% compared to full float32. Q2_K produced noticeably degraded agricultural reasoning in early tests, and Q5_K_M exceeded the RAM budget on the target hardware profile.
 
 ### Runtime: llama.cpp via llama-cpp-python
 
-llama.cpp provides the fastest available CPU inference for GGUF models, using hand-optimized SIMD kernels. No GPU is required or assumed. The key inference parameters were tuned specifically for the 8 GB hardware target: n_ctx=512, n_batch=256, n_threads=4, n_gpu_layers=0, and max_tokens=80.
+llama.cpp provides the fastest available CPU inference for GGUF models, using hand-optimized SIMD kernels. No GPU is required or assumed. Key inference parameters tuned for the 8 GB hardware target: n_ctx=512, n_batch=128, n_threads=4, n_gpu_layers=0, max_tokens=150, repeat_penalty=1.3.
 
-### RAG Pipeline: ChromaDB and sentence-transformers
+### Subprocess Worker Architecture
 
-Every model response is grounded in a curated local knowledge base through retrieval-augmented generation. At query time, the three most relevant passages are retrieved and injected into the prompt context, substantially reducing hallucination on domain-specific agricultural questions.
+The inference engine runs as a separate subprocess rather than inline with the HTTP server. This means a C-level crash or segfault in llama.cpp does not bring down the web server. The main process communicates with the worker over stdin/stdout using newline-delimited JSON, with a threading lock ensuring requests are serialized safely.
 
-The embedding model is all-MiniLM-L6-v2, which weighs approximately 80 MB and runs entirely offline. The vector store is ChromaDB, configured for local persistent storage with no external server required. The knowledge base consists of four domain files totalling approximately 1,200 lines of curated agricultural content, covering ten major Nigerian crops with state-specific planting calendars, disease guides, fertilizer schedules, and yield targets; weather patterns across Nigeria's six agro-ecological zones; five soil types with pH management and amendment guidance; and commodity market pricing, seasonal trends, and post-harvest advice across major Nigerian markets.
+### RAG Pipeline: Keyword-Based Retrieval
+
+Every model response is grounded in a curated local knowledge base through retrieval-augmented generation. At query time, the most relevant passages are retrieved by keyword scoring and injected into the prompt context, substantially reducing hallucination on domain-specific agricultural questions.
+
+The knowledge base consists of four domain files totalling approximately 1,200 lines of curated agricultural content, covering ten major Nigerian crops with state-specific planting calendars, disease guides, fertilizer schedules, and yield targets; weather patterns across Nigeria's six agro-ecological zones; five soil types with pH management and amendment guidance; and commodity market pricing, seasonal trends, and post-harvest advice across major Nigerian markets including Dawanau, Mile 12, and Makurdi.
+
+A keyword-based retrieval approach was chosen over sentence-transformers after discovering that the embedding model caused indefinite startup hangs in offline environments due to background network checks. Pure Python keyword scoring is instant, reliable, and requires no additional dependencies.
 
 ### Multilingual Support
 
-Language detection uses keyword matching across four languages. When a Hausa, Yoruba, or Igbo query is detected, the system prompt instructs the model to respond in that language. This approach requires no additional models or translation APIs and works entirely offline.
+Language detection operates on two levels. First, the user can explicitly select their language via a toggle (EN, HA, YO, IG) in the interface. Second, keyword matching provides automatic fallback detection. When a language is selected or detected, the system prompt instructs the model to respond entirely in that language, accompanied by a few-shot example in the target language to guide output quality. This approach requires no translation API and works entirely offline.
 
 ### User Interface
 
-VerdeBuddy serves a single-page chat interface through Python's built-in http.server module. The interface includes a chat history sidebar with search, New Chat, and Back/Forward navigation; suggested prompt chips in all four supported languages on the landing screen; properly word-wrapped responses; and a background image served from base64 so there are no external asset requests. The entire UI operates offline with zero CDN or third-party resource dependencies.
+VerdeBuddy serves a single-page chat application through Python's built-in http.server module. The interface includes a chat history sidebar with search and navigation; copy, refresh, and edit buttons on every message; suggested follow-up questions after each response; a language toggle for English, Hausa, Yoruba, and Igbo; voice input via the Web Speech API; an export chat function; suggested prompt chips in all four languages; and a clean agriculture-themed design. All assets are local with zero external resource dependencies.
+
+### Progressive Web App
+
+VerdeBuddy ships with a Web App Manifest and service worker, allowing it to be installed directly from the browser on any device. Once installed it launches in fullscreen like a native app, and the service worker caches all static assets for instant loading.
 
 
 ## 3. Constraints
 
-The 8 GB RAM ceiling was the primary hardware constraint shaping every decision. The 1.5B model at Q4_K_M occupies approximately 1 GB, and the MiniLM embedding model adds another 80 MB, leaving well over 6 GB of headroom for the operating system and application overhead.
+The 8 GB RAM ceiling was the primary hardware constraint shaping every decision. The 1.5B model at Q4_K_M occupies approximately 1 GB, leaving well over 6 GB of headroom for the operating system and application overhead.
 
-The requirement for zero internet access during inference meant that all assets, model weights, the vector database, and UI resources had to be local. No GPU could be assumed, so inference runs entirely on CPU through llama.cpp. African language support was achieved through keyword-based detection paired with a multilingual system prompt rather than a separate translation model. The server runs on Python's standard library HTTP server, avoiding any dependency on Flask, FastAPI, or other web frameworks. Model weights are downloaded once via an idempotent download_model.sh script that checks for the file before downloading.
+The requirement for zero internet access during inference meant that all assets, model weights, the knowledge base, and UI resources had to be local. No GPU could be assumed, so inference runs entirely on CPU through llama.cpp. African language support was achieved through explicit language selection combined with keyword-based detection and few-shot prompt engineering rather than a separate translation model. The server runs on Python's standard library HTTP server, avoiding any dependency on Flask, FastAPI, or other web frameworks.
 
 
 ## 4. Benchmarks
 
-The following measurements were taken on the development machine: an Intel Core i5 with 4 CPU cores, 5.8 GB usable RAM, running WSL2 Ubuntu 24 with no GPU.
+Measured on development machine: Intel Core i7-6500U, 4 CPU cores, 5.8 GB usable RAM, WSL2 Ubuntu, no GPU.
 
 | Metric | Observed Value |
 |---|---|
 | Model load time (cold start) | 18 to 25 seconds |
-| RAG retrieval latency | 0.3 to 0.8 seconds |
-| Inference speed | 4 to 7 tokens per second |
-| Time to first response | 15 to 25 seconds |
-| Peak RAM usage (model and RAG) | approximately 1.4 GB |
-| Idle RAM after load | approximately 1.1 GB |
+| RAG retrieval latency | less than 0.1 seconds |
+| Inference speed | 7.65 tokens per second |
+| First token latency | approximately 44 seconds |
+| Peak RAM usage | 1.78 GB |
+| Steady state RAM | 1.71 GB |
 | Context window | 512 tokens |
-| Maximum response length | 80 tokens |
+| Maximum response length | 150 tokens |
 
-Response time is primarily constrained by CPU inference speed. On more capable hardware such as a modern 8-core CPU, inference speed would improve to roughly 12 to 18 tokens per second, bringing time-to-response down to between 5 and 10 seconds.
+### Profiler Results (adtc-profiler v0.1.0, participant mode)
+
+| Metric | Value | Score |
+|---|---|---|
+| Tokens per second | 8.0 | 53.3/100 |
+| Peak RAM | 1.78 GB | 74.6/100 |
+| Combined (perf + efficiency) | | 30.9/50 |
 
 
 ## 5. Offline Compliance
 
-VerdeBuddy makes zero network requests during normal operation. Model weights are stored at model/qwen2.5-1.5b-instruct-q4_k_m.gguf and downloaded once via the provided script. The sentence-transformers embedding model is cached locally. ChromaDB persists its vector index to a local directory. All UI assets are either inlined or served from the local /static/ directory. There is no CDN usage, no analytics, and no telemetry of any kind. The system has been tested with the network interface fully disabled and behaves identically to connected mode.
+VerdeBuddy makes zero network requests during normal operation. Model weights are stored locally and downloaded once via the provided idempotent script. The knowledge base is a set of plain text files. All UI assets are either inlined or served from the local /static/ directory. There is no CDN usage, no analytics, and no telemetry. The system has been tested with the network interface fully disabled and behaves identically to connected mode.
 
 
 *VerdeBuddy. Verde means Green. Built for Nigerian farmers, runs anywhere.*
