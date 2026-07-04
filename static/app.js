@@ -16,22 +16,6 @@ function exportChat(){
   a.click();
 }
 
-// Offline indicator
-function updateNetStatus(){
-  var dot = document.getElementById('net-dot');
-  var label = document.getElementById('net-label');
-  if(!dot) return;
-  if(navigator.onLine){
-    dot.style.background='#FFA500';
-    label.textContent='Online';
-  } else {
-    dot.style.background='#4CAF50';
-    label.textContent='Offline Ready';
-  }
-}
-window.addEventListener('online', updateNetStatus);
-window.addEventListener('offline', updateNetStatus);
-setTimeout(updateNetStatus, 500);
 
 // Language toggle
 var activeLang = 'en';
@@ -55,14 +39,14 @@ function startVoice(){
   r.interimResults = false;
   r.maxAlternatives = 1;
   var micBtn = document.getElementById('mic-btn');
-  if(micBtn) micBtn.textContent = '🔴';
+  if(micBtn) micBtn.style.border = '2px solid #ff6b6b';
   r.onresult = function(e){
     inp.value = e.results[0][0].transcript;
-    if(micBtn) micBtn.textContent = '🎤';
+    if(micBtn) micBtn.style.border = '1px solid #4CAF50';
     doSend();
   };
-  r.onerror = function(){ if(micBtn) micBtn.textContent = '🎤'; };
-  r.onend = function(){ if(micBtn) micBtn.textContent = '🎤'; };
+  r.onerror = function(){ if(micBtn) micBtn.style.border = '1px solid #4CAF50'; };
+  r.onend = function(){ if(micBtn) micBtn.style.border = '1px solid #4CAF50'; };
   r.start();
 }
 
@@ -199,7 +183,7 @@ function doSend(){
   fetch('/ask', {
     method: 'POST',
     headers: {'Content-Type': 'application/json'},
-    body: JSON.stringify({question: text})
+    body: JSON.stringify({question: text, lang: activeLang})
   }).then(function(r){ return r.json(); })
     .then(function(data){
       removeTyping();

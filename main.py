@@ -46,12 +46,19 @@ HAUSA = ["yaushe","zan","wane","nawa","yaya","menene","gona","masara","shuka","t
 YORUBA = ["nigba","bawo","kini","elo","nibo","gbin","oja","ajile","irugbin","ikore","agbado","alubosa"]
 IGBO = ["kedu","mgbe","ole","gini","ebe","aku","ugbo","ahia","nzu","ozuzo","onye"]
 
-def ask(query):
+def ask(query, lang='en'):
     q = query.lower()
-    note = ""
-    if any(w in q for w in HAUSA): note = " The farmer speaks Hausa. Reply entirely in Hausa. Do not repeat words."
-    elif any(w in q for w in YORUBA): note = " The farmer speaks Yoruba. Reply entirely in Yoruba. Do not repeat words."
-    elif any(w in q for w in IGBO): note = " The farmer speaks Igbo. Reply entirely in Igbo. Do not repeat words."
+    lang_map = {
+        'ha': ' The farmer speaks Hausa. You MUST reply entirely in Hausa language only. Do not use English.',
+        'yo': ' The farmer speaks Yoruba. You MUST reply entirely in Yoruba language only. Do not use English.',
+        'ig': ' The farmer speaks Igbo. You MUST reply entirely in Igbo language only. Do not use English.',
+        'en': ''
+    }
+    note = lang_map.get(lang, '')
+    if not note:
+        if any(w in q for w in HAUSA): note = lang_map['ha']
+        elif any(w in q for w in YORUBA): note = lang_map['yo']
+        elif any(w in q for w in IGBO): note = lang_map['ig']
     ctx = " ".join(retrieve(query))[:300]
     examples = ""
     if "Hausa" in note:
@@ -96,7 +103,7 @@ class H(BaseHTTPRequestHandler):
             n = int(self.headers["Content-Length"])
             body = json.loads(self.rfile.read(n))
             try:
-                ans = ask(body.get("question", ""))
+                ans = ask(body.get("question", ""), body.get("lang", "en"))
             except Exception as e:
                 ans = "Sorry, I could not process that. Please try again."
             self.send_response(200)
