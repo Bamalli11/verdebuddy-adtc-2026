@@ -22,7 +22,7 @@ var activeLang = 'en';
 function setLang(lang){
   activeLang = lang;
   document.querySelectorAll('.lang-btn').forEach(function(b){
-    b.style.background = b.dataset.lang === lang ? 'rgba(76,175,80,0.4)' : 'rgba(12,50,8,0.7)';
+    b.style.background = b.dataset.lang === lang ? 'rgba(233, 220, 220, 0.658)' : 'rgba(12,50,8,0.7)';
   });
 }
 
@@ -34,7 +34,7 @@ function startVoice(){
   }
   var SR = window.SpeechRecognition || window.webkitSpeechRecognition;
   var r = new SR();
-  var langMap = {en:'en-NG', ha:'ha-NG', yo:'yo', ig:'ig'};
+  var langMap = {en:'en-NG', ha:'ha-NG'};
   r.lang = langMap[activeLang] || 'en-NG';
   r.interimResults = false;
   r.maxAlternatives = 1;
@@ -45,17 +45,15 @@ function startVoice(){
     if(micBtn) micBtn.style.border = '1px solid #4CAF50';
     doSend();
   };
-  r.onerror = function(){ if(micBtn) micBtn.style.border = '1px solid #4CAF50'; };
-  r.onend = function(){ if(micBtn) micBtn.style.border = '1px solid #4CAF50'; };
+  r.onerror = function(){ if(micBtn) micBtn.style.border = '1px solid #032f05'; };
+  r.onend = function(){ if(micBtn) micBtn.style.border = '1px solid #033004'; };
   r.start();
 }
 
 // Suggested follow-ups
 var followups = {
-  en: ['What fertilizer should I use?','When is the best time to sell?','How do I treat this disease?'],
-  ha: ['Wane taki zan yi amfani?','Yaushe lokacin siyarwa?','Yaya zan magance wannan cuta?'],
-  yo: ['Ajile wo ni mo lo?','Nigba wo ni akoko tita?','Bawo ni mo se wo arun yi?'],
-  ig: ['Nri ala ole m ga-eji?','Kedu mgbe oge ire?','Kedu otu m ga-esi gwoo oria a?']
+  en: ['What fertilizer should I use?','When is the best time to sell?','What is the ROI on this crop?','Which states are best for investment?', 'What are the export opportunities?'],
+  ha: ['Wane taki zan yi amfani?','Yaushe lokacin siyarwa?','Wane taki zan yi amfani?','Yaushe lokacin girbi?','Nawa ake siyarwa a kasuwa?'],
 };
 function showFollowups(){
   var existing = document.getElementById('followup-bar');
@@ -67,7 +65,7 @@ function showFollowups(){
   fq.forEach(function(q){
     var btn = document.createElement('button');
     btn.textContent = q;
-    btn.style.cssText = 'background:rgba(12,50,8,0.8);border:1px solid #1a5c2a;color:#90d090;border-radius:20px;padding:4px 12px;font-size:.75em;cursor:pointer;';
+    btn.style.cssText='background:rgba(255,255,255,0.658);border:1px solid rgba(20,60,20,0.15);color:#123a12;border-radius:20px;padding:4px 12px;font-size:.75em;font-weight:500;cursor:pointer;';
     btn.onclick = function(){ inp.value = q; doSend(); };
     bar.appendChild(btn);
   });

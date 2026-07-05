@@ -41,32 +41,22 @@ def retrieve(query, n=2):
     return [d for s,d in scored[:n] if s > 0] or [docs[0]]
 print("VerdeBuddy is ready!")
 
-SYSTEM = "You are VerdeBuddy, an offline AI for Nigerian farmers. Answer about crops, soil, weather, market prices. Max 3 sentences. Use only provided context."
+SYSTEM = "You are VerdeBuddy, an offline AI assistant for Nigerian farmers and for local and foreign investors exploring agricultural opportunities in Nigeria. Answer questions about crops, soil health, weather patterns, market prices, and investment opportunities. Give clear practical advice in 2-3 sentences. Use only the provided context. Do not repeat yourself."
 HAUSA = ["yaushe","zan","wane","nawa","yaya","menene","gona","masara","shuka","taki","kasuwa","girbi","rani","damina"]
-YORUBA = ["nigba","bawo","kini","elo","nibo","gbin","oja","ajile","irugbin","ikore","agbado","alubosa"]
-IGBO = ["kedu","mgbe","ole","gini","ebe","aku","ugbo","ahia","nzu","ozuzo","onye"]
 
 def ask(query, lang='en'):
     q = query.lower()
     lang_map = {
         'ha': ' The farmer speaks Hausa. You MUST reply entirely in Hausa language only. Do not use English.',
-        'yo': ' The farmer speaks Yoruba. You MUST reply entirely in Yoruba language only. Do not use English.',
-        'ig': ' The farmer speaks Igbo. You MUST reply entirely in Igbo language only. Do not use English.',
         'en': ''
     }
     note = lang_map.get(lang, '')
     if not note:
         if any(w in q for w in HAUSA): note = lang_map['ha']
-        elif any(w in q for w in YORUBA): note = lang_map['yo']
-        elif any(w in q for w in IGBO): note = lang_map['ig']
     ctx = " ".join(retrieve(query))[:300]
     examples = ""
     if "Hausa" in note:
         examples = "\nExample Q: Yaushe zan shuka masara?\nExample A: Shuka masara a farkon damina, watanni na Mayu zuwa Yuni. Tabbatar da ruwan sama ya isa kafin shuka."
-    elif "Yoruba" in note:
-        examples = "\nExample Q: Nigba wo ni mo le gbin oka?\nExample A: Gbin oka ni ibere akoko ojo, ni osu Karun tabi Efa. Ri daju pe ile tutu to."
-    elif "Igbo" in note:
-        examples = "\nExample Q: Kedu mgbe m ga-akuo oka?\nExample A: Kuo oka na mmalite oge ozuzo, na onwa Mei ma ọ bụ Jun. Jide n'aka na ala dị mmiri."
     prompt = "<|im_start|>system\n" + SYSTEM + note + examples + "<|im_end|>\n<|im_start|>user\nContext: " + ctx + "\nQuestion: " + query + "<|im_end|>\n<|im_start|>assistant\n"
     return llm_ask(prompt)
 

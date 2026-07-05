@@ -1,128 +1,916 @@
+=== CROP ADVISORY KNOWLEDGE BASE - VERDEBUDDY ===
+Nigeria Agricultural Advisory System | Updated 2026
+
+---
+
 MAIZE (CORN) - NIGERIA
 Best planting states: Kaduna, Kano, Plateau, Benue, Niger
+Other states found: Nasarawa, Taraba, Kwara, Kogi, Oyo, Bauchi, Gombe, Adamawa
 Planting season: March-April (first season), July-August (second season)
 Soil type: Well-drained loamy soil, pH 5.5-7.0
-Maturity period: 90-120 days depending on variety
-Common diseases: Maize streak virus, Northern leaf blight, Gray leaf spot
-Pest management: Use carbofuran for stem borers, neem extract for aphids
+Maturity period: 90-120 days
 Recommended varieties: SAMMAZ 15, SAMMAZ 27, OBA SUPER 2, TZPB SR
-Fertilizer: Apply NPK 15-15-15 at planting, top dress with urea at 6 weeks
-Yield potential: 3-5 tonnes per hectare with good management
-Market peak: November-January when supply is low
+Fertilizer: NPK 15-15-15 at planting, urea top-dressing at 6 weeks (150 kg/ha)
+Spacing: 75cm between rows, 25cm within rows, 1 seed per hole
+Planting guide: Till soil to 15-20cm depth. Plant seeds 3-5cm deep. Thin to one seedling per stand at 2 weeks. Apply herbicide within 3 days of planting. Weed at 3 and 6 weeks. Apply urea when plants are knee-high.
+Common diseases: Maize streak virus (yellow streaks on leaves), Northern leaf blight (long grey-green lesions), Gray leaf spot
+Pest management: Use IPM approach. For stem borers apply carbofuran at base of plant. Neem extract for aphids. Scout weekly.
+Yield potential: 3-5 tonnes/ha (improved varieties up to 7 tonnes with good management)
+Market peak: November-January
+Profit per hectare: N600,000 - N1,200,000
+Input cost estimate: N250,000 - N450,000
+ROI classification: Medium
+Storage life: 6-12 months (dry grain at 12-13% moisture)
+Export demand score: 5/10
+Climate sensitivity: 500-1200mm rainfall needed
+
+---
 
 TOMATO - NIGERIA
 Best planting states: Kano, Kaduna, Plateau, Sokoto, Jigawa
-Planting season: October-February (dry season with irrigation)
+Other states found: Katsina, Kebbi, Zamfara, Nasarawa, FCT, Ogun, Osun, Oyo
+Planting season: October-February (irrigated dry season), May-June (rainy season)
 Soil type: Sandy loam, pH 6.0-6.8
 Maturity period: 70-90 days
-Common diseases: Fusarium wilt, Bacterial canker, Tomato mosaic virus, Blight
-Pest management: Use copper fungicide for blight, insecticide for whitefly
-Recommended varieties: Roma VF, Beske, UC82B, Tropimech
-Fertilizer: NPK 20-10-10 at transplanting, calcium nitrate during fruiting
-Irrigation: Drip irrigation recommended, water every 2-3 days in dry season
-Yield potential: 15-25 tonnes per hectare
-Market peak: May-July when dry season supply drops
+Recommended varieties: Roma VF, UC82B, Tropimech, Beske, Thorgal
+Fertilizer: NPK 20-10-10 at transplanting, calcium nitrate weekly foliar spray
+Spacing: 60cm between rows, 45cm within rows
+Planting guide: Raise seedlings in nursery for 4 weeks. Transplant in the evening or on a cloudy day. Irrigate immediately after transplanting. Stake plants when 30cm tall. Prune suckers on indeterminate varieties. Apply fertilizer in split doses every 2 weeks.
+Common diseases: Fusarium wilt, Bacterial canker, Early and late blight
+Pest management: Copper fungicide for fungal diseases. Imidacloprid for whiteflies. Use yellow sticky traps.
+Yield potential: 15-25 tonnes/ha
+Market peak: May-July
+Profit per hectare: N1,500,000 - N3,500,000
+Input cost estimate: N800,000 - N1,500,000
+ROI classification: High
+Storage life: 1-3 weeks fresh, 12 months processed
+Export demand score: 6/10
+Climate sensitivity: 600-1000mm
+
+---
 
 CASSAVA - NIGERIA
-Best planting states: Benue, Cross River, Oyo, Ogun, Delta, Anambra
-Planting season: March-May (start of rainy season)
+Best planting states: Benue, Cross River, Oyo, Ogun, Delta, Anambra, Enugu
+Other states found: Ondo, Edo, Rivers, Bayelsa, Imo, Abia, Ebonyi, Kwara, Kogi, Osun, Ekiti
+Planting season: March-May (main season), October-November (minor season)
 Soil type: Sandy loam, pH 5.5-6.5
 Maturity period: 12-18 months
-Common diseases: Cassava mosaic disease, Cassava bacterial blight, Anthracnose
-Pest management: Mealybug controlled by biological agents, weed early
-Recommended varieties: TMS 30572, NR 8082, TME 419, UMUCASS 36
-Fertilizer: NPK 12-12-17 at 6 weeks after planting
-Yield potential: 20-40 tonnes per hectare
-Processing: Can be processed into garri, flour, starch, fufu
-Market peak: December-March when demand for garri is highest
+Recommended varieties: TME 419, TMS 98/0505, UMUCASS 36, IITA-TMS-I011368
+Fertilizer: NPK 12-12-17 at 2 months, 120 kg/ha
+Spacing: 1m x 1m for table varieties, 0.8m x 0.8m for processing
+Planting guide: Select healthy stem cuttings 20-25cm long with 5-8 nodes. Plant at 45-degree angle with 2/3 of stem in soil. Weed at 1, 2, and 4 months. Mound soil around base at 3 months to encourage tuber formation.
+Common diseases: Cassava Mosaic Disease, Cassava Bacterial Blight, Cassava Brown Streak
+Pest management: Mealybug - introduce biological control. Whitefly control for mosaic virus.
+Processing options: Garri, flour, starch, fufu
+Yield potential: 20-40 tonnes/ha (improved varieties up to 50 tonnes)
+Market peak: December-March
+Profit per hectare: N800,000 - N2,000,000
+Input cost estimate: N300,000 - N600,000
+ROI classification: High
+Storage life: 1-2 weeks fresh, 12-24 months processed
+Export demand score: 8/10
+Climate sensitivity: 1000-1500mm
+
+---
 
 RICE - NIGERIA
-Best planting states: Kebbi, Niger, Anambra, Ebonyi, Benue, Taraba
-Planting season: May-June (upland), June-July (lowland/irrigated)
-Soil type: Clay loam for lowland, well-drained loam for upland, pH 5.5-6.5
+Best planting states: Kebbi, Niger, Ebonyi, Benue, Taraba, Anambra
+Other states found: Kano, Delta, Ogun, Oyo, Cross River, Ondo, Kwara, Bauchi, Sokoto
+Planting season: May-July (rain-fed), November-February (irrigated)
+Soil type: Clay loam, well-drained lowland
 Maturity period: 100-130 days
-Common diseases: Rice blast, Brown spot, Bacterial leaf blight
-Pest management: African rice gall midge controlled by early planting
-Recommended varieties: FARO 44, FARO 52, NERICA 1, NERICA 4
-Fertilizer: NPK 15-15-15 basal, urea top dressing at tillering
-Irrigation: Flood irrigation for lowland, supplemental for upland
-Yield potential: 4-8 tonnes per hectare irrigated
-Market peak: February-April before new harvest arrives
+Recommended varieties: FARO 44, FARO 52, NERICA 1, NERICA 4, Sipi
+Fertilizer: NPK 15-15-15 at transplanting (200 kg/ha), urea top-dress at tillering (100 kg/ha)
+Spacing: 20cm x 20cm for transplanted, direct seeded at 25cm rows
+Planting guide: Raise seedlings in nursery for 21 days. Puddle field 2 weeks before transplanting. Transplant 2-3 seedlings per hill. Maintain 5cm water depth for first 3 weeks. Drain field 2 weeks before harvest.
+Common diseases: Rice blast, Brown spot, Sheath blight
+Pest management: Resistant varieties first. Tricyclazole for blast. Scare birds at grain filling stage.
+Yield potential: 2-4 tonnes/ha (rain-fed), 4-8 tonnes/ha (irrigated)
+Market peak: February-April
+Profit per hectare: N700,000 - N1,800,000
+Input cost estimate: N400,000 - N900,000
+ROI classification: Medium
+Storage life: 1-2 years (milled), 6-12 months (paddy)
+Export demand score: 7/10
+Climate sensitivity: 1000-2000mm
 
-SORGHUM - NIGERIA
-Best planting states: Kano, Kaduna, Borno, Yobe, Sokoto, Zamfara
-Planting season: June-July with onset of rains
-Soil type: Well-drained loamy to clay soils, pH 5.5-7.5
-Maturity period: 90-140 days
-Common diseases: Grain mold, Striga weed (major problem), Anthracnose
-Pest management: Use Striga-resistant varieties, rotate with cowpea
-Recommended varieties: SAMSORG 14, SAMSORG 17, SK 5912
-Fertilizer: NPK 15-15-15 at planting, urea at 4-6 weeks
-Drought tolerance: High — suitable for low rainfall areas below 600mm
-Yield potential: 2-4 tonnes per hectare
-Uses: Food, animal feed, brewing, biofuel
-
-COWPEA (BEANS) - NIGERIA
-Best planting states: Kano, Borno, Sokoto, Kebbi, Niger, Kaduna
-Planting season: June-July (single rainy season), March (irrigation)
-Soil type: Sandy loam, pH 6.0-7.0
-Maturity period: 60-90 days
-Common diseases: Cowpea mosaic virus, Septoria leaf spot, Root rot
-Pest management: Thrips and pod borers — use lambda-cyhalothrin
-Recommended varieties: IT97K-499-35, SAMPEA 10, SAMPEA 14
-Fertilizer: Minimal nitrogen needed (fixes own nitrogen), apply phosphorus
-Intercropping: Commonly intercropped with maize and sorghum
-Yield potential: 0.8-2.5 tonnes per hectare
-Market peak: October-December after harvest, prices rise January-June
-
-GROUNDNUT (PEANUT) - NIGERIA
-Best planting states: Kano, Kaduna, Sokoto, Katsina, Zamfara, Kebbi
-Planting season: May-June with first rains
-Soil type: Sandy loam, well-drained, pH 5.9-7.0
-Maturity period: 90-120 days
-Common diseases: Early leaf spot, Late leaf spot, Rosette virus
-Pest management: Treat seeds with fungicide before planting
-Recommended varieties: SAMNUT 22, SAMNUT 23, SAMNUT 24
-Fertilizer: Single superphosphate at planting, gypsum at pegging
-Aflatoxin risk: Dry properly after harvest to avoid aflatoxin contamination
-Yield potential: 1-2.5 tonnes per hectare
-Uses: Oil production, groundnut cake, direct consumption
+---
 
 YAM - NIGERIA
-Best planting states: Benue, Plateau, Niger, Taraba, Kogi, Enugu
-Planting season: February-March (early planting for best yield)
-Soil type: Deep well-drained loamy soil, pH 5.5-6.5
-Maturity period: 7-8 months
-Common diseases: Yam mosaic virus, Anthracnose, Dry rot
-Pest management: Yam beetle controlled by treating setts before planting
-Recommended varieties: Puna, Ife, TDr 89/02665, Kemi
-Fertilizer: NPK 15-15-15 at 6 weeks, mulch to retain moisture
-Storage: Store in well-ventilated barns, treat with wood ash
-Yield potential: 15-30 tonnes per hectare
-Market peak: December-May when old stock depletes before new harvest
+Best planting states: Benue, Plateau, Niger, Taraba, Ekiti, Kogi
+Other states found: Nasarawa, Kwara, Enugu, Anambra, Imo, Abia, Oyo, Osun, Cross River
+Planting season: February-March (early), April (late)
+Soil type: Deep loamy soil, pH 5.5-6.5
+Maturity period: 7-8 months (white yam), 5-6 months (water yam)
+Recommended varieties: Puna, Ife, Amula, Pepa
+Fertilizer: NPK 15-15-15 at 100 kg/ha at 6-8 weeks
+Spacing: 1m x 1m with stakes or mounds
+Planting guide: Plant setts of 200-400g. Treat with wood ash and fungicide before planting. Create mounds 30cm high. Stakes are essential. Weed at 6 and 12 weeks. Harvest when vines turn yellow.
+Common diseases: Yam Mosaic Virus, Anthracnose, Dry rot
+Pest management: Treat setts before planting. Control weevils with carbofuran. Rotate with cowpea or groundnut.
+Yield potential: 15-30 tonnes/ha
+Market peak: December-May
+Profit per hectare: N1,500,000 - N3,000,000
+Input cost estimate: N800,000 - N1,500,000
+ROI classification: High
+Storage life: 4-6 months in barn storage
+Export demand score: 6/10
+Climate sensitivity: 1000-1500mm
 
-PEPPER (CHILI) - NIGERIA
-Best planting states: Kaduna, Kano, Plateau, Oyo, Ogun
-Planting season: September-October (nursery), November-December (transplant)
-Soil type: Well-drained loamy soil, pH 6.0-6.8
-Maturity period: 90-120 days after transplanting
-Common diseases: Phytophthora blight, Pepper veinal mottle virus, Anthracnose
-Pest management: Aphids and mites — use insecticidal soap or neem oil
-Recommended varieties: Rodo (tatashe), Shombo, Bawa, Tatase
-Fertilizer: NPK 15-15-15 at transplanting, foliar feed every 3 weeks
-Irrigation: Regular watering especially during fruit development
-Yield potential: 8-15 tonnes per hectare fresh weight
-Market peak: July-September when demand peaks for festive cooking
+---
+
+PEPPER (CHILLI AND BELL) - NIGERIA
+Best planting states: Kaduna, Kano, Plateau, Oyo, Osun
+Other states found: Nasarawa, Benue, Niger, FCT, Kwara, Ekiti, Ogun, Ondo, Cross River
+Planting season: September-December (dry season irrigated), April-June (rainy season)
+Soil type: Well-drained loamy soil, pH 6.0-7.0
+Maturity period: 90-120 days from transplanting
+Recommended varieties: Tatashe (bell pepper), Rodo (habanero), NIHORT hybrids, Yolo Wonder
+Fertilizer: NPK 15-15-15 at transplanting, foliar spray every 2 weeks
+Spacing: 60cm x 60cm
+Planting guide: Raise seedlings in nursery for 3-4 weeks. Transplant in evening. Water daily for first week. Mulch to retain moisture. Harvest when peppers turn color.
+Common diseases: Pepper blight, Pepper mosaic virus, Powdery mildew
+Pest management: Neem oil spray. Aphids - imidacloprid. Remove infected plants promptly.
+Yield potential: 8-15 tonnes/ha
+Market peak: July-September
+Profit per hectare: N1,000,000 - N2,500,000
+Input cost estimate: N500,000 - N1,000,000
+ROI classification: High
+Storage life: 2-4 weeks fresh, 12+ months dried
+Export demand score: 7/10
+Climate sensitivity: 600-1200mm
+
+---
 
 ONION - NIGERIA
-Best planting states: Kebbi, Sokoto, Kano, Jigawa, Niger
-Planting season: October-November (dry season with irrigation)
-Soil type: Sandy loam, well-drained, pH 6.0-7.0
+Best planting states: Kebbi, Kano, Sokoto, Zamfara, Jigawa
+Other states found: Katsina, Kaduna, Plateau, Nasarawa, Borno, Yobe, Niger
+Planting season: October-November (best), September-December
+Soil type: Sandy loam, pH 6.0-7.0
 Maturity period: 90-120 days
-Common diseases: Purple blotch, Downy mildew, Fusarium basal rot
-Pest management: Thrips are major pest — use spinosad or lambda-cyhalothrin
-Recommended varieties: Jar Maka, Bello, Dogon Yaro, Red Creole
-Fertilizer: NPK 15-15-15 at planting, urea side dressing at 6 weeks
-Storage: Cure in field for 2 weeks, store in cool dry ventilated place
-Yield potential: 20-30 tonnes per hectare
-Market peak: June-September when stored supply runs low
+Recommended varieties: Red Creole, Bello, Violet de Galmi
+Fertilizer: NPK 15-15-15 at 200 kg/ha, urea top-dress at 6 weeks
+Spacing: 20cm x 15cm
+Planting guide: Prepare nursery and transplant at 6 weeks. Irrigate every 3-4 days. Stop irrigation 2 weeks before harvest. Harvest when 50% of tops have fallen. Cure in shade for 2-3 weeks.
+Common diseases: Downy mildew, Purple blotch, Neck rot in storage
+Pest management: Thrips - lambda-cyhalothrin. Copper fungicide for foliar diseases.
+Yield potential: 20-30 tonnes/ha
+Market peak: June-September
+Profit per hectare: N1,200,000 - N2,800,000
+Input cost estimate: N500,000 - N900,000
+ROI classification: High
+Storage life: 2-6 months (properly cured)
+Export demand score: 7/10
+Climate sensitivity: 400-800mm
+
+---
+
+GROUNDNUT (PEANUT) - NIGERIA
+Best planting states: Kano, Kaduna, Taraba, Adamawa, Nasarawa, Katsina
+Other states found: Sokoto, Kebbi, Zamfara, Bauchi, Gombe, Borno, Niger, Kwara, Benue
+Planting season: May-July (rainy season)
+Soil type: Well-drained sandy loam, pH 5.5-7.0
+Maturity period: 90-120 days
+Recommended varieties: SAMNUT 24, SAMNUT 29, SAMNUT 30
+Fertilizer: NPK 15-15-15 at 100 kg/ha, superphosphate 150 kg/ha, gypsum at pegging 200 kg/ha
+Spacing: 60cm between rows, 15cm within rows
+Planting guide: Plant 2 seeds per hole 5cm deep. Weed at 3 and 6 weeks. Apply gypsum when flowers appear. Harvest when inner shell shows color network pattern.
+Common diseases: Rosette disease, Early and late leaf spot, Groundnut smut
+Pest management: Aphids transmit rosette - control with insecticides. Rotate with cereals.
+Yield potential: 1.5-2.7 tonnes/ha
+Market peak: November-January
+Profit per hectare: N94,000 - N250,000
+Input cost estimate: N150,000 - N300,000
+ROI classification: Medium
+Storage life: 6-12 months at low moisture
+Export demand score: 8/10
+Climate sensitivity: 800-1200mm
+
+---
+
+SORGHUM - NIGERIA
+Best planting states: Kano, Kaduna, Katsina, Borno, Zamfara
+Other states found: Sokoto, Kebbi, Yobe, Bauchi, Gombe, Adamawa, Niger, Nasarawa, Taraba
+Planting season: June-July
+Soil type: Clay loam to sandy loam, pH 5.5-7.5, drought tolerant
+Maturity period: 90-150 days
+Recommended varieties: SAMSORG 14, SAMSORG 17, SK 5912, Farafara
+Fertilizer: NPK 15-15-15 at 100 kg/ha, urea at 6 weeks
+Spacing: 75cm between rows, 20cm within rows
+Planting guide: Plant 3-4 seeds per hole, thin to 2 plants at 2 weeks. Weed at 3 and 6 weeks. Bird-proof heads at grain fill.
+Common diseases: Grain mold, Downy mildew, Striga witchweed
+Pest management: Striga-resistant varieties. Stem borer - carbofuran. Shoot fly - early planting.
+Yield potential: 1.5-3 tonnes/ha
+Uses: Ogi, tuwo, burukutu, animal feed
+Market peak: December-February
+Profit per hectare: N200,000 - N500,000
+Input cost estimate: N100,000 - N250,000
+ROI classification: Medium
+Storage life: 12-24 months
+Export demand score: 4/10
+Climate sensitivity: 400-800mm (drought tolerant)
+
+---
+
+COWPEA (BEANS) - NIGERIA
+Best planting states: Kano, Borno, Katsina, Sokoto, Niger
+Other states found: Zamfara, Kebbi, Yobe, Adamawa, Bauchi, Kaduna, Nasarawa, Kwara, Oyo
+Planting season: June-August (rainy), November-December (irrigated)
+Soil type: Sandy loam, pH 6.0-7.0
+Maturity period: 60-90 days (early varieties)
+Recommended varieties: IT99K-573-1-1, Oloyin, Drum, Ife Brown, Kanannado
+Fertilizer: Single super phosphate 200 kg/ha only - cowpea fixes its own nitrogen
+Spacing: 75cm between rows, 20cm within rows
+Planting guide: Inoculate seeds with Rhizobium before planting. Plant 2-3 seeds per hole. Thin to 1-2 plants. Harvest pods when brown and dry.
+Common diseases: Cowpea mosaic virus, Septoria leaf spot, Ashy stem blight
+Pest management: Aphids, thrips, pod borer - lambda-cyhalothrin at flowering. Weevils in storage - use hermetic bags.
+Yield potential: 0.5-1.5 tonnes/ha grain
+Market peak: November-January
+Profit per hectare: N200,000 - N600,000
+Input cost estimate: N80,000 - N200,000
+ROI classification: Medium
+Storage life: 6-12 months dry grain, 2 years hermetic storage
+Export demand score: 6/10
+Climate sensitivity: 500-900mm
+
+---
+
+SOYBEAN - NIGERIA
+Best planting states: Benue, Kaduna, Kano, Borno, Plateau
+Other states found: Taraba, Nasarawa, Niger, Kwara, Kogi, Bauchi, Adamawa, Gombe
+Planting season: Early June to mid-July
+Soil type: Sandy loam to clay loam, pH 6.0-7.0
+Maturity period: 90-110 days
+Recommended varieties: TGX 1448-2E, TGX 1987-10F, TGX 1835-10E
+Fertilizer: Superphosphate plus NoduMax Rhizobium inoculant. Minimal nitrogen needed.
+Spacing: 60cm between rows, 5cm within rows
+Planting guide: Inoculate seeds with soybean-specific Rhizobium. Plant 2 seeds per hole. Weed twice. Harvest when 80% of pods turn brown.
+Common diseases: Soybean rust (most serious), Frogeye leaf spot
+Pest management: Soybean looper and bean fly - approved insecticides at pod fill.
+Yield potential: 1.0-2.5 tonnes/ha
+Market peak: October-December
+Profit per hectare: N143,000 - N178,000
+Input cost estimate: N100,000 - N250,000
+ROI classification: Medium
+Storage life: 6-12 months at 12% moisture
+Export demand score: 7/10
+Climate sensitivity: 700mm+ rainfall
+
+---
+
+GINGER - NIGERIA
+Best planting states: Kaduna, Nasarawa, Plateau
+Other states found: Taraba, Bauchi, Gombe, Adamawa, Benue, Niger, Kogi, Enugu
+Planting season: April-May
+Soil type: Well-drained sandy loam, rich organic matter
+Maturity period: 8-10 months
+Recommended varieties: UG1, UG2 (Tafin giwa local)
+Fertilizer: Organic compost 10 tonnes/ha plus NPK 15-15-15 200 kg/ha in 3 split doses
+Spacing: 30cm x 30cm in ridges
+Planting guide: Select healthy disease-free rhizomes. Soak in fungicide overnight before planting. Plant 5cm deep. Mulch heavily. Water twice weekly in dry spells. Harvest when leaves turn yellow at 8-10 months.
+Common diseases: Rhizome rot (Pythium - most serious), Bacterial wilt. Avoid waterlogging.
+Post-harvest: Wash, dry, and grade for export. Fresh ginger commands premium October-February.
+Yield potential: 15-30 tonnes/ha fresh
+Market peak: September-February (export)
+Profit per hectare: N2,000,000 - N5,000,000
+Input cost estimate: N700,000 - N1,500,000
+ROI classification: Very High
+Storage life: 4-6 months fresh, 12+ months dried
+Export demand score: 10/10 (top Nigerian export crop)
+
+---
+
+SESAME (BENNISEED) - NIGERIA
+Best planting states: Benue, Nasarawa, Taraba, Kogi
+Other states found: Niger, Kwara, Kebbi, Sokoto, Adamawa, Bauchi, Gombe, Cross River
+Planting season: June-July
+Soil type: Well-drained sandy loam
+Maturity period: 90-120 days
+Recommended varieties: NCRIBEN-01, NCRIBEN-02
+Fertilizer: NPK 15-15-15 at 60 kg/ha - sesame needs minimal feeding
+Spacing: 45cm between rows, 10cm within rows
+Planting guide: Broadcast or drill seeds at 3-5 kg/ha. Do not cover deeply. Weed at 3 and 6 weeks. Top-dress urea at branching. Harvest when 75% of capsules turn yellow. Cut, bundle, and thresh after 1 week drying.
+Common diseases: Leaf spot, Phytophthora blight, Fusarium wilt
+Yield potential: 0.5-1.5 tonnes/ha
+Market peak: September-January (export)
+Profit per hectare: N800,000 - N2,000,000
+Input cost estimate: N200,000 - N400,000
+ROI classification: Very High
+Storage life: 6-12 months
+Export demand score: 10/10
+
+---
+
+COCOA - NIGERIA
+Best planting states: Ondo, Cross River, Ogun, Osun, Ekiti
+Other states found: Edo, Delta, Kwara, Kogi, Abia, Anambra, Rivers, Imo
+Planting season: May-June (start of rains)
+Soil type: Deep loamy soil with good drainage and organic matter
+Maturity period: 3-5 years to first harvest, 8-10 years peak production
+Recommended varieties: CRIN hybrids, Amazon Upper
+Fertilizer: Muriate of potash plus urea annually from year 2
+Spacing: 3m x 3m with shade trees
+Planting guide: Dig holes 60cm x 60cm x 60cm. Provide shade with plantain for first 2 years. Prune to single trunk to 1.5m then allow 3-4 main branches. Remove chupons regularly. Harvest pods when yellow or orange.
+Common diseases: Black pod (Phytophthora - 30-50% loss), Cocoa swollen shoot virus, Vascular streak dieback
+Pest management: Capsids - lambda-cyhalothrin. Black pod - copper fungicide every 3 weeks in rains.
+Fermentation and drying: Ferment beans 5-7 days. Sun dry to 7.5% moisture.
+Yield potential: 300-800 kg/ha dry beans
+Market peak: October-March
+Profit per hectare: N800,000 - N2,500,000
+Input cost estimate: N500,000 - N1,000,000
+ROI classification: Very High
+Storage life: 6-12 months properly dried
+Export demand score: 10/10 (Nigeria is world 4th largest producer)
+
+---
+
+CASHEW - NIGERIA
+Best planting states: Kogi, Kwara, Oyo, Enugu
+Other states found: Benue, Nasarawa, Niger, Ondo, Ekiti, Edo, Cross River, Abuja FCT, Taraba
+Planting season: May-June
+Soil type: Sandy loam, tolerates poor soils, pH 5.0-6.5
+Maturity period: 3-4 years to first harvest
+Recommended varieties: Improved dwarf early-bearing varieties from NIHORT
+Fertilizer: NPK 15-15-15 annually from year 2
+Spacing: 10m x 10m (100 trees/ha)
+Planting guide: Dig holes 60cm x 60cm x 60cm. Add compost. One tree per hole. Mulch around tree. Prune to remove crossing branches. Harvest when apple turns red/yellow and nut falls easily.
+Common diseases: Anthracnose, Powdery mildew, Leaf blight
+Pest management: Helopeltis bug - imidacloprid. Tea mosquito bug - cypermethrin.
+Yield potential: 500-1000 kg/ha raw cashew nuts
+Market peak: February-May
+Profit per hectare: N700,000 - N3,500,000
+Input cost estimate: N300,000 - N900,000
+ROI classification: Very High
+Storage life: 6-12 months
+Export demand score: 10/10
+
+---
+
+PLANTAIN - NIGERIA
+Best planting states: Ondo, Edo, Delta, Cross River, Bayelsa, Rivers, Osun
+Other states found: Ogun, Oyo, Ekiti, Kwara, Kogi, Anambra, Imo, Abia, Ebonyi, Lagos
+Planting season: Beginning of rains (March-April) or year-round with irrigation
+Soil type: Well-drained fertile loamy clay, pH 5.5-7.0
+Maturity period: 9-12 months first bunch, ratoons every 8-10 months
+Recommended varieties: False-horn (Agbagba), French (Obino l'Ewai), Horn
+Fertilizer: NPK 15-15-15 at 200g per plant 3 times/year plus poultry manure
+Spacing: 3m x 3m (1,100 plants/ha)
+Planting guide: Use disease-free sword suckers. Treat with fungicide. Dig holes 60cm x 60cm x 60cm. De-sucker monthly leaving 1 follower per plant. Prop bunch when it emerges.
+Common diseases: Black Sigatoka (most serious), Banana Bunchy Top Virus, Fusarium wilt
+Pest management: Sigatoka - remove old leaves and apply copper fungicide. Nematodes - crop rotation.
+Yield potential: 6-12 tonnes/ha per harvest cycle
+Market peak: October-February
+Profit per hectare: N1,155,000 - N4,500,000
+Input cost estimate: N1,200,000 - N2,900,000
+ROI classification: High
+Storage life: Highly perishable - sell within 3 days of harvest
+Export demand score: 5/10
+
+---
+
+OKRA - NIGERIA
+Best planting states: Nationwide - suited to all zones
+Other states found: All 36 states and FCT - widely grown across Nigeria
+Planting season: March-July (rainy), October-January (irrigated)
+Soil type: Sandy loam to loam, pH 6.0-7.5
+Maturity period: 50-65 days to first harvest
+Recommended varieties: Clemson Spineless, V35, Lady's Finger, NHAe 47-4
+Fertilizer: NPK 15-15-15 at 200 kg/ha, urea at 4 weeks
+Spacing: 60cm x 30cm
+Planting guide: Soak seeds overnight before planting. Plant 2 seeds per hole. Thin to 1 plant. Begin harvest when pods are 7-10cm long every 2-3 days. Regular harvesting extends production season.
+Common diseases: Okra mosaic virus, Fusarium wilt, Powdery mildew
+Pest management: Aphids and jassids - neem oil. Fruit and shoot borer - spray at first sign.
+Yield potential: 8-15 tonnes/ha
+Market peak: June-September
+Profit per hectare: N600,000 - N1,500,000
+Input cost estimate: N150,000 - N350,000
+ROI classification: High
+Storage life: 2-4 days fresh
+Export demand score: 5/10
+
+---
+
+WATERMELON - NIGERIA
+Best planting states: Kano, Kaduna, Niger, Ogun, Cross River
+Other states found: Kebbi, Sokoto, Zamfara, Nasarawa, Benue, Plateau, FCT, Oyo, Osun, Lagos
+Planting season: February-March (dry season irrigated), May-June (rainy season)
+Soil type: Sandy loam, well-drained, pH 6.0-7.0
+Maturity period: 70-90 days
+Recommended varieties: Sugar Baby, Charleston Gray, Crimson Sweet
+Fertilizer: NPK 15-15-15 at 300 kg/ha, foliar spray weekly
+Spacing: 2m x 1.5m
+Planting guide: Plant 2 seeds per hole 2-3cm deep. Thin to 1 plant. Apply nitrogen only before flowering then switch to potassium and phosphorus. Harvest when tendril nearest fruit turns brown and fruit sounds hollow when tapped.
+Common diseases: Fusarium wilt, Gummy stem blight, Powdery mildew
+Pest management: Aphids - neem oil. Fruit fly - protein bait trap.
+Yield potential: 15-30 tonnes/ha
+Market peak: May-August
+Profit per hectare: N800,000 - N2,500,000
+Input cost estimate: N300,000 - N700,000
+ROI classification: High
+Storage life: 2-3 weeks at room temperature
+Export demand score: 4/10
+
+---
+
+MANGO - NIGERIA
+Best planting states: Kano, Kaduna, Plateau, Benue, Nasarawa
+Other states found: Niger, Kebbi, Kwara, Kogi, Taraba, Adamawa, Oyo, Ogun, Osun, Anambra, Enugu
+Planting season: Beginning of rains (May-June)
+Soil type: Deep well-drained loamy soil, pH 5.5-7.5
+Maturity period: 3-5 years to first commercial harvest
+Recommended varieties: Peter, Julie, Kerosene, Shelly, Tommy Atkins
+Fertilizer: NPK 15-15-15 at 0.5 kg per year of age per tree, annually
+Spacing: 10m x 10m (100 trees/ha)
+Planting guide: Dig holes 1m x 1m x 1m. Add compost. Plant grafted seedlings. Stake for first 2 years. Prune to open canopy. Smoke trees with damp straw to induce flowering in dry season.
+Common diseases: Mango anthracnose, Powdery mildew, Malformation
+Pest management: Fruit fly - protein bait trap. Scale insects - white oil spray.
+Yield potential: 200-500 kg/tree (10-20 tonnes/ha at maturity)
+Market peak: March-June
+Profit per hectare: N500,000 - N2,000,000
+Input cost estimate: N200,000 - N500,000
+ROI classification: High (long term)
+Storage life: 2-3 weeks ambient, 4-6 weeks cold storage
+Export demand score: 8/10
+
+---
+
+MORINGA (ZOGALE) - NIGERIA
+Best planting states: Nationwide - extremely adaptable
+Other states found: All states, especially Kano, Katsina, Sokoto, Kebbi, Niger, Kaduna, FCT, Borno
+Planting season: Beginning of rains (April-June)
+Soil type: Sandy loam - tolerates poor soils, pH 6.0-7.0
+Maturity period: Leaves in 3 months, pods in 8-12 months
+Recommended varieties: PKM1, PKM2, Local
+Fertilizer: Compost only - very low input crop
+Spacing: 3m x 3m for trees, 30cm x 10cm for leaf production
+Planting guide: Sow seeds 2cm deep or plant cuttings. For leaf production cut back to 1m height every 2 months. Very drought tolerant.
+Uses: Leaves (rich in vitamins A, C, iron, protein), Seeds (water purification, oil), Pods
+Yield potential: 30-50 tonnes/ha fresh leaves (intensive)
+Market peak: Dry season November-April
+Profit per hectare: N500,000 - N2,000,000
+Input cost estimate: N50,000 - N200,000
+ROI classification: High
+Storage life: 2-3 days fresh, 12+ months dried
+Export demand score: 8/10
+
+---
+
+SWEET POTATO - NIGERIA
+Best planting states: Benue, Plateau, Niger, Kogi, Anambra
+Other states found: Nasarawa, Taraba, Kwara, Enugu, Imo, Abia, Cross River, Ogun, Oyo
+Planting season: April-June
+Soil type: Sandy loam, well-drained, pH 5.5-6.5
+Maturity period: 3-5 months
+Recommended varieties: UMUSPO 3, UMUSPO 5, Bony Best, Adufe (orange-fleshed)
+Fertilizer: NPK 15-15-15 at 200 kg/ha at planting only
+Spacing: 90cm between ridges, 30cm within rows
+Planting guide: Plant vine cuttings 30cm long on ridges. Plant 2/3 of stem underground. Weed twice. Ensure drainage. Harvest when leaves begin to yellow.
+Common diseases: Sweet potato weevil (main pest), Black rot
+Pest management: Crop rotation. Use clean planting material. Harvest on time.
+Yield potential: 10-20 tonnes/ha
+Market peak: August-November
+Profit per hectare: N500,000 - N1,200,000
+Input cost estimate: N200,000 - N400,000
+ROI classification: Medium
+Storage life: 2-4 months
+Export demand score: 6/10
+
+---
+
+IRISH POTATO - NIGERIA
+Best planting states: Plateau (Jos), Kaduna, Benue highland areas
+Other states found: Taraba highlands, Adamawa highlands, Bauchi, Gombe highlands, FCT
+Planting season: March-May (rainy), August-September (dry season highlands)
+Soil type: Well-drained loamy soil, pH 5.0-6.0
+Maturity period: 90-120 days
+Recommended varieties: Nicola, Diamant, Rosita, Atica
+Fertilizer: NPK 15-15-15 at 400 kg/ha, muriate of potash at earthing-up
+Spacing: 75cm between rows, 30cm within rows with earthing-up required
+Planting guide: Chit seed potatoes for 2 weeks. Cut tubers to 30-50g pieces with at least 2 eyes. Plant 8-10cm deep. Earth up at 4 and 8 weeks. Harvest when haulms die back.
+Common diseases: Late blight (Phytophthora infestans - most serious), Early blight, Bacterial wilt
+Pest management: Late blight - Ridomil or copper fungicide every 7 days in wet weather.
+Yield potential: 15-30 tonnes/ha
+Market peak: June-September
+Profit per hectare: N1,000,000 - N2,500,000
+Input cost estimate: N600,000 - N1,200,000
+ROI classification: High
+Storage life: 1-3 months
+Export demand score: 6/10
+
+---
+
+HIBISCUS (ZOBO/ROSELLE) - NIGERIA
+Best planting states: Kano, Jigawa, Katsina, Sokoto
+Other states found: Zamfara, Kebbi, Borno, Yobe, Niger, Kaduna, Nasarawa
+Planting season: June-July
+Soil type: Sandy loam
+Maturity period: 90-120 days
+Fertilizer: Very low - NPK 60 kg/ha maximum
+Spacing: 1m x 0.5m
+Planting guide: Direct seed at 5 seeds per hole. Thin to 2 plants. Minimal management. Harvest calyces when pods swell. Dry calyces immediately.
+Yield potential: 1-2 tonnes/ha dried calyces
+Market peak: Export year-round
+Profit per hectare: N700,000 - N1,800,000
+Input cost estimate: N200,000 - N400,000
+ROI classification: High
+Storage life: 6-12 months dried
+Export demand score: 9/10
+
+---
+
+GARLIC - NIGERIA
+Best planting states: Kano, Kaduna, Plateau
+Other states found: Nasarawa, Niger, Kebbi, Sokoto, Katsina, Jigawa, Bauchi
+Planting season: October-November
+Soil type: Well-drained sandy loam, pH 6.0-7.0
+Maturity period: 90-120 days
+Fertilizer: NPK 15-15-15 plus urea, avoid excess nitrogen
+Spacing: 15cm x 10cm on flat beds
+Planting guide: Split bulbs into individual cloves. Plant 3-5cm deep with pointed end up. Weed carefully. Stop irrigation when tops begin to dry. Harvest when 50-75% of tops fallen. Cure in shade 3-4 weeks.
+Common diseases: Rust, White rot, Purple blotch
+Pest management: Thrips - insecticide spray. Avoid overwatering.
+Yield potential: 5-10 tonnes/ha
+Market peak: June-September
+Profit per hectare: N1,000,000 - N2,500,000
+Input cost estimate: N500,000 - N900,000
+ROI classification: High
+Storage life: 4-6 months
+Export demand score: 8/10
+
+---
+
+CARROT - NIGERIA
+Best planting states: Plateau, Kaduna, Bauchi
+Other states found: Nasarawa, Taraba, Gombe, Adamawa highlands, FCT, Benue highlands
+Planting season: September-November (cool season), March-May (highlands)
+Soil type: Deep sandy loam, pH 6.0-6.8, stone-free
+Maturity period: 70-90 days
+Recommended varieties: Nantes, Kuroda, Chantenay, Touchon
+Fertilizer: NPK 15-15-15 at 200 kg/ha, avoid excess nitrogen which causes forking
+Spacing: 30cm between rows, 5cm within rows thinned to 8cm
+Planting guide: Prepare deep loose soil free of stones. Direct seed only - do not transplant. Thin seedlings at 3 weeks. Water regularly to prevent cracking. Harvest before roots become overly large.
+Common diseases: Alternaria leaf blight, Cavity spot, Root knot nematode
+Pest management: Nematode - crop rotation. Carrot fly - use row cover. Aphids - neem oil.
+Yield potential: 15-30 tonnes/ha
+Market peak: December-March
+Profit per hectare: N300,000 - N800,000
+Input cost estimate: N200,000 - N450,000
+ROI classification: High
+Storage life: 2-4 weeks fresh, 2-3 months refrigerated
+Export demand score: 6/10
+
+---
+
+CABBAGE - NIGERIA
+Best planting states: Plateau, Kaduna, Kano
+Other states found: Nasarawa, Bauchi, Gombe, FCT, Taraba highlands, Benue, Niger
+Planting season: September-January (cool season), year-round on Plateau
+Soil type: Sandy loam to clay loam, pH 6.0-7.0, well-drained
+Maturity period: 60-90 days from transplanting
+Recommended varieties: Copenhagen Market, Gloria F1, Drumhead, Green Coronet
+Fertilizer: NPK 15-15-15 at transplanting 300 kg/ha, urea top-dress at 4 weeks
+Spacing: 60cm between rows, 45cm within rows
+Planting guide: Raise seedlings in nursery for 4 weeks. Transplant in evening. Irrigate daily for first week. Harvest when head is firm and solid.
+Common diseases: Black rot, Clubroot, Downy mildew
+Pest management: Caterpillars (diamondback moth) - Bt spray or lambda-cyhalothrin. Aphids - neem oil.
+Yield potential: 20-40 tonnes/ha
+Market peak: November-March
+Profit per hectare: N500,000 - N1,200,000
+Input cost estimate: N300,000 - N600,000
+ROI classification: High
+Storage life: 2-4 weeks fresh
+Export demand score: 6/10
+
+---
+
+CUCUMBER - NIGERIA
+Best planting states: Kano, Kaduna, FCT, Plateau
+Other states found: Niger, Nasarawa, Ogun, Lagos, Oyo, Delta, Cross River, Rivers
+Planting season: February-April (dry season irrigated), May-July (rainy season)
+Soil type: Sandy loam, well-drained, pH 6.0-7.0
+Maturity period: 45-60 days to first harvest
+Recommended varieties: Marketmore, Ashley, Poinsett, Super Marketer
+Fertilizer: NPK 15-15-15 at 300 kg/ha, weekly foliar spray calcium nitrate
+Spacing: 1.5m between rows, 60cm within rows, train on trellis
+Planting guide: Plant 2 seeds per hole. Thin to 1 plant. Train on trellis. Harvest every 2-3 days when fruit is 15-20cm long. Do not let fruit over-mature.
+Common diseases: Powdery mildew, Angular leaf spot, Cucumber mosaic virus
+Pest management: Whiteflies - yellow sticky traps and imidacloprid. Fruit fly - bait traps.
+Yield potential: 20-40 tonnes/ha
+Market peak: May-August
+Profit per hectare: N600,000 - N1,500,000
+Input cost estimate: N300,000 - N600,000
+ROI classification: High
+Storage life: 1-2 weeks fresh
+Export demand score: 6/10
+
+---
+
+ORANGE - NIGERIA
+Best planting states: Benue, Kogi, Oyo
+Other states found: Ogun, Osun, Kwara, Ondo, Ekiti, Anambra, Enugu, Cross River, Lagos
+Planting season: Rainy season (May-June)
+Soil type: Sandy loam, pH 5.5-6.5
+Maturity period: 3-4 years to first harvest
+Recommended varieties: Valencia, Navel, Washington, Local sweet orange
+Fertilizer: NPK 15-15-15 plus compost, apply annually
+Spacing: 6m x 6m (280 trees/ha)
+Planting guide: Use budded seedlings from nursery. Dig holes 60cm x 60cm. Add compost. Stake young trees. Prune for open canopy shape.
+Common diseases: Citrus canker, Gummosis, Greening disease
+Pest management: Aphids - spray control. Citrus psyllid - imidacloprid.
+Yield potential: 15-25 tonnes/ha
+Market peak: November-February
+Profit per hectare: N700,000 - N1,800,000
+Input cost estimate: N300,000 - N700,000
+ROI classification: High
+Storage life: 2-4 weeks fresh
+Export demand score: 8/10
+
+---
+
+BANANA - NIGERIA
+Best planting states: Rivers, Ogun, Delta, Cross River
+Other states found: Ondo, Edo, Bayelsa, Lagos, Anambra, Imo, Abia, Oyo, Ekiti, Kwara
+Planting season: Year-round, best at start of rains
+Soil type: Rich loamy soil, pH 5.5-7.0
+Maturity period: 9-12 months first bunch, ratoons every 6-8 months
+Recommended varieties: Grand Nain, Williams, Gros Michel, Local sweet banana
+Fertilizer: Urea 200g plus muriate of potash 150g per plant every 3 months
+Spacing: 2m x 2m (2,500 plants/ha)
+Planting guide: Use tissue culture plants or sword suckers. Add compost to holes. De-sucker monthly leaving 1 follower. Prop bunch when it emerges.
+Common diseases: Panama disease (Fusarium wilt - no cure, use resistant varieties), Black Sigatoka
+Yield potential: 20-40 tonnes/ha per year
+Market peak: Year-round, peaks July-October
+Profit per hectare: N1,000,000 - N3,000,000
+Input cost estimate: N500,000 - N1,200,000
+ROI classification: Very High
+Storage life: 5-10 days fresh
+Export demand score: 9/10
+
+---
+
+PINEAPPLE - NIGERIA
+Best planting states: Cross River, Ogun
+Other states found: Ondo, Edo, Delta, Anambra, Imo, Rivers, Bayelsa, Oyo, Lagos, Kwara
+Planting season: Rainy season (April-June)
+Soil type: Sandy loam, well-drained, pH 4.5-6.0
+Maturity period: 18-24 months first crop, 12-18 months ratoon
+Recommended varieties: Smooth Cayenne, MD2 (Gold), Sugarloaf (local)
+Fertilizer: NPK 15-15-15 plus organic mulch. Apply every 3 months.
+Spacing: 60cm x 30cm (50,000 plants/ha on double rows)
+Planting guide: Use suckers or slips from healthy plants. Plant with 2/3 of base in soil. Mulch heavily. Apply ethephon to induce uniform flowering after 12 months. Harvest when 25% of fruit turns yellow.
+Common diseases: Heart rot (Phytophthora), Mealybug wilt, Fruitlet core rot
+Pest management: Mealybugs - insecticide plus ant control.
+Yield potential: 30-50 tonnes/ha
+Market peak: April-July
+Profit per hectare: N900,000 - N2,500,000
+Input cost estimate: N400,000 - N900,000
+ROI classification: High
+Storage life: 2-3 weeks
+Export demand score: 8/10
+
+---
+
+PAPAYA (PAWPAW) - NIGERIA
+Best planting states: Ogun, Delta, Cross River
+Other states found: Lagos, Ondo, Edo, Rivers, Bayelsa, Anambra, Imo, Oyo, Osun, Kwara, Benue
+Planting season: Rainy season (April-May)
+Soil type: Loamy soil, pH 6.0-6.5, must have excellent drainage
+Maturity period: 6-12 months to first fruit
+Recommended varieties: Solo, Sunrise, Tainung, Local red-fleshed
+Fertilizer: NPK 15-15-15 at 200g per plant monthly for first year
+Spacing: 2m x 2m (2,500 plants/ha)
+Planting guide: Plant 3-4 seeds per hole, thin to 1 healthy plant. Papaya cannot tolerate waterlogging. Keep only 1 male per 20 females. Harvest when skin shows yellow color blush.
+Common diseases: Papaya ringspot virus (no cure - use resistant varieties), Phytophthora root rot
+Pest management: Aphids transmit virus - control immediately. Spider mites - miticide.
+Yield potential: 15-25 tonnes/ha
+Market peak: Year-round
+Profit per hectare: N700,000 - N1,500,000
+Input cost estimate: N300,000 - N600,000
+ROI classification: High
+Storage life: 1-2 weeks fresh
+Export demand score: 7/10
+
+---
+
+AVOCADO - NIGERIA
+Best planting states: Plateau, Kaduna
+Other states found: Taraba highlands, Adamawa highlands, Bauchi, Gombe, Benue, Enugu, Cross River
+Planting season: Rainy season (May-June)
+Soil type: Loamy soil, pH 6.0-7.0, deep and well-drained
+Maturity period: 3-4 years to first harvest (grafted seedlings faster)
+Recommended varieties: Fuerte, Hass, Reed, Local improved
+Fertilizer: Organic manure 20 kg/tree plus NPK 15-15-15 annually
+Spacing: 8m x 8m (150 trees/ha)
+Planting guide: Use grafted seedlings. Avocado has very shallow roots - do not deep plough around tree. Mulch heavily. Prune for open canopy. Harvest when skin color changes and fruit yields slightly to pressure.
+Common diseases: Root rot (Phytophthora - most serious, needs good drainage), Anthracnose on fruit
+Pest management: Fruit fly - protein bait trap. Mites - miticide spray.
+Yield potential: 10-15 tonnes/ha at maturity
+Market peak: June-August
+Profit per hectare: N800,000 - N2,000,000
+Input cost estimate: N400,000 - N800,000
+ROI classification: High
+Storage life: 2-3 weeks fresh
+Export demand score: 8/10
+
+---
+
+COCONUT - NIGERIA
+Best planting states: Lagos, Rivers
+Other states found: Bayelsa, Delta, Edo, Cross River, Akwa Ibom, Ondo, Ogun
+Planting season: Rainy season (May-July)
+Soil type: Sandy coastal soil or sandy loam, pH 5.5-7.0
+Maturity period: 4-6 years to first harvest (dwarf varieties faster)
+Recommended varieties: Dwarf Green, Dwarf Yellow, Tall (West African Tall)
+Fertilizer: Organic manure plus NPK 15-15-15 annually
+Spacing: 8m x 8m (150 trees/ha)
+Planting guide: Germinate coconuts in nursery for 6 months. Transplant with leaf sheaths intact. Mulch heavily. Do not plant in poorly drained areas.
+Common diseases: Bud rot (Phytophthora), Lethal yellowing disease (no cure), Cape St Paul wilt
+Pest management: Rhinoceros beetle - remove rotting logs. Regular inspection critical.
+Yield potential: 8-12 tonnes/ha fresh nuts, 2-3 tonnes/ha copra
+Market peak: Year-round
+Profit per hectare: N900,000 - N2,500,000
+Input cost estimate: N500,000 - N1,000,000
+ROI classification: High
+Storage life: 3-6 months dry coconut/copra
+Export demand score: 9/10
+
+---
+
+SOURSOP - NIGERIA
+Best planting states: Ogun, Edo
+Other states found: Lagos, Ondo, Delta, Rivers, Cross River, Anambra, Imo, Oyo, Kwara, Kogi
+Planting season: Rainy season (April-June)
+Soil type: Loamy soil, pH 5.5-7.0
+Maturity period: 2-3 years to first harvest
+Recommended varieties: Local improved, Jumbo soursop
+Fertilizer: Organic manure plus NPK 15-15-15 bi-annually
+Spacing: 5m x 5m (400 trees/ha)
+Planting guide: Plant seedlings carefully - tap root sensitive. Shade-tolerant when young. Prune to 3-4 main branches. Harvest when skin turns slightly yellow and fruit yields to gentle pressure.
+Common diseases: Root rot (avoid waterlogging), Anthracnose
+Pest management: Mealybugs - insecticide. Fruit fly - bait trap.
+Yield potential: 10-15 tonnes/ha
+Market peak: August-December
+Profit per hectare: N800,000 - N2,000,000
+Input cost estimate: N300,000 - N700,000
+ROI classification: High
+Storage life: 1-2 weeks fresh
+Export demand score: 8/10 (high demand for soursop juice and extract)
+
+---
+
+AFRICAN STAR APPLE (AGBALUMO/UDARA) - NIGERIA
+Best planting states: Lagos, Ogun
+Other states found: Oyo, Osun, Ondo, Ekiti, Kwara, Anambra, Enugu, Imo, Abia, Delta, Cross River
+Planting season: Rainy season
+Soil type: Loamy soil, pH 5.5-7.0
+Maturity period: 4-5 years to first harvest from seedling, 2-3 years grafted
+Recommended varieties: Local improved seedlings
+Fertilizer: Organic manure - low input tree crop
+Spacing: 8m x 8m (150 trees/ha)
+Planting guide: Very hardy, minimal inputs needed once established. Bears seasonally December-February only.
+Common diseases: Minimal - very resilient tree
+Pest management: Basic fruit fly control.
+Yield potential: 8-12 tonnes/ha
+Market peak: December-February (highly seasonal)
+Profit per hectare: N900,000 - N2,200,000
+Input cost estimate: N400,000 - N800,000
+ROI classification: High
+Storage life: 2-3 weeks fresh
+Export demand score: 7/10
+
+---
+
+STRAWBERRY - NIGERIA
+Best planting states: Plateau (Jos)
+Other states found: Taraba highlands, Adamawa highlands (Mambilla Plateau)
+Planting season: Cool season - October-December
+Soil type: Sandy loam with high organic matter, pH 5.5-6.5
+Maturity period: 3-4 months to first fruit
+Recommended varieties: Chandler, Camarosa, Albion, Seascape
+Fertilizer: Compost plus NPK 15-15-15, calcium nitrate weekly foliar
+Spacing: 30cm x 30cm on raised beds with plastic mulch
+Planting guide: Use runners from certified virus-free plants. Raised beds essential for drainage. Drip irrigation under mulch preferred. Harvest every 2-3 days when fully red.
+Common diseases: Gray mold (Botrytis - major), Powdery mildew, Crown rot
+Pest management: Fungicides every 7 days in humid weather. Spider mites - miticide.
+Yield potential: 5-10 tonnes/ha
+Market peak: January-March
+Profit per hectare: N1,500,000 - N4,000,000
+Input cost estimate: N700,000 - N1,500,000
+ROI classification: Very High
+Storage life: 2-3 days fresh (very perishable)
+Export demand score: 9/10
+Climate sensitivity: Requires cool temperatures 10-25 degrees C - restricted to highlands
+
+---
+
+APPLE (HIGHLAND) - NIGERIA
+Best planting states: Plateau (Jos, above 1,200m altitude)
+Other states found: Mambilla Plateau (Taraba), Obudu Plateau (Cross River) - very restricted
+Planting season: Beginning of rains (May-June)
+Soil type: Loamy soil, pH 6.0-7.0
+Maturity period: 3-5 years to first harvest
+Recommended varieties: Anna, Dorsett Golden, Tropical Anna (low-chill varieties only)
+Fertilizer: Organic manure plus NPK 15-15-15, zinc and boron spray at flowering
+Spacing: 4m x 4m (625 trees/ha)
+Planting guide: Use grafted seedlings of low-chill varieties only. Prune annually after harvest. Thin fruit clusters to improve size.
+Common diseases: Scab (Venturia) - major, Powdery mildew, Fire blight
+Pest management: Fungicide sprays every 10-14 days from bud break.
+Yield potential: 8-15 tonnes/ha
+Market peak: August-October
+Profit per hectare: N1,000,000 - N3,000,000
+Input cost estimate: N600,000 - N1,200,000
+ROI classification: High
+Storage life: 1-2 months cool storage
+Export demand score: 8/10
+Climate sensitivity: Requires altitude above 1,200m, cool nights essential
+
+---
+
+GREEN BEANS - NIGERIA
+Best planting states: Plateau, Kaduna, Kano
+Other states found: FCT, Nasarawa, Bauchi, Benue, Niger, Ogun
+Planting season: March-June (rainy), September-January (irrigated cool)
+Soil type: Sandy loam, pH 6.0-7.0
+Maturity period: 50-65 days to first harvest
+Recommended varieties: Provider, Blue Lake, Contender, Tendergreen
+Fertilizer: Superphosphate only - green beans fix nitrogen. No urea.
+Spacing: 60cm between rows, 10cm within rows
+Planting guide: Inoculate seeds with Rhizobium before planting. Direct seed only. Harvest pods before seeds swell every 3-4 days.
+Common diseases: Bean rust, Anthracnose, Halo blight
+Pest management: Aphids - neem oil. Bean fly - seed treatment.
+Yield potential: 8-15 tonnes/ha
+Market peak: Year-round, peak export October-March
+Profit per hectare: N400,000 - N1,000,000
+Input cost estimate: N200,000 - N500,000
+ROI classification: High
+Storage life: 5-7 days fresh, 12 months frozen
+Export demand score: 8/10 (strong EU export market)
+
+---
+
+LETTUCE - NIGERIA
+Best planting states: Plateau, Kaduna
+Other states found: FCT, Kano (irrigated), Lagos, Ogun (market gardens), Nasarawa, Bauchi
+Planting season: October-March (cool season), year-round on Plateau highlands
+Soil type: Sandy loam with high organic matter, pH 6.0-7.0
+Maturity period: 45-75 days
+Recommended varieties: Great Lakes, Iceberg, Butterhead, Romaine, Lollo Rosso
+Fertilizer: NPK 15-15-15 at 200 kg/ha plus weekly urea liquid feed
+Spacing: 30cm x 25cm
+Planting guide: Raise seedlings in nursery for 3 weeks. Transplant in evening. Water daily. Harvest before bolting in heat. Shade cloth helps in hot weather.
+Common diseases: Downy mildew, Bottom rot, Tipburn (calcium deficiency)
+Pest management: Aphids - neem oil. Caterpillars - Bt spray. Slugs - bait.
+Yield potential: 15-25 tonnes/ha
+Market peak: December-March (cool season)
+Profit per hectare: N400,000 - N900,000
+Input cost estimate: N200,000 - N450,000
+ROI classification: High
+Storage life: 1-2 weeks fresh
+Export demand score: 6/10
+
+---
+
+SPINACH - NIGERIA
+Best planting states: Plateau, Kaduna, FCT
+Other states found: Lagos, Ogun, Kano (irrigated), Nasarawa, Niger, Oyo
+Planting season: October-April (cool season), year-round in cool highlands
+Soil type: Sandy loam with high organic matter, pH 6.0-7.5
+Maturity period: 40-60 days
+Recommended varieties: Bloomsdale, Hybrid F1, Malabar spinach (warm season)
+Fertilizer: NPK 15-15-15 plus urea at 4 weeks for lush growth
+Spacing: 30cm between rows, 10cm within rows
+Planting guide: Direct seed or transplant. Harvest outer leaves first for cut-and-come-again. Bolts quickly in heat.
+Common diseases: Downy mildew, Leaf spot
+Pest management: Aphids and caterpillars - neem oil or Bt. Leaf miners - remove affected leaves.
+Yield potential: 10-20 tonnes/ha
+Market peak: November-March
+Profit per hectare: N300,000 - N700,000
+Input cost estimate: N150,000 - N350,000
+ROI classification: High
+Storage life: 3-5 days fresh
+Export demand score: 6/10
+
+---
+
+GENERAL PLANTING GUIDE FOR ALL CROPS
+
+Soil preparation:
+Plough to 20-30cm depth at least 2 weeks before planting. For clay soils add sand and organic matter to improve drainage. For sandy soils add compost to improve water retention. Take soil test every 3 years from State Ministry of Agriculture.
+
+Seed selection:
+Always use certified seeds from NASC or state agricultural agencies. Avoid saving seeds from hybrid varieties. Treat seeds with fungicide and insecticide before planting. Test germination with 10 seeds on wet cotton - at least 8 should sprout.
+
+Water management:
+Most crops need 25-50mm water per week. Water in morning to reduce evaporation and disease. Drip irrigation saves 40-60% water. Waterlogging kills more crops than drought.
+
+Weed control:
+Critical in first 6 weeks. Use herbicides only on labeled crops. Mulching reduces weeding by 50-70%. Never let weeds flower and set seed.
+
+Fertilizer application:
+Split into 2-3 doses. Apply when soil is moist. Keep fertilizer away from stem to avoid burning.
+
+Pest and disease management:
+Scout fields twice weekly. Treat at economic threshold. Rotate crops every season. Keep field records.
+
+Harvest and post-harvest:
+Harvest at right maturity in cool morning hours. Grade and sort before market. Use hermetic bags or metal silos for grain storage.

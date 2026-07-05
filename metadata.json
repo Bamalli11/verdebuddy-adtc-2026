@@ -3,9 +3,8 @@
   "domain": "agriculture",
   "language_scope": [
     "en",
-    "ha",
-    "yo",
-    "ig"
+    "ha"
+    
   ],
   "african_alpha_claim": true,
   "budget_laptop_claim": true,
@@ -17,7 +16,7 @@
   "cross_disciplinary_pairing": {
     "discipline": "agriculture",
     "load_bearing": true,
-    "description": "VerdeBuddy is an offline AI assistant for Nigerian farmers that integrates crop advisory, soil health analysis, seasonal weather patterns, and commodity market pricing into a single conversational interface. It supports English, Hausa, Yoruba, and Igbo languages and runs entirely on an 8GB laptop with no internet connection."
+    "description": "VerdeBuddy is an offline AI assistant serving both Nigerian farmers and agricultural investors. It integrates crop advisory, soil health analysis, seasonal weather patterns, commodity market pricing, and investment opportunity guidance into a single conversational interface. It supports English and Hausa and runs entirely on an 8GB laptop with no internet connection."
   },
   "test_prompts": [
     {
