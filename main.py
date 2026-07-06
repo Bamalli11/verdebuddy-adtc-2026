@@ -31,33 +31,92 @@ for fn in os.listdir("data"):
             if chunk.strip():
                 docs.append(chunk.strip())
 
+STOPWORDS = {"the","a","an","in","of","for","is","are","what","which","give","to","do","does","my","i","on","and","or","with","this","that","how","when","where","who","can","will","should","about","from","as","it","be","get","good","should","would"}
+
+import json as _json
+with open("data/qa_pairs.json") as _f:
+    QA_PAIRS = _json.load(_f)
+
+SYNONYMS = {
+    "roi": "roi", "return": "roi", "returns": "roi", "profitable": "roi",
+    "profit": "roi", "profits": "roi", "investment": "roi", "investing": "roi",
+}
+
+def _normalize(text):
+    words = []
+    for w in text.lower().split():
+        w = w.strip(".,?!:;")
+        if not w:
+            continue
+        w = SYNONYMS.get(w, w)
+        if len(w) > 3 and w.endswith("s"):
+            w = w[:-1]
+        if w in STOPWORDS:
+            continue
+        words.append(w)
+    return set(words)
+
+def find_qa_match(query):
+    q_words = _normalize(query)
+    if not q_words:
+        return None
+    best_score = 0.0
+    best_answer = None
+    for pair in QA_PAIRS:
+        pair_words = _normalize(pair["q"])
+        if not pair_words:
+            continue
+        overlap = len(q_words & pair_words)
+        ratio = overlap / len(pair_words)
+        if ratio > best_score and overlap >= 2:
+            best_score = ratio
+            best_answer = pair["a"]
+    if best_score >= 0.5:
+        return best_answer
+    return None
+
 def retrieve(query, n=2):
     q = query.lower()
+    q_words = [w for w in q.split() if len(w) > 2]
     scored = []
     for doc in docs:
-        score = sum(1 for w in q.split() if w in doc.lower())
+        d = doc.lower()
+        score = sum(1 for w in q_words if w in d)
+        # Boost score for state name matches
+        if any(w in d for w in q_words if len(w) > 4):
+            score += 2
         scored.append((score, doc))
     scored.sort(reverse=True)
     return [d for s,d in scored[:n] if s > 0] or [docs[0]]
 print("VerdeBuddy is ready!")
 
-SYSTEM = "You are VerdeBuddy, an offline AI assistant for Nigerian farmers and for local and foreign investors exploring agricultural opportunities in Nigeria. Answer questions about crops, soil health, weather patterns, market prices, and investment opportunities. Give clear practical advice in 2-3 sentences. Use only the provided context. Do not repeat yourself."
+SYSTEM = "You are VerdeBuddy, an agricultural intelligence assistant for Nigerian farmers and investors. When a question is simple, answer in 2-3 sentences. When a question is complex (investment, export, full crop guide, market analysis), first ask the user if they want a quick summary or full detailed analysis before answering. Be conversational and helpful. Use bullet points only for lists. Use only the provided context."
 HAUSA = ["yaushe","zan","wane","nawa","yaya","menene","gona","masara","shuka","taki","kasuwa","girbi","rani","damina"]
 
 def ask(query, lang='en'):
+    qa_hit = find_qa_match(query)
+    if qa_hit:
+        return qa_hit
     q = query.lower()
-    lang_map = {
-        'ha': ' The farmer speaks Hausa. You MUST reply entirely in Hausa language only. Do not use English.',
-        'en': ''
-    }
-    note = lang_map.get(lang, '')
-    if not note:
-        if any(w in q for w in HAUSA): note = lang_map['ha']
-    ctx = " ".join(retrieve(query))[:300]
+    note = ''
+    if any(w in q for w in HAUSA): note = ' Reply entirely in Hausa only.'
+
+    more_triggers = ['tell me more', 'full detailed', 'more detail', 'elaborate', 'kara bayani', 'regarding this topic']
+    is_more = any(t in q for t in more_triggers)
+
+    if is_more:
+        original = query.replace('Regarding this topic -', '').replace('- please give more detailed information', '').strip()
+        ctx = " ".join(retrieve(original, n=2))[:300]
+        instruction = "Give detailed bullet-point information about: " + original
+    else:
+        ctx = " ".join(retrieve(query, n=2))[:300]
+        instruction = query
+
     examples = ""
-    if "Hausa" in note:
-        examples = "\nExample Q: Yaushe zan shuka masara?\nExample A: Shuka masara a farkon damina, watanni na Mayu zuwa Yuni. Tabbatar da ruwan sama ya isa kafin shuka."
-    prompt = "<|im_start|>system\n" + SYSTEM + note + examples + "<|im_end|>\n<|im_start|>user\nContext: " + ctx + "\nQuestion: " + query + "<|im_end|>\n<|im_start|>assistant\n"
+    if note:
+        examples = "\nMisal: Shuka masara a farkon damina, watanni na Mayu zuwa Yuni."
+
+    prompt = "<|im_start|>system\n" + SYSTEM + note + examples + "<|im_end|>\n<|im_start|>user\nContext:\n" + ctx + "\n\n" + instruction + "<|im_end|>\n<|im_start|>assistant\n"
     return llm_ask(prompt)
 
 PAGE = open('/home/servi/VerdeBuddy/templates/page.html').read()

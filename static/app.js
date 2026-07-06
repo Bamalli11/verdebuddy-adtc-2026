@@ -35,7 +35,7 @@ function startVoice(){
   var SR = window.SpeechRecognition || window.webkitSpeechRecognition;
   var r = new SR();
   var langMap = {en:'en-NG', ha:'ha-NG'};
-  r.lang = langMap[activeLang] || 'en-NG';
+  r.lang = langMap[activeLang] || 'en-NG', 'ha-NG';
   r.interimResults = false;
   r.maxAlternatives = 1;
   var micBtn = document.getElementById('mic-btn');
@@ -45,33 +45,131 @@ function startVoice(){
     if(micBtn) micBtn.style.border = '1px solid #4CAF50';
     doSend();
   };
-  r.onerror = function(){ if(micBtn) micBtn.style.border = '1px solid #032f05'; };
-  r.onend = function(){ if(micBtn) micBtn.style.border = '1px solid #033004'; };
+  r.onerror = function(){ if(micBtn) micBtn.style.border = '1px solid #4CAF50'; };
+  r.onend = function(){ if(micBtn) micBtn.style.border = '1px solid #4CAF50'; };
   r.start();
 }
 
 // Suggested follow-ups
-var followups = {
-  en: ['What fertilizer should I use?','When is the best time to sell?','What is the ROI on this crop?','Which states are best for investment?', 'What are the export opportunities?'],
-  ha: ['Wane taki zan yi amfani?','Yaushe lokacin siyarwa?','Wane taki zan yi amfani?','Yaushe lokacin girbi?','Nawa ake siyarwa a kasuwa?'],
+var topicFollowups = {
+  en: {
+    crop:      ["What fertilizer should I use?", "What is the ROI on this crop?", "When is the best time to sell?"],
+    soil:      ["How do I test my soil pH?", "What fertilizer fixes this soil issue?", "Which crops suit this soil type?"],
+    weather:   ["When should I plant based on this?", "What are the flood/drought risks here?", "Which crops handle this climate best?"],
+    market:    ["Which market sells this for the best price?", "When is the best time to sell?", "How do I add value before selling?"],
+    invest:    ["Which states are best for investment?", "What are the export opportunities?", "What is the ROI on this crop?"],
+    disease:   ["How do I prevent this from spreading?", "What pesticide should I use?", "Is this disease common in my state?"],
+    default:   ["What fertilizer should I use?", "When is the best time to sell?", "Which states are best for investment?"]
+  },
+  ha: {
+    crop:      ["Wane taki zan yi amfani?", "Yaushe lokacin siyarwa?", "Yaya zan magance wannan cuta?"],
+    soil:      ["Ta yaya zan gwada kasa ta?", "Wane taki ya dace da wannan kasa?", "Wadanne amfanin gona suka dace da wannan kasa?"],
+    weather:   ["Yaushe zan shuka bisa ga wannan yanayi?", "Akwai hadarin ambaliya ko fari?", "Wadanne amfanin gona suka dace da wannan yanayi?"],
+    market:    ["Wace kasuwa ce ta fi kyawun farashi?", "Yaushe lokacin siyarwa?", "Ta yaya zan kara darajar kayana kafin sayarwa?"],
+    invest:    ["Wadanne jihohi suka fi kyau don zuba jari?", "Akwai damar fitarwa zuwa kasashen waje?", "Menene ribar wannan amfanin gona?"],
+    disease:   ["Ta yaya zan hana yaduwar wannan cuta?", "Wane maganin kwari zan yi amfani?", "Wannan cuta ta zama ruwan dare a jihata?"],
+    default:   ["Wane taki zan yi amfani?", "Yaushe lokacin siyarwa?", "Wadanne jihohi suka fi kyau don zuba jari?"]
+  }
 };
-function showFollowups(){
+
+function detectTopic(text){
+  var t = text.toLowerCase();
+  if (/roi|invest|return|profit|export|zuba jari|riba/.test(t)) return "invest";
+  if (/disease|pest|cuta|kwari|blight|rot|virus/.test(t)) return "disease";
+  if (/soil|ph|kasa|fertilizer/.test(t)) return "soil";
+  if (/rain|weather|season|damina|rani|yanayi|flood|drought/.test(t)) return "weather";
+  if (/market|price|sell|kasuwa|farashi|siyarwa/.test(t)) return "market";
+  return "crop";
+}
+
+function showFollowups(answer){
   var existing = document.getElementById('followup-bar');
   if(existing) existing.remove();
-  var fq = followups[activeLang] || followups.en;
+
+  // Generate contextual follow-ups based on answer content
+  var a = answer.toLowerCase();
+  var suggestions = [];
+
+  // Crop-specific follow-ups
+  if(a.includes('maize') || a.includes('corn') || a.includes('masara')){
+    suggestions = ['What fertilizer does maize need?','When should I harvest maize?','What diseases affect maize?','Best maize variety for Kano?'];
+  } else if(a.includes('tomato')){
+    suggestions = ['How do I prevent tomato blight?','When is the best time to sell tomatoes?','What fertilizer for tomatoes?','How to grow tomatoes in dry season?'];
+  } else if(a.includes('cassava')){
+    suggestions = ['How do I process cassava into garri?','What is the market price for cassava?','Best cassava variety for high yield?','How to store cassava after harvest?'];
+  } else if(a.includes('rice')){
+    suggestions = ['What fertilizer does rice need?','How much water does rice need?','Best rice variety for Nigeria?','When to harvest rice?'];
+  } else if(a.includes('yam')){
+    suggestions = ['How to store yam after harvest?','What is the best time to plant yam?','What fertilizer for yam?','How to control yam beetle?'];
+  } else if(a.includes('groundnut') || a.includes('peanut')){
+    suggestions = ['How to prevent groundnut rosette disease?','When is the best time to sell groundnut?','How to store groundnut safely?','What is groundnut export price?'];
+  } else if(a.includes('soybean') || a.includes('soya')){
+    suggestions = ['Where can I sell soybean?','What fertilizer does soybean need?','When to harvest soybean?','What is soybean market price?'];
+  } else if(a.includes('pepper')){
+    suggestions = ['How to dry pepper for storage?','What is pepper market price?','How to prevent pepper blight?','When to harvest pepper?'];
+  } else if(a.includes('onion')){
+    suggestions = ['How to cure onion for storage?','When is the best time to sell onion?','What fertilizer for onion?','How to prevent onion downy mildew?'];
+  } else if(a.includes('ginger')){
+    suggestions = ['How to export ginger from Nigeria?','What is ginger export price?','How to dry ginger for export?','Where to sell ginger in Nigeria?'];
+  } else if(a.includes('sesame') || a.includes('benniseed')){
+    suggestions = ['What is sesame export price?','How to harvest sesame?','Where to sell sesame in Nigeria?','How to store sesame after harvest?'];
+  } else if(a.includes('cocoa')){
+    suggestions = ['How to ferment cocoa beans?','What is cocoa price today?','How to control cocoa black pod?','How to improve cocoa yield?'];
+  } else if(a.includes('cashew')){
+    suggestions = ['When is cashew harvest season?','What is cashew export price?','How to process cashew nuts?','Where to sell cashew in Nigeria?'];
+  }
+  // Soil-related follow-ups
+  else if(a.includes('soil') || a.includes('pH') || a.includes('acidic') || a.includes('fertile')){
+    suggestions = ['How do I test my soil pH?','How much lime should I apply?','What fertilizer for sandy soil?','How to improve soil fertility?'];
+  } else if(a.includes('fertilizer') || a.includes('npk') || a.includes('urea')){
+    suggestions = ['When should I apply fertilizer?','What is the correct fertilizer dose?','How to prevent fertilizer burn?','Where to buy fertilizer cheaply?'];
+  }
+  // Market and investment follow-ups
+  else if(a.includes('invest') || a.includes('roi') || a.includes('profit') || a.includes('return')){
+    suggestions = ['What crops have highest ROI in Nigeria?','How do I access agricultural finance?','What are the best states for farming investment?','How do I export Nigerian farm products?'];
+  } else if(a.includes('export') || a.includes('market') || a.includes('price') || a.includes('sell')){
+    suggestions = ['What is the current market price?','How do I export from Nigeria?','When is the best time to sell?','Which market pays the best price?'];
+  } else if(a.includes('storage') || a.includes('store') || a.includes('hermetic')){
+    suggestions = ['How long can I store grain safely?','How to prevent weevils in stored grain?','What is the best storage method?','How to use hermetic bags?'];
+  }
+  // Weather follow-ups
+  else if(a.includes('rain') || a.includes('drought') || a.includes('flood') || a.includes('season')){
+    suggestions = ['When does planting season start?','How to manage drought stress?','What crops survive flooding?','When is the dry season?'];
+  }
+  // Disease/pest follow-ups
+  else if(a.includes('disease') || a.includes('pest') || a.includes('wilt') || a.includes('blight') || a.includes('fungus')){
+    suggestions = ['How do I treat this disease?','What fungicide should I use?','How to prevent crop disease?','What is the cost of treatment?'];
+  }
+  // Default follow-ups
+  else {
+    if(activeLang === 'ha'){
+      suggestions = ['Wane taki zan yi amfani?','Yaushe lokacin girbi?','Nawa ake siyarwa a kasuwa?','Yaya zan hana cututtuka?'];
+    } else {
+      suggestions = ['What crops are most profitable?','How do I improve my soil?','What is the current market price?','How do I access farm credit?'];
+    }
+  }
+
+  // Show 3 random suggestions from the list
+  // Always add interactive options
+  var interactive = activeLang === 'ha' ?
+    ['Kara bayani', 'Cikakken bayani'] :
+    ['Tell me more', 'Full detailed analysis'];
+  var picks = suggestions.sort(function(){return 0.5-Math.random();}).slice(0,2).concat(interactive.slice(0,1));
   var bar = document.createElement('div');
   bar.id = 'followup-bar';
   bar.style.cssText = 'display:flex;gap:8px;flex-wrap:wrap;padding:6px 12px;';
-  fq.forEach(function(q){
+  picks.forEach(function(q){
     var btn = document.createElement('button');
     btn.textContent = q;
     btn.style.cssText='background:rgba(255,255,255,0.658);border:1px solid rgba(20,60,20,0.15);color:#123a12;border-radius:20px;padding:4px 12px;font-size:.75em;font-weight:500;cursor:pointer;';
     btn.onclick = function(){ inp.value = q; doSend(); };
     bar.appendChild(btn);
   });
-  msgs.appendChild(bar);
-  msgs.scrollTop = msgs.scrollHeight;
+  var m = document.getElementById('msgs') || msgs;
+  m.appendChild(bar);
+  m.scrollTop = m.scrollHeight;
 }
+
 inp.addEventListener('input', function(){
   inp.style.height = 'auto';
   inp.style.height = Math.min(inp.scrollHeight, 110) + 'px';
@@ -100,7 +198,29 @@ function addMsg(type, text){
   b.className = 'bbl';
   b.style.wordBreak = 'break-word';
   b.style.whiteSpace = 'pre-wrap';
-  b.textContent = text;
+  var hasLines = text.includes('\n') || /\d+\./.test(text); if(hasLines){
+    var lines = text.split('\n');
+    lines.forEach(function(line){
+      line = line.trim();
+      if(line.startsWith('-') || line.startsWith('•') || line.startsWith('*') || /^\d+\./.test(line)){
+        var li = document.createElement('div');
+        li.style.cssText = 'padding:2px 0 2px 12px;position:relative;';
+        var dot = document.createElement('span');
+        dot.style.cssText = 'position:absolute;left:4px;color:#4CAF50;font-weight:bold;';
+        dot.textContent = '•';
+        li.appendChild(dot);
+        li.appendChild(document.createTextNode(line.replace(/^[-•*]\s*/,'').replace(/^\d+\.\s*/,'')));
+        b.appendChild(li);
+      } else {
+        var p = document.createElement('p');
+        p.style.margin = '0 0 4px 0';
+        p.textContent = line;
+        b.appendChild(p);
+      }
+    });
+  } else {
+    b.textContent = text;
+  }
   d.appendChild(av);
   d.appendChild(b);
   if(type === 'b'){
@@ -176,17 +296,26 @@ function doSend(){
   inp.value = '';
   inp.style.height = 'auto';
   sbtn.disabled = true;
+  lastQuestion = text;
   addMsg('u', text);
   addTyping();
   fetch('/ask', {
     method: 'POST',
     headers: {'Content-Type': 'application/json'},
-    body: JSON.stringify({question: text, lang: activeLang})
+    body: JSON.stringify({
+      question: (text === 'Tell me more' || text === 'Full detailed analysis' || text === 'Kara bayani')
+        ? 'Regarding this topic - ' + lastQuestion + ' - please give more detailed information'
+        : text,
+      lang: activeLang
+    })
   }).then(function(r){ return r.json(); })
     .then(function(data){
       removeTyping();
-      addMsg('b', data.answer || 'Sorry, something went wrong.');
-      showFollowups();
+      var ans = data.answer || 'Sorry, something went wrong.';
+      lastAnswer = ans;
+      lastAnswer = ans;
+      addMsg('b', ans);
+      showFollowups(ans);
       sbtn.disabled = false;
       setTimeout(saveChat, 200);
     })
@@ -208,7 +337,7 @@ function drop(){
 setInterval(drop, 900);
 for(var i = 0; i < 8; i++) drop();
 
-var chats = [], ci = -1;
+var chats = [], ci = -1, lastQuestion = '', lastAnswer = '';
 function openSB(){ document.getElementById('sd').style.left = '0'; document.getElementById('sd-ov').style.display = 'block'; }
 function closeSB(){ document.getElementById('sd').style.left = '-270px'; document.getElementById('sd-ov').style.display = 'none'; }
 function saveChat(){
