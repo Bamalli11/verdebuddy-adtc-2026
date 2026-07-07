@@ -1,148 +1,257 @@
-NIGERIA WEATHER ZONES AND FARMING CALENDAR
+=== WEATHER AND CLIMATE KNOWLEDGE BASE - VERDEBUDDY ===
+Nigeria Agricultural Climate Guide | Updated 2026
 
-SAHEL ZONE (Sokoto, Kebbi, Zamfara, Katsina, northern Kano, northern Borno)
-Annual rainfall: 250-500mm
-Rainy season: June-September (3-4 months only)
-Dry season: October-May (very long, hot and dry)
-Temperature: 25-40°C, can exceed 45°C in April
-Harmattan: November-February, strong dusty winds from Sahara
-Recommended crops: Millet, sorghum, cowpea, groundnut
-Farming advice: Plant immediately rains start in June, use drought-tolerant varieties
-Irrigation need: Essential for any dry season farming
-Risk: Drought, locust invasion, desert encroachment
-Flood risk: Low but flash floods possible in July-August
+---
 
-SUDAN SAVANNA ZONE (Sokoto south, Kano, Kaduna north, Jigawa, Yobe, Borno south)
-Annual rainfall: 500-1000mm
-Rainy season: May-October (5-6 months)
-Dry season: November-April
-Temperature: 22-38°C
-Harmattan: December-February, moderate intensity
-Recommended crops: Sorghum, millet, cowpea, groundnut, rice, maize, onion, tomato
-Farming advice: Two crops possible in good rainfall years
-Irrigation need: Needed for dry season vegetables
-Risk: Erratic rainfall, meningitis season December-April
-Flood risk: Medium, low-lying areas flood in August-September
+NIGERIA AGRO-ECOLOGICAL ZONES
 
-GUINEA SAVANNA ZONE (Kaduna south, Niger, Kwara, Kogi, Benue, Plateau, Nassarawa, southern Kebbi)
-Annual rainfall: 1000-1500mm
-Rainy season: April-October (7 months)
-Dry season: November-March
-Temperature: 20-35°C
-Harmattan: December-January, mild
-Recommended crops: Maize, sorghum, yam, cassava, rice, cowpea, soybean, cotton
-Farming advice: Best zone for maize and yam production
-Irrigation need: Minimal, rainfed farming mostly reliable
-Risk: Flooding in river basins, army worms in maize
-Flood risk: High near River Niger and River Benue
+Nigeria has 6 major agro-ecological zones, each with distinct rainfall, temperature, and farming calendars.
 
-DERIVED SAVANNA ZONE (Oyo, Ogun, Osun, Ondo, Edo, Delta north, Enugu, Anambra, Imo north)
+---
+
+SUDAN SAVANNA ZONE
+States: Sokoto, Kebbi, Zamfara, Katsina, Kano, Jigawa, Borno, Yobe, northern Bauchi, northern Gombe
+Annual rainfall: 500-900mm
+Rainy season: June-September (4-5 months only)
+Dry season: October-May (7-8 months)
+Temperature: 15-45 degrees C (very hot in April-May, cool December-January)
+Dominant winds: Harmattan (dry, dusty NE wind) November-February; Southwest monsoon June-September
+Farming calendar:
+- April-May: Land preparation. Plant early millet and cowpea before rains.
+- June: First rains - plant maize, sorghum, groundnut, cowpea, sesame
+- July-August: Weeding season. Apply fertilizer top-dress.
+- September: Late rains. Harvest early varieties.
+- October-November: Main harvest season. Groundnut, sorghum, cowpea.
+- November-March: Fadama dry season farming. Tomato, onion, garlic, wheat, pepper.
+Best crops: Millet, sorghum, groundnut, cowpea, sesame, onion, tomato (irrigated), wheat, hibiscus
+Water harvesting: Critical in this zone. Use half-moon water harvesting pits. Zai pits for degraded land.
+Drought risk: High. Plant early-maturing drought-tolerant varieties. SAMMAZ 27 for maize, Kanannado for cowpea.
+Investor tip: Lowest land cost in Nigeria. Best for irrigated dry season vegetables and export crops (sesame, hibiscus).
+
+---
+
+GUINEA SAVANNA ZONE (NORTH)
+States: Niger, Kwara, Kogi, Nasarawa, southern Kaduna, southern Bauchi, Gombe, Adamawa, Taraba, Benue, Plateau
+Annual rainfall: 900-1400mm
+Rainy season: April-October (6-7 months)
+Dry season: November-March (4-5 months)
+Temperature: 18-38 degrees C
+Farming calendar:
+- March-April: Land preparation begins. Early planting of maize and cassava.
+- April-May: Main planting season. Maize, sorghum, cowpea, soybean, cassava, yam.
+- June-August: Weeding. Fertilizer application. Second planting of cowpea.
+- September-October: Harvesting early crops. Maize, cowpea.
+- October-November: Cassava, yam harvest begins. Continues to March.
+- November-February: Dry season. Some areas have fadama farming.
+Best crops: Maize, sorghum, cowpea, soybean, cassava, yam, ginger, sesame, rice, mango
+Soil: Mix of sandy loam and clay. Generally good fertility.
+Investor tip: Middle Belt is Nigeria's food basket. Best zone for large-scale maize, soybean, rice, and cassava investment.
+
+---
+
+DERIVED GUINEA SAVANNA / FOREST-SAVANNA TRANSITION
+States: Oyo, Ogun, Osun, Ekiti, Kwara south, Ondo north, Kogi south, Anambra, Enugu, Imo, Abia, Ebonyi
+Annual rainfall: 1200-1500mm
+Rainy season: Two seasons. March-July (first), September-November (second)
+Dry season: December-February
+Temperature: 21-35 degrees C
+Farming calendar:
+- February-March: First season land preparation. Plant maize, vegetables, cowpea.
+- March-July: First cropping season. Maize, cassava, yam, vegetables.
+- July-August: Short dry spell. Harvest first season crops.
+- August-September: Second season planting. Maize, cowpea, vegetables, cassava (ratoon).
+- September-November: Second season crops grow. Heavy rainfall.
+- November-January: Harvest second season. Dry season begins.
+Best crops: Cassava, yam, maize, cocoa, oil palm, citrus, plantain, vegetables
+Investor tip: Two farming seasons per year doubles investment returns. Good for cassava processing, cocoa, oil palm.
+
+---
+
+HUMID FOREST / RAINFOREST ZONE
+States: Cross River, Akwa Ibom, Rivers, Bayelsa, Delta, Edo, Lagos, Ondo south, Ogun south, Abia, Imo
+Annual rainfall: 1500-3000mm (highest in Nigeria)
+Rainy season: Almost year-round (10-11 months)
+Dry season: December-February (very short)
+Temperature: 23-32 degrees C year-round
+Farming calendar:
+- January-February: Short dry spell. Land clearing. Plant cassava, yam.
+- March-May: Heavy rains begin. Plant vegetables, plantain, banana, cocoa.
+- June-September: Peak rains. Weeding critical. Monitor for fungal diseases.
+- October-November: Moderate rains. Harvest season for most crops.
+- December: Short dry season. Harvest root crops.
+Best crops: Cassava, yam, plantain, banana, cocoa, rubber, oil palm, coconut, pineapple, vegetables
+Disease pressure: High humidity means high fungal disease pressure. Spray more frequently.
+Investor tip: Best for perennial tree crops. High humidity and rainfall means low irrigation cost but high disease management cost.
+
+---
+
+MONTANE / HIGHLAND ZONE
+States: Plateau (Jos Plateau), Taraba (Mambilla Plateau), Adamawa highlands, Bauchi highlands
 Annual rainfall: 1200-1600mm
-Rainy season: Two seasons — March-July and September-November
-Dry season: December-February and August (short dry spell)
-Temperature: 24-33°C
-Harmattan: December-January, very mild
-Recommended crops: Cassava, maize, yam, cocoa, plantain, vegetables
-Farming advice: Plant first season crops in March, second season in September
-Irrigation need: Usually not needed, rainfall well distributed
-Risk: Soil erosion on slopes, flooding in low areas
-Flood risk: Medium, especially September-October
-
-RAINFOREST ZONE (Lagos, Ogun south, Ondo south, Delta south, Rivers, Bayelsa, Cross River, Akwa Ibom)
-Annual rainfall: 1500-4000mm
-Rainy season: Almost year-round, peaks March-July and September-November
-Dry season: December-February only (short)
-Temperature: 25-32°C, high humidity year-round
-Harmattan: Very mild, barely noticeable
-Recommended crops: Cassava, plantain, cocoyam, oil palm, rubber, vegetables
-Farming advice: Can farm almost year-round but manage waterlogging
-Irrigation need: Not needed, excess water management more important
-Risk: Flooding, soil waterlogging, fungal diseases due to high humidity
-Flood risk: Very high, especially coastal areas
-
-HIGHLAND ZONE (Plateau state, Mambilla Plateau in Taraba, Obudu in Cross River)
-Annual rainfall: 1000-1500mm
 Rainy season: April-October
-Dry season: November-March
-Temperature: 12-28°C (much cooler than rest of Nigeria)
-Harmattan: Moderate December-February
-Recommended crops: Irish potato, wheat, barley, temperate vegetables, tea, coffee
-Farming advice: Only zone suitable for Irish potato and temperate crops
-Frost risk: Possible on Mambilla Plateau December-January at night
-Irrigation need: Minimal
-Risk: Frost damage, soil erosion on steep slopes
-Flood risk: Low but erosion is serious concern
+Temperature: 10-28 degrees C (cool at altitude - Jos averages 18-22 degrees C year-round)
+Special features: Cool temperatures allow crops impossible elsewhere in Nigeria: strawberry, apple, temperate vegetables, wheat, irish potato
+Farming calendar:
+- February-March: Land preparation. Irish potato planting begins.
+- April-May: Main planting season. Maize, vegetables, potato, tomato.
+- June-August: Peak growing season. Cool temperatures favor quality vegetables.
+- September-October: Harvest season. Potato, tomato, cabbage, carrot.
+- November-January: Second season or dry season preparation.
+Best crops: Irish potato, tomato, cabbage, carrot, lettuce, strawberry, apple, wheat, maize, ginger
+Investor tip: Unique cool-climate zone in Nigeria. Premium vegetables command higher prices. Jos Irish potato is best in Nigeria.
 
-NIGERIA NATIONAL FARMING CALENDAR
+---
+
+SAHEL SAVANNA ZONE
+States: Extreme north of Borno, Yobe, Sokoto, Kebbi (Lake Chad basin area)
+Annual rainfall: 250-500mm (very low)
+Rainy season: July-August (2-3 months only)
+Dry season: September-June (9-10 months)
+Temperature: 15-48 degrees C (extreme heat April-June)
+Farming calendar:
+- July: Plant drought-tolerant crops immediately at first rains. Early millet (90 days), cowpea.
+- August: Weed and fertilize quickly. Rain ends fast.
+- September: Harvest. Everything must be done before October.
+- October-June: Very long dry season. Irrigated farming near Lake Chad possible.
+Best crops: Early millet (Gero), cowpea, groundnut (very short season varieties only)
+Special notes: Climate change has made this zone increasingly unreliable. Rainfall starting later and ending earlier.
+Investor warning: High climate risk. Only invest with guaranteed water source (Lake Chad, borehole, irrigation).
+
+---
+
+MONTHLY FARMING CALENDAR - NIGERIA (GENERAL GUIDE)
 
 JANUARY
-- Harvest dry season tomato, pepper, onion in north
-- Land preparation for early maize in south
-- Irrigate vegetables in north
-- Prune cocoa and citrus in south
+- North: Dry season fadama farming peak. Harvest onion, garlic, tomato, wheat.
+- South: Short dry season. Harvest yam, cassava from October plantings. Land clearing.
+- Weather: Harmattan winds (dusty, dry, cold mornings hot afternoons). Visibility poor.
+- Investor action: Market prices high for vegetables in south. Good time to sell stored grain.
 
 FEBRUARY
-- Plant yam in Guinea savanna and derived savanna
-- Continue dry season vegetable harvest
-- Apply fertilizer to irrigated crops
-- Land clearing for first season planting
+- North: Fadama harvest continues. Begin land preparation for rainy season.
+- South: Land preparation begins. Plant cassava cuttings in southern states.
+- Weather: Hot and dry. Temperature rising. Harmattan weakening.
+- Farming tip: Treat seeds with fungicide before storing. Check store for pests.
 
 MARCH
-- First rains arrive in south (Lagos, Ibadan, Benin)
-- Plant maize, cassava, vegetables in south
-- Nursery preparation for tomato in north
-- Monitor for meningitis season in north
+- North: Continue land prep. Plant early maize in far south of Sudan savanna.
+- South: First rains expected in south (Lagos, Ogun, Cross River). Plant maize, vegetables.
+- Weather: First rains may arrive south. North remains dry. Temperature peaks.
+- Investor action: Input prices rise as planting season approaches. Buy inputs early.
 
 APRIL
-- Rains spread to middle belt
-- Plant maize in Benue, Kogi, Niger, Kwara
-- Transplant tomato seedlings in Plateau
-- Apply pre-emergent herbicide to fields
+- North: First rains may arrive in southern Guinea savanna. Plant cowpea, groundnut.
+- South: Full planting season. Maize, cassava, yam, vegetables.
+- Planting warning: Do not plant before rains are established - wait for 2-3 consecutive rainfalls.
+- Pest alert: Termites active before rains. Treat planting holes.
 
 MAY
-- Rains reach Guinea savanna zone
-- Plant groundnut, cowpea, sorghum in Kaduna, Kano
-- Second planting of maize in south
-- Watch for army worm outbreak
+- North: Rains established in Guinea savanna. Main planting season. Maize, sorghum, cowpea.
+- South: Active growing season. Fertilize maize at knee-high stage.
+- Weather: Thunderstorms and heavy rain possible. Lightning risk.
+- Farmer tip: Apply urea top-dress when rain is forecast not after.
 
 JUNE
-- Rains reach Sudan savanna and Sahel
-- Plant millet, sorghum in far north
-- Apply NPK fertilizer to early planted maize
-- Watch for flooding in low-lying areas
+- North: Sudan savanna rains begin. Plant millet, sorghum, groundnut, cowpea.
+- South: Heavy rains. Watch for flooding in low areas. Waterlogging risk.
+- Pest alert: Stem borer moths active. Scout maize fields for egg masses.
+- Disease alert: Fungal diseases increase with humidity. Apply preventive fungicide to tomato.
 
 JULY
-- Peak rainy season across most of Nigeria
-- Top dress maize and sorghum with urea
-- Weed cassava and yam fields
-- High flood risk near rivers
+- North: Full rainy season. Apply fertilizer to all crops. Weed urgently.
+- South: Mid-season. First season maize nearing harvest. Second season preparation.
+- Flooding risk: Niger, Benue, Anambra river basins. Monitor water levels.
+- Farmer tip: Critical weeding month. Weeds between rows compete most at this stage.
 
 AUGUST
-- Short dry spell in south (August break)
-- Second season planting in south
-- Harvest early maize in north
-- Control striga weed in sorghum fields
+- North: Heavy rains. Crops at flowering and grain fill. Very critical month.
+- South: Short dry spell may occur (August break). Stress for crops. Irrigate if possible.
+- Pest alert: Fall armyworm attacks maize. Check for caterpillars in whorl.
+- Investor action: Cassava prices often lowest now. Good time to buy and process into garri.
 
 SEPTEMBER
-- Second rains in south
-- Harvest maize in Guinea savanna
-- Plant second season tomato in south
-- Monitor for late blight in wet conditions
+- North: Early harvest begins. Cowpea, early maize. Groundnut pegging complete.
+- South: Second season planting begins. Heavy rains return after August break.
+- Harvest tip: Monitor grain moisture. Do not harvest wet grain.
+- Weather: Storm season peak. Lodging risk for tall crops.
 
 OCTOBER
-- Main harvest season begins across Nigeria
-- Harvest sorghum, millet, cowpea, groundnut
-- Plant dry season vegetables in north (with irrigation)
-- Store grains properly to avoid aflatoxin
+- North: Main harvest month. Sorghum, groundnut, cowpea, maize. Busy month.
+- South: First season harvest continues. Yam, cassava, cocoa pods ripening.
+- Storage alert: Aflatoxin risk in groundnut during drying. Dry quickly below 9% moisture.
+- Market tip: Grain prices at annual low. Consider storing until January-March.
 
 NOVEMBER
-- Major harvest across all zones
-- Plant onion, tomato, pepper in Kano, Kebbi, Sokoto
-- Dry and store harvested grains
-- Prices lowest due to abundant supply
+- North: Harvest largely complete. Fadama planting begins. Tomato, onion, pepper.
+- South: Harvest continues. Cocoa fermentation and drying.
+- Weather: Harmattan begins. Good drying weather for grain and cocoa.
+- Investor action: Best month to buy grain cheaply for storage.
 
 DECEMBER
-- Post-harvest storage and marketing
-- Harmattan begins — good for drying crops
-- Plan next season — order seeds and fertilizer early
-- Prices begin rising as supply moves to market
+- North: Fadama crops growing. Irrigate every 4-5 days.
+- South: Short dry season. Cassava, yam harvest. Christmas market demand high.
+- Market: Staple food prices start rising as stocks deplete. Good for farmers with storage.
+- Planning: Order seeds and fertilizers early for next season.
+
+---
+
+WEATHER RISKS AND MANAGEMENT
+
+DROUGHT
+Risk areas: Sudan savanna, Sahel zone, northern Nigeria generally
+Signs: Rainfall below 50mm per month during growing season, plants wilting by mid-morning
+Management:
+- Plant drought-tolerant varieties (see crop-specific recommendations)
+- Use zai pits or half-moon water harvesting structures
+- Mulch heavily to conserve soil moisture
+- Irrigate when soil is dry 5cm below surface
+- Plant shorter-season varieties that mature before dry spell
+
+FLOODING
+Risk areas: Niger-Benue confluence (Lokoja), Cross River basin, Niger Delta, coastal states, Kogi
+Flood-prone months: August-October (peak flooding)
+Management:
+- Plant flood-tolerant varieties (FARO 52 rice, flood-tolerant cassava)
+- Build bunds around fields
+- Have drainage channels ready before rains
+- Monitor NIMET flood early warning alerts
+- Never plant in lowest-lying fadama during main rains
+
+HARMATTAN
+Period: November-February
+Risk: Reduces crop yield in vegetables, causes leaf scorching, dries out soil
+Management:
+- Irrigate more frequently during harmattan
+- Use windbreaks (rows of trees) to reduce wind damage
+- Harvest dry season crops before harmattan intensity peaks (before February)
+- Store harvested grain with hermetic bags to prevent drying and pests
+
+HEATWAVES
+Risk areas: North Nigeria April-June before rains
+Temperature can reach 45-48 degrees C in Sokoto, Kebbi
+Management:
+- Plant early or wait until rains establish - avoid planting into extreme heat
+- Use shade nets for seedling nurseries in April-May
+- Irrigate during early morning or evening only
+
+---
+
+NIMET WEATHER SERVICES (NIGERIA METEOROLOGICAL AGENCY)
+
+NIMET provides agricultural weather forecasts for farmers and investors.
+Contact: NIMET, Nnamdi Azikiwe International Airport, Abuja
+Website: www.nimet.gov.ng
+Phone: +234 9 9741834
+
+Services available:
+- 3-day, 7-day, and seasonal weather forecasts
+- Agrometeorological bulletins (free download)
+- Rainfall early warning (drought and flood)
+- Crop-specific advisories
+- State-level rainfall maps
+
+Rainfall data by state (average annual):
+Sokoto: 550mm | Kano: 850mm | Maiduguri: 500mm | Bauchi: 950mm
+Kaduna: 1100mm | Jos: 1400mm | Abuja: 1200mm | Ilorin: 1200mm
+Minna: 1200mm | Makurdi: 1350mm | Enugu: 1600mm | Ibadan: 1200mm
+Lagos: 1500mm | Benin City: 2000mm | Port Harcourt: 2400mm | Calabar: 3100mm

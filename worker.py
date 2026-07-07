@@ -7,7 +7,7 @@ from llama_cpp import Llama
 
 llm = Llama(
     model_path="/home/servi/VerdeBuddy/model/qwen2.5-1.5b-instruct-q4_k_m.gguf",
-    n_ctx=512, n_threads=4, n_gpu_layers=0, n_batch=128, verbose=False
+    n_ctx=1024, n_threads=4, n_gpu_layers=0, n_batch=128, verbose=False
 )
 
 sys.stdout.write("READY\n")
@@ -20,7 +20,7 @@ for line in sys.stdin:
     try:
         data = json.loads(line)
         prompt = data["prompt"]
-        r = llm(prompt, max_tokens=150, temperature=0.2, repeat_penalty=1.4,
+        r = llm(prompt, max_tokens=200, temperature=0.05, repeat_penalty=1.3,
                 stop=["<|im_end|>", "Human:", "Question:", "User:"])
         ans = r["choices"][0]["text"].strip()
         if ans and not ans[-1] in '.?!':

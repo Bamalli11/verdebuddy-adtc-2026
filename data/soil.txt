@@ -1,161 +1,251 @@
-NIGERIA SOIL TYPES AND MANAGEMENT GUIDE
+=== SOIL HEALTH KNOWLEDGE BASE - VERDEBUDDY ===
+Nigeria Soil Advisory System | Updated 2026
 
-SOIL TYPES BY REGION
+---
 
-SANDY SOILS (Common in Sokoto, Kebbi, Kano, Jigawa, Yobe, Borno)
-Characteristics: Light, loose, drains quickly, low water retention
+NIGERIA SOIL TYPES OVERVIEW
+
+Nigeria has 6 main soil types distributed across its agro-ecological zones. Understanding your soil type is the first step to profitable farming.
+
+---
+
+SANDY SOIL (HAUSA: YASHI)
+Characteristics: Light, loose, gritty texture. Does not hold water. Warms up quickly. Low nutrients.
+Found in: Kano, Katsina, Sokoto, Zamfara, Kebbi, Borno, Yobe, Jigawa, Niger
+Best crops: Groundnut, cowpea, sorghum, millet, melon, sesame, watermelon, cassava, sweet potato
+Problems: Leaches nutrients quickly, dries out fast, low organic matter
+How to improve sandy soil:
+- Add compost or cow dung at 5-10 tonnes/ha every season
+- Use mulch to retain moisture
+- Apply fertilizer in small doses frequently (split 3-4 times)
+- Plant legumes like cowpea as cover crop to add nitrogen
+- Avoid over-irrigation which washes nutrients below root zone
+Fertilizer recommendation: Apply NPK in 3 splits. Extra phosphorus (SSP) helps root development.
+Irrigation need: High - water every 2-3 days
+pH range: Usually 6.0-7.5
+Investor note: Low land cost but high irrigation investment needed. Best for groundnut and sesame export.
+
+---
+
+CLAY SOIL (HAUSA: LAKA)
+Characteristics: Heavy, sticky when wet, hard when dry. Holds water and nutrients well. Slow to warm.
+Found in: Benue, Anambra, Cross River, Delta, Rivers, Bayelsa, Kogi, Kwara, Plateau lowlands
+Best crops: Rice, yam, cassava, maize, soybean, sugarcane, vegetable crops
+Problems: Waterlogging, poor aeration, hard to cultivate when dry, cracks in dry season
+How to improve clay soil:
+- Add sand and compost to improve drainage and aeration
+- Build raised beds or ridges to improve drainage
+- Never work clay soil when wet - damages structure
+- Apply gypsum (calcium sulfate) at 1-2 tonnes/ha to improve structure
+- Use deep-rooted cover crops like pigeon pea to break up hardpan
+Fertilizer recommendation: Standard NPK works well. Avoid excess nitrogen which causes lodging in rice.
+Irrigation need: Low - retains moisture well. Risk of waterlogging.
+pH range: Usually 5.0-6.5
+Investor note: Ideal for rice production. Benue, Niger, Kebbi river basin clays are highly productive.
+
+---
+
+LOAMY SOIL (BEST SOIL TYPE)
+Characteristics: Mix of sand, silt, and clay. Good structure. Holds water and nutrients. Easy to cultivate.
+Found in: Plateau, Kaduna, Nasarawa, Benue, Niger, Kwara, Oyo, Ogun, Ondo, FCT
+Best crops: All crops perform well. Especially good for maize, tomato, pepper, yam, cassava, vegetables
+Problems: Few problems. Can become compacted if heavy machinery used repeatedly.
+How to maintain loamy soil:
+- Apply compost annually to maintain organic matter
+- Rotate crops to prevent nutrient depletion
+- Minimize tillage to preserve soil structure
+- Mulch between seasons
+Fertilizer recommendation: Standard NPK recommendations for each crop
+Irrigation need: Moderate - 2-3 times per week
+pH range: Usually 6.0-7.0
+Investor note: Premium land. Highest crop yields. Kaduna, Plateau, Oyo loamy soils are highly sought.
+
+---
+
+LATERITE/FERRALITIC SOIL (IRON-RICH RED SOIL)
+Characteristics: Red or orange color from iron and aluminum oxides. Highly weathered. Low nutrients. Hardens when exposed.
+Found in: Ondo, Ekiti, Ogun, Osun, Edo, Delta, Cross River, parts of Plateau
+Best crops: Cassava, yam, oil palm, rubber, cocoa, cashew, citrus
+Problems: Very low nutrients, highly acidic (pH 4.5-5.5), forms hard crust (hardpan), loses topsoil easily
+How to improve laterite soil:
+- Apply large amounts of organic matter (10-20 tonnes compost/ha)
+- Lime application essential - 2-4 tonnes/ha to raise pH
+- Minimum tillage to prevent erosion and hardpan formation
+- Agroforestry - plant trees alongside crops
+- Terracing on slopes to prevent erosion
+Fertilizer recommendation: Phosphorus most limiting. Apply SSP 300 kg/ha. Lime before any fertilizer.
+Irrigation need: Moderate. Drains quickly.
+pH range: 4.5-5.5 (acidic - most crops need liming)
+Investor note: Good for cocoa, cashew, rubber, oil palm which tolerate acidity. Low cost but high amendment input needed.
+
+---
+
+ALLUVIAL SOIL (RIVER VALLEY SOIL)
+Characteristics: Deposited by rivers. Deep, fertile, rich in minerals. Found near river banks.
+Found in: Niger River valley, Benue River valley, Sokoto River valley, Kebbi River areas, Cross River basin
+Best crops: Rice, sugarcane, vegetables, maize, yam - very high yields
+Problems: Flood risk during heavy rains. Some areas have high water table.
+How to manage alluvial soil:
+- Build flood control bunds during flood season
+- Avoid planting in lowest-lying areas
+- Take advantage of natural fertility - can reduce fertilizer by 25%
+- Plant flood-tolerant varieties in flood-prone areas
+Fertilizer recommendation: Soil test first. Often naturally high in nutrients. Supplement with potassium.
+Irrigation need: Low to none - high natural moisture
 pH range: 6.0-7.5
-Nutrient level: Low — nutrients wash out easily
-Best crops: Groundnut, cowpea, millet, onion, watermelon
-Management:
-- Add organic matter (compost, manure) to improve water retention
-- Apply fertilizer in small split doses to reduce leaching
-- Mulch surface to reduce evaporation
-- Irrigate frequently but lightly
-Problems: Drought stress, nutrient deficiency, wind erosion
-Improvement: Apply 5-10 tonnes compost per hectare every season
+Investor note: Most productive soil in Nigeria. Kebbi, Niger, Benue river valleys are premium investment zones for rice and vegetables.
 
-LOAMY SOILS (Common in Kaduna, Niger, Kwara, Benue, Plateau, Nassarawa)
-Characteristics: Best agricultural soil, balanced sand/silt/clay mix
-pH range: 5.5-7.0
-Nutrient level: Medium to high
-Best crops: Maize, yam, cassava, soybean, sorghum, vegetables
-Management:
-- Maintain organic matter with crop residue incorporation
-- Rotate crops to maintain fertility
-- Apply balanced NPK fertilizer
-- Avoid compaction by heavy machinery
-Problems: Erosion on slopes, compaction if over-tilled
-Improvement: Practice minimum tillage, maintain cover crops
+---
 
-CLAY SOILS (Common in Kebbi, Niger lowlands, river floodplains, Lagos, Delta)
-Characteristics: Heavy, sticky when wet, hard when dry, high water retention
-pH range: 5.5-7.5
-Nutrient level: High but may be locked up
-Best crops: Rice, sugarcane, vegetables with irrigation management
-Management:
-- Improve drainage with ridges and furrows
-- Add sand and organic matter to improve structure
-- Avoid working when waterlogged
-- Apply lime if pH below 5.5
-Problems: Waterlogging, poor drainage, hard pans, difficult tillage
-Improvement: Deep ploughing, add organic matter, install drainage channels
+HYDROMORPHIC SOIL (FADAMA/WETLAND SOIL)
+Characteristics: Waterlogged for part or all of year. Dark color from organic matter. Found in depressions and valleys.
+Found in: Fadama lands across all states. Major fadama in Niger, Kebbi, Sokoto, Borno, Kano
+Best crops: Dry season: tomato, pepper, onion, garlic, wheat. Wet season: rice, sugarcane
+Problems: Poor drainage, anaerobic conditions, high iron and manganese toxicity in some areas
+How to manage fadama soil:
+- Use during dry season when water table drops
+- Install drainage channels
+- Raised bed cultivation during wet season
+- Test for iron toxicity before planting rice
+Fertilizer recommendation: Phosphorus often locked up. Apply SSP. Avoid urea - ammonia toxicity in waterlogged conditions.
+Irrigation need: None in wet season. Pump irrigation in dry season from shallow water table.
+pH range: 5.0-6.5
+Investor note: Fadama land is most valuable dry season farmland in northern Nigeria. N200,000-N500,000/ha/year lease.
 
-LATERITE SOILS (Common in Oyo, Ogun, Osun, Ondo, Enugu, Anambra)
-Characteristics: Reddish color, compacted, low fertility, iron-rich
-pH range: 5.0-6.5 (often acidic)
-Nutrient level: Low, especially phosphorus
-Best crops: Cassava, yam, cowpea, oil palm
-Management:
-- Apply lime to raise pH if below 5.5
-- Heavy organic matter application essential
-- Phosphorus fertilizer important
-- Avoid burning bush — destroys soil structure
-Problems: High acidity, low phosphorus, surface crusting, erosion
-Improvement: Apply 2-4 tonnes lime per hectare, add compost
+---
 
-ALLUVIAL SOILS (River floodplains — Niger, Benue, Hadejia, Sokoto rivers)
-Characteristics: Deposited by rivers, very fertile, rich in minerals
-pH range: 6.0-7.5
-Nutrient level: High
-Best crops: Rice, sugarcane, vegetables, maize
-Management:
-- Manage flood timing for rice cultivation
-- Drain properly after flooding
-- Minimal fertilizer needed if flooded regularly
-- Control waterweeds
-Problems: Flood damage, waterlogging, difficult access in rainy season
-Improvement: Flood management infrastructure, drainage canals
+SOIL pH GUIDE FOR NIGERIAN FARMERS AND INVESTORS
 
-SOIL pH GUIDE FOR NIGERIAN FARMERS
+pH scale: 0-14. Below 7 is acidic, 7 is neutral, above 7 is alkaline.
+Most Nigerian crops grow best at pH 6.0-7.0.
 
-pH BELOW 5.0 (Very acidic — problem soil)
-Symptoms: Poor crop growth, aluminum toxicity, purple leaves in maize
-Treatment: Apply agricultural lime at 2-4 tonnes per hectare
-Wait: 4-6 weeks after liming before planting
-Common in: Rainforest zone, derived savanna
+pH below 5.0 (Very acidic):
+- Toxic aluminum and manganese damage plant roots
+- Most nutrients unavailable
+- Only acid-tolerant crops: cassava, oil palm, rubber, pineapple
+- Fix: Apply 4-6 tonnes/ha agricultural lime. Wait 4-6 weeks before planting.
 
-pH 5.0-5.5 (Acidic)
-Symptoms: Reduced nutrient uptake, poor legume nodulation
-Treatment: Apply lime at 1-2 tonnes per hectare
-Suitable crops: Cassava, yam, oil palm, rubber
+pH 5.0-5.5 (Acidic):
+- Phosphorus becomes unavailable
+- Common in Ondo, Ekiti, Ogun, Cross River red soils
+- Fix: Apply 2-4 tonnes/ha agricultural lime
+- Crops that tolerate: cassava, yam, cowpea, sorghum, maize (with lime)
 
-pH 5.5-6.5 (Slightly acidic — ideal for most crops)
-Symptoms: Good nutrient availability, healthy plant growth
-Treatment: Maintain with organic matter, balanced fertilizer
-Suitable crops: Maize, cassava, yam, sorghum, cowpea, groundnut
+pH 5.5-6.0 (Slightly acidic):
+- Acceptable for most crops with good fertilizer management
+- Fix: Apply 1-2 tonnes/ha lime to raise to 6.0-6.5
+- Most crops: groundnut, cassava, maize, soybean
 
-pH 6.5-7.0 (Neutral — best for most crops)
-Symptoms: Maximum nutrient availability
-Treatment: Maintain organic matter levels
-Suitable crops: All Nigerian food crops
+pH 6.0-7.0 (Ideal):
+- All nutrients available
+- No lime needed
+- All Nigerian crops grow well
 
-pH 7.0-8.0 (Alkaline)
-Symptoms: Iron and manganese deficiency, yellowing leaves
-Treatment: Apply sulfur or acidifying fertilizers
-Common in: Far north near Lake Chad, irrigated soils
-Suitable crops: Onion, tomato, sorghum, cotton
+pH 7.0-8.0 (Slightly alkaline):
+- Iron and zinc can become deficient
+- Common in Sokoto, Kebbi, Kano (arid zone soils)
+- Fix: Apply sulfur at 200-500 kg/ha or use acidifying fertilizers (ammonium sulfate)
+- Crops: Most cereals tolerate this. Vegetables need pH correction.
 
-FERTILIZER GUIDE FOR NIGERIAN SOILS
+pH above 8.0 (Alkaline):
+- Severe micronutrient deficiency
+- Apply elemental sulfur, organic matter
 
-NPK 15-15-15 (General purpose)
-Use for: Maize, sorghum, vegetables at planting
-Rate: 200-300 kg per hectare
-Timing: Apply at planting or 2 weeks after germination
-Cost: Approximately N18,000-22,000 per 50kg bag
+How to test soil pH:
+- State Ministry of Agriculture laboratory: N2,000-N5,000 per sample
+- IITA soil testing service: Ibadan HQ
+- Portable pH meter: N5,000-N20,000 for farm use
+- Litmus paper strips: N500-N1,000 (rough guide only)
+- Take samples from 10 spots in field, mix, test the mixture
 
-NPK 20-10-10 (Nitrogen-heavy for leafy growth)
-Use for: Maize top dressing, leafy vegetables
-Rate: 150-200 kg per hectare
-Timing: 4-6 weeks after planting
+---
 
-UREA (46% Nitrogen — for top dressing)
-Use for: Maize, rice, sorghum after establishment
-Rate: 100-150 kg per hectare
-Timing: 6-8 weeks after planting, never at planting
-Caution: Do not apply during heavy rain — leaches out
+SOIL NUTRIENT GUIDE
 
-SINGLE SUPERPHOSPHATE (18% Phosphorus)
-Use for: Groundnut, cowpea, soybean at planting
-Rate: 200 kg per hectare
-Benefit: Promotes root development and nodulation
+NITROGEN (N) - for leafy growth, dark green color
+Deficiency signs: Yellow leaves starting from older leaves. Stunted growth. Pale green color.
+Sources: Urea (46% N), CAN (26% N), NPK fertilizers, cow manure, green manure
+Recommended dose: 60-150 kg N/ha depending on crop
+Hausa name: Taki mai nitrogen
 
-ORGANIC FERTILIZERS
-Poultry manure: Apply 5-10 tonnes per hectare, best for vegetables
-Cow dung: Apply 10-15 tonnes per hectare, good for all crops
-Compost: Apply 5-10 tonnes per hectare, improves soil structure
-Timing: Apply organic manure 2-3 weeks before planting
+PHOSPHORUS (P) - for roots, flowers, and fruit
+Deficiency signs: Purple or red coloring on leaves and stems. Delayed maturity. Poor root development.
+Sources: Single Super Phosphate (18% P2O5), TSP (46% P2O5), NPK fertilizers, bone meal
+Recommended dose: 40-80 kg P2O5/ha
+Note: Phosphorus is often deficient in Nigerian soils especially red laterite soils.
 
-SOIL TESTING
-Where to test: NAERLS offices, state ADP offices, universities
-Cost: Approximately N3,000-8,000 per sample
-What to test: pH, NPK levels, organic matter, micronutrients
-Frequency: Every 2-3 years or when yields decline
-Interpretation: Take results to extension officer for recommendations
+POTASSIUM (K) - for strong stems, disease resistance, fruit quality
+Deficiency signs: Brown scorched leaf edges, weak stems, poor fruit quality
+Sources: Muriate of Potash (60% K2O), NPK fertilizers, wood ash
+Recommended dose: 40-80 kg K2O/ha
+Note: Very important for cassava, yam, potato, banana, plantain which are high K crops.
 
-SOIL HEALTH INDICATORS
+CALCIUM (Ca) - for cell walls, fruit quality
+Deficiency signs: Blossom end rot in tomato and pepper, tip burn in lettuce, poor pod fill in groundnut
+Sources: Agricultural lime (CaCO3), gypsum (CaSO4), dolomite
+Recommended dose: Apply lime for pH correction - calcium provided automatically
 
-HEALTHY SOIL SIGNS
-- Earthworms present when digging
-- Dark color indicating organic matter
-- Crumbly texture, not hard or sticky
-- Pleasant earthy smell
-- Water soaks in rather than running off
-- Good crop growth without excess fertilizer
+MAGNESIUM (Mg) - for chlorophyll, photosynthesis
+Deficiency signs: Yellowing between leaf veins (interveinal chlorosis) on older leaves
+Sources: Dolomite lime, magnesium sulfate (Epsom salt), some NPK formulations
+Recommended dose: 20-40 kg MgO/ha as foliar or soil application
 
-UNHEALTHY SOIL SIGNS
-- Hard, crusty surface after rain
-- Water pools on surface instead of soaking in
-- Very pale or reddish color
-- No earthworms visible
-- Crops yellow despite fertilizer application
-- Soil blows away in wind or washes in rain
+ZINC (Zn) - for crop growth at all stages
+Deficiency signs: Small leaves, shortened internodes, striped or mottled leaves, poor grain set
+Sources: Zinc sulfate foliar spray (2g/L water), some micronutrient packages
+Note: Very common in Nigerian soils especially those with pH above 7.0. Maize and rice very sensitive.
 
-SOIL CONSERVATION PRACTICES
-Contour farming: Plant across slopes not up-down to reduce erosion
-Terracing: Build level steps on steep slopes
-Cover cropping: Plant cowpea or mucuna between seasons
-Mulching: Cover soil with straw, leaves, or plastic
-Minimum tillage: Reduce ploughing to maintain soil structure
-Crop rotation: Change crops each season to break pest cycles
-Agroforestry: Plant trees between crops for shade and leaf litter
+BORON (B) - for pollination and fruit set
+Deficiency signs: Hollow stems, poor fruit set, distorted growth of growing points
+Sources: Borax foliar spray (2g/L water)
+Note: Important for tomato, pepper, groundnut, cassava flower/fruit set.
+
+---
+
+SOIL CONSERVATION AND EROSION CONTROL
+
+Nigeria loses significant topsoil every year to erosion - especially in Anambra, Imo, Enugu (gully erosion), and Kogi, Kwara (sheet erosion). This is a serious threat to long-term farm productivity.
+
+Erosion control methods:
+1. Minimum tillage: Reduce frequency of ploughing. Use mulch.
+2. Contour farming: Plant along contours not up and down slopes.
+3. Grass strips: Plant vetiver grass strips every 20-30m across slope.
+4. Cover cropping: Plant cowpea, mucuna, or other legumes as ground cover.
+5. Agroforestry: Integrate trees (gliricidia, leucaena) in farm fields.
+6. Check dams: Build small earth or stone dams in gullies.
+7. Terracing: For steep slopes above 8 degrees.
+8. Mulching: Maintain 5-10cm mulch cover at all times.
+
+Soil organic matter improvement:
+- Compost: Apply 5-10 tonnes/ha every season (most affordable)
+- Manure: Cow dung 5-10 tonnes/ha, poultry manure 2-3 tonnes/ha (higher N)
+- Green manure: Bury cowpea or soybean biomass before planting
+- Crop residues: Incorporate maize stalks and other residues rather than burning
+- Biochar: Apply charred organic matter at 2-5 tonnes/ha (long-lasting)
+
+---
+
+SOIL TESTING SERVICES IN NIGERIA
+
+Federal level:
+- IITA (International Institute of Tropical Agriculture), Ibadan - world-class soil lab
+- NASC (National Agricultural Seeds Council) soil testing centres
+- Federal University of Agriculture Abeokuta (FUNAAB) - Ogun
+- Federal University of Agriculture Makurdi (FUAM) - Benue
+
+State level:
+- State Ministry of Agriculture - each state capital
+- Agricultural Development Programme (ADP) offices - each LGA
+- FADAMA offices - for fadama-specific soil testing
+
+Private services:
+- Soil Science Society of Nigeria - certified soil analysts
+- Crop specific services: cocoa (CRIN Ibadan), cassava (IITA)
+- Test cost: N2,000-N10,000 per sample (basic NPK + pH)
+- Full micronutrient test: N15,000-N30,000 per sample
+
+Soil test interpretation guide:
+- Always test before applying lime or fertilizer
+- Take samples at 0-20cm depth (topsoil) and 20-40cm (subsoil)
+- Take minimum 10 cores per field and mix well
+- Test every 3 years or after major yield decline
