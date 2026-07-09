@@ -6,9 +6,7 @@
     "domain": "agriculture",
     "language_scope": [
       "en",
-      "ha",
-      "yo",
-      "ig"
+      "ha"
     ],
     "african_alpha_claim": true,
     "budget_laptop_claim": true,
@@ -20,7 +18,7 @@
     "cross_disciplinary_pairing": {
       "discipline": "agriculture",
       "load_bearing": true,
-      "description": "VerdeBuddy is an offline AI assistant for Nigerian farmers that integrates crop advisory, soil health analysis, seasonal weather patterns, and commodity market pricing into a single conversational interface. It supports English, Hausa, Yoruba, and Igbo languages and runs entirely on an 8GB laptop with no internet connection."
+      "description": "VerdeBuddy is an offline AI assistant serving both Nigerian farmers and agricultural investors. It integrates crop advisory, soil health analysis, seasonal weather patterns, commodity market pricing, and investment opportunity guidance into a single conversational interface. It supports English and Hausa and runs entirely on an 8GB laptop with no internet connection."
     },
     "test_prompts": [
       {
@@ -48,24 +46,24 @@
     "os": "Ubuntu 26.04 LTS"
   },
   "throughput": {
-    "tokens_per_second_generation": 7.94,
-    "first_token_latency_ms": 24404.02,
+    "tokens_per_second_generation": 6.2,
+    "first_token_latency_ms": 44675.64,
     "prompt_tokens": 512,
     "generated_tokens": 128
   },
   "memory": {
-    "peak_rss_mb": 1821.76,
-    "steady_state_rss_mb": 1737.34,
-    "peak_vms_mb": 2283.91
+    "peak_rss_mb": 1822.17,
+    "steady_state_rss_mb": 1730.5,
+    "peak_vms_mb": 2283.76
   },
   "accuracy": [],
   "cpu_thermal": {
-    "cpu_percent_p99": 53.4,
+    "cpu_percent_p99": 100.0,
     "core_temp_c_peak": null,
     "throttled": false
   },
   "reproducibility": {
-    "git_commit_sha": "a9906b26d488",
+    "git_commit_sha": "cd4ed97dc157",
     "docker_image_digest": "unknown",
     "random_seed": 42
   },

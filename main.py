@@ -41,66 +41,75 @@ STATE_WORDS = ['kano','benue','oyo','kaduna','plateau','niger','kebbi','ondo','c
                'enugu','anambra','imo','abia','ebonyi','rivers','delta','edo','lagos','ogun',
                'osun','ekiti','zamfara','katsina','jigawa','yobe','akwa ibom','bayelsa','fct']
 
-def retrieve(query, n=2):
-    q = query.lower()
+def _first_line(doc):
+    return doc.strip().split('\n')[0].lower()
+
+def _find_by_heading(keywords, exclude):
+    for doc in docs:
+        if doc in exclude:
+            continue
+        fl = _first_line(doc)
+        if any(k in fl for k in keywords):
+            return doc
+    return None
+
+def retrieve(query, n=3):
+    q = query.lower().replace('nigeria', '')
     chunks = []
 
-    # Step 1: Direct crop match - find the exact crop section
-    matched_crop = None
+    # 1. Crop match - always highest priority if a crop is mentioned
     for cw in CROP_WORDS:
         if cw in q:
-            matched_crop = cw
+            match = _find_by_heading([cw], chunks)
+            if match:
+                chunks.append(match)
             break
 
-    if matched_crop:
-        for doc in docs:
-            first_line = doc.strip().split('\n')[0].lower()
-            if matched_crop in first_line:
-                chunks.append(doc)
-                break
+    # 2. Soil topic match
+    soil_triggers = ['soil', 'ph', 'acid', 'alkaline', 'lime', 'sandy', 'clay', 'loam', 'fertile', 'fertility']
+    if any(t in q for t in soil_triggers) and len(chunks) < n:
+        match = _find_by_heading(['soil ph', 'soil nutrient'], chunks) or \
+                _find_by_heading(['sandy soil', 'clay soil', 'loamy soil', 'laterite', 'alluvial', 'hydromorphic'], chunks) or \
+                _find_by_heading(['soil'], chunks)
+        if match:
+            chunks.append(match)
 
-    # Step 2: Direct state match - find state/weather/investment sections mentioning the state
-    matched_state = None
-    q_clean = q.replace('nigeria', '')
-    for st in STATE_WORDS:
-        if st in q_clean:
-            matched_state = st
-            break
+    # 3. Weather/climate topic match
+    weather_triggers = ['rain', 'rainfall', 'weather', 'climate', 'drought', 'flood', 'season', 'harmattan', 'temperature']
+    if any(t in q for t in weather_triggers) and len(chunks) < n:
+        match = _find_by_heading(['monthly farming calendar'], chunks) or \
+                _find_by_heading(['savanna zone', 'rainforest', 'sahel', 'montane'], chunks) or \
+                _find_by_heading(['weather', 'drought', 'flooding', 'harmattan'], chunks)
+        if match:
+            chunks.append(match)
 
-    if matched_state and len(chunks) < n:
-        for doc in docs:
-            if doc in chunks:
-                continue
-            if matched_state in doc.lower() and ('Other states found' in doc or 'best planting states' in doc.lower()):
-                chunks.append(doc)
-                break
+    # 4. Market/price topic match
+    market_triggers = ['price', 'market', 'sell', 'cost', 'buy', 'cheap', 'expensive']
+    if any(t in q for t in market_triggers) and len(chunks) < n:
+        match = _find_by_heading(['commodity price tracker'], chunks) or \
+                _find_by_heading(['market price seasonality'], chunks) or \
+                _find_by_heading(['dawanau', 'mile 12', 'makurdi', 'major agricultural markets'], chunks)
+        if match:
+            chunks.append(match)
 
-    # Step 2.5: Investment/ROI topic match - prioritize the sector opportunities chunk
+    # 5. Investment/export topic match
     invest_triggers = ['invest', 'roi', 'return', 'profit', 'export', 'finance', 'loan', 'credit']
     if any(t in q for t in invest_triggers) and len(chunks) < n:
-        priority_headers = ['top investment opportunities', 'nigeria agricultural overview']
-        for ph in priority_headers:
-            for doc in docs:
-                if doc in chunks:
-                    continue
-                fl = doc.strip().split('\n')[0].lower()
-                if ph in fl:
-                    chunks.append(doc)
-                    break
-            if len(chunks) >= n:
-                break
-        # Fill any remaining with general investment chunks
-        if len(chunks) < n:
-            for doc in docs:
-                if doc in chunks:
-                    continue
-                fl = doc.strip().split('\n')[0].lower()
-                if 'invest' in fl or 'roi' in fl or 'export' in fl:
-                    chunks.append(doc)
-                    if len(chunks) >= n:
-                        break
+        match = _find_by_heading(['top investment opportunities'], chunks) or \
+                _find_by_heading(['nigeria agricultural overview'], chunks) or \
+                _find_by_heading(['invest', 'roi', 'export'], chunks)
+        if match:
+            chunks.append(match)
 
-    # Step 3: Fill remaining slots with keyword-scored fallback
+    # 6. State match (crop/investment context) - only if not already covered
+    for st in STATE_WORDS:
+        if st in q and len(chunks) < n:
+            match = _find_by_heading([st], chunks)
+            if match:
+                chunks.append(match)
+            break
+
+    # 7. Fallback keyword scoring for anything not caught above
     if len(chunks) < n:
         q_words = [w for w in q.split() if len(w) > 4]
         scored = []
@@ -135,11 +144,11 @@ def ask(query, lang='en'):
     note = lang_map.get(lang, '')
     if not note:
         if any(w in q for w in HAUSA): note = lang_map['ha']
-    ctx = " ".join(retrieve(query, n=3))[:800]
+    ctx = "\n\n".join([c[:700] for c in retrieve(query, n=3)])
     examples = ""
     if "Hausa" in note:
         examples = "\nExample Q: Yaushe zan shuka masara?\nExample A: Shuka masara a farkon damina, watanni na Mayu zuwa Yuni. Tabbatar da ruwan sama ya isa kafin shuka."
-    prompt = "<|im_start|>system\nYou are VerdeBuddy. Copy facts EXACTLY from Context below. Never invent variety names, numbers, or facts not in Context. If Context lacks an answer, say 'not specified in available data'." + note + "<|im_end|>\n<|im_start|>user\nContext:\n" + ctx + "\n\nQuestion: " + query + "<|im_end|>\n<|im_start|>assistant\n"
+    prompt = "<|im_start|>system\nYou are VerdeBuddy, agricultural AI for Nigerian farmers and investors. Use facts from Context below. Never invent variety names, numbers, or facts not in Context. If part of the answer is missing from Context, answer what IS known and note what is not specified. Keep answer under 180 words." + note + "<|im_end|>\n<|im_start|>user\nContext:\n" + ctx + "\n\nQuestion: " + query + "<|im_end|>\n<|im_start|>assistant\n"
     return llm_ask(prompt)
 
 PAGE = open('/home/servi/VerdeBuddy/templates/page.html').read()

@@ -7,7 +7,7 @@ from llama_cpp import Llama
 
 llm = Llama(
     model_path="/home/servi/VerdeBuddy/model/qwen2.5-1.5b-instruct-q4_k_m.gguf",
-    n_ctx=1024, n_threads=4, n_gpu_layers=0, n_batch=128, verbose=False
+    n_ctx=2048, n_threads=4, n_gpu_layers=0, n_batch=128, verbose=False
 )
 
 sys.stdout.write("READY\n")
