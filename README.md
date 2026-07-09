@@ -6,6 +6,7 @@
 
 VerdeBuddy is a fully offline AI assistant that helps Nigerian smallholder farmers get practical advice on crops, soil health, weather patterns, and market prices — in English, Hausa, Yoruba, or Igbo — with no internet connection required.
 
+![VerdeBuddy Screenshot](templates/screenshot.png)
 
 ---
 
