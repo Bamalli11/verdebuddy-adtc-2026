@@ -135,20 +135,111 @@ print("VerdeBuddy is ready!")
 SYSTEM = "You are VerdeBuddy, an expert agricultural AI assistant for Nigerian farmers and investors. Answer ALL parts of every question completely and accurately. For multi-part questions, address each part clearly. Use bullet points for lists of 3 or more items. Keep total response under 200 words. After answering, ask if the user wants more details. Use only the provided context."
 HAUSA = ["yaushe","zan","wane","nawa","yaya","menene","gona","masara","shuka","taki","kasuwa","girbi","rani","damina"]
 
+from hausa_templates import HAUSA_TEMPLATES, classify_hausa_topic
+
+MONTH_MAP = {
+    "January": "Janairu", "February": "Fabrairu", "March": "Maris", "April": "Afrilu",
+    "May": "Mayu", "June": "Yuni", "July": "Yuli", "August": "Agusta",
+    "September": "Satumba", "October": "Oktoba", "November": "Nuwamba", "December": "Disamba"
+}
+
+def translate_to_hausa_text(text):
+    """Translate month names and common season/unit phrases in an English fact string to Hausa."""
+    for en, ha in MONTH_MAP.items():
+        text = text.replace(en, ha)
+    text = text.replace("first season", "kakar farko")
+    text = text.replace("second season", "lokaci na biyu")
+    text = text.replace("main season", "babbar kaka")
+    text = text.replace("minor season", "kaka karama")
+    text = text.replace("dry season", "lokacin rani")
+    text = text.replace("rainy season", "damina")
+    text = text.replace("harvest season", "lokacin girbi")
+    text = text.replace("cold season", "lokacin hunturu")
+    text = text.replace("months", "watanni")
+    text = text.replace("month", "wata")
+    text = text.replace("days", "kwanaki")
+    text = text.replace("day", "rana")
+    return text
+
+HAUSA_CROP_MAP = {
+    'masara': 'maize', 'rogo': 'cassava', 'tumatir': 'tomato', 'shinkafa': 'rice',
+    'doya': 'yam', 'gyada': 'groundnut', 'wake': 'cowpea', 'barkono': 'pepper',
+    'albasa': 'onion', 'citta': 'ginger', 'ridi': 'sesame', 'kaka': 'cocoa',
+    'kwakwa': 'coconut', 'ayaba': 'banana', 'mangwaro': 'mango', 'dawa': 'sorghum',
+    'gero': 'millet', 'waken soya': 'soybean'
+}
+
+def normalize_hausa_query(q):
+    for ha_word, en_word in HAUSA_CROP_MAP.items():
+        if ha_word in q:
+            q = q + ' ' + en_word
+    return q
+
+def extract_crop_facts(query_lower):
+    """Pull structured facts for the matched crop from the crops chunk, for template filling."""
+    matched = None
+    for cw in CROP_WORDS:
+        if cw in query_lower:
+            matched = cw
+            break
+    if not matched:
+        return None
+    chunk = _find_by_heading([matched], [])
+    if not chunk:
+        return None
+    facts = {"crop": matched.capitalize(), "season": "watannin damina", "soil": "kasa mai kyau", "maturity": "kwanaki da yawa", "varieties": "iri daban-daban", "diseases": "cututtuka daban-daban"}
+    for line in chunk.split("\n"):
+        l = line.strip()
+        if l.lower().startswith("planting season:"):
+            facts["season"] = l.split(":",1)[1].strip()
+        elif l.lower().startswith("soil type:"):
+            facts["soil"] = l.split(":",1)[1].strip()
+        elif l.lower().startswith("maturity period:"):
+            facts["maturity"] = l.split(":",1)[1].strip()
+        elif l.lower().startswith("recommended varieties:"):
+            facts["varieties"] = l.split(":",1)[1].strip()
+        elif l.lower().startswith("common diseases:"):
+            facts["diseases"] = l.split(":",1)[1].strip()
+    return facts
+
 def ask(query, lang='en'):
     q = query.lower()
-    lang_map = {
-        'ha': ' The farmer speaks Hausa. You MUST reply entirely in Hausa language only. Do not use English.',
-        'en': ''
-    }
-    note = lang_map.get(lang, '')
-    if not note:
-        if any(w in q for w in HAUSA): note = lang_map['ha']
+
+    if lang == 'ha' or any(w in q for w in HAUSA):
+        q_clean = normalize_hausa_query(q.replace('nigeria', ''))
+        has_crop = any(cw in q_clean for cw in CROP_WORDS)
+        has_soil = any(t in q_clean for t in ['soil', 'ph', 'acid', 'kasa'])
+        has_weather = any(t in q_clean for t in ['rain', 'weather', 'season', 'damina', 'fari'])
+        has_market = any(t in q_clean for t in ['price', 'market', 'sell', 'farashi', 'kasuwa'])
+        has_investment = any(t in q_clean for t in ['invest', 'roi', 'return', 'profit'])
+
+        key = classify_hausa_topic(q_clean, has_crop, has_soil, has_weather, has_market, has_investment)
+        template = HAUSA_TEMPLATES[key]
+
+        fill = {
+            "crop": "amfanin gona", "season": "watannin damina", "soil": "kasa mai kyau",
+            "maturity": "kwanaki da yawa", "varieties": "iri daban-daban", "diseases": "cututtuka daban-daban",
+            "market": "kusa da kai", "north_start": "Mayu zuwa Yuni", "south_start": "Maris zuwa Afrilu"
+        }
+        if has_crop:
+            crop_facts = extract_crop_facts(q_clean)
+            if crop_facts:
+                for k in ("season", "maturity"):
+                    if k in crop_facts:
+                        crop_facts[k] = translate_to_hausa_text(crop_facts[k])
+                fill.update(crop_facts)
+                en_to_ha_crop = {v: k for k, v in HAUSA_CROP_MAP.items()}
+                en_name = fill["crop"].lower()
+                if en_name in en_to_ha_crop:
+                    fill["crop"] = en_to_ha_crop[en_name].capitalize()
+
+        try:
+            return template.format(**fill)
+        except Exception:
+            return HAUSA_TEMPLATES["default"]
+
     ctx = "\n\n".join([c[:700] for c in retrieve(query, n=3)])
-    examples = ""
-    if "Hausa" in note:
-        examples = "\nExample Q: Yaushe zan shuka masara?\nExample A: Shuka masara a farkon damina, watanni na Mayu zuwa Yuni. Tabbatar da ruwan sama ya isa kafin shuka."
-    prompt = "<|im_start|>system\nYou are VerdeBuddy, agricultural AI for Nigerian farmers and investors. Use facts from Context below. Never invent variety names, numbers, or facts not in Context. If part of the answer is missing from Context, answer what IS known and note what is not specified. Keep answer under 180 words." + note + "<|im_end|>\n<|im_start|>user\nContext:\n" + ctx + "\n\nQuestion: " + query + "<|im_end|>\n<|im_start|>assistant\n"
+    prompt = "<|im_start|>system\nYou are VerdeBuddy, agricultural AI for Nigerian farmers and investors. Use facts from Context below. Never invent variety names, numbers, or facts not in Context. If part of the answer is missing from Context, answer what IS known and note what is not specified. Keep answer under 180 words.<|im_end|>\n<|im_start|>user\nContext:\n" + ctx + "\n\nQuestion: " + query + "<|im_end|>\n<|im_start|>assistant\n"
     return llm_ask(prompt)
 
 PAGE = open('/home/servi/VerdeBuddy/templates/page.html').read()
