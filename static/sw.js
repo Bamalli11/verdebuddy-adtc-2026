@@ -1,4 +1,4 @@
-const CACHE = 'verdebuddy-v2';
+const CACHE = 'verdebuddy-v3';
 const ASSETS = ['/', '/static/app.js', '/static/style.css', '/static/manifest.json'];
 
 self.addEventListener('install', function(e){

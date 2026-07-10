@@ -19,6 +19,7 @@ function exportChat(){
 
 // Language toggle
 var activeLang = 'en';
+var lastQuestion = '';
 function setLang(lang){
   activeLang = lang;
   document.querySelectorAll('.lang-btn').forEach(function(b){
@@ -186,6 +187,19 @@ function startChat(){
     chat.style.display = 'flex';
     chat.style.flexDirection = 'column';
   }
+  var cb = document.getElementById('close-chat-btn');
+  if(cb) cb.style.display = 'block';
+}
+
+function closeChatToHome(){
+  saveChat();
+  msgs.innerHTML = '';
+  ci = -1;
+  started = false;
+  welcome.style.display = 'flex';
+  chat.style.display = 'none';
+  var cb = document.getElementById('close-chat-btn');
+  if(cb) cb.style.display = 'none';
 }
 
 function addMsg(type, text){
@@ -198,28 +212,62 @@ function addMsg(type, text){
   b.className = 'bbl';
   b.style.wordBreak = 'break-word';
   b.style.whiteSpace = 'pre-wrap';
-  var hasLines = text.includes('\n') || /\d+\./.test(text); if(hasLines){
-    var lines = text.split('\n');
+  function renderInline(container, str){
+    // Strip markdown heading markers
+    str = str.replace(/^#{1,6}\s*/, '');
+    // Split on **bold** markers and build DOM nodes
+    var parts = str.split(/(\*\*[^*]+\*\*)/g);
+    parts.forEach(function(part){
+      if(!part) return;
+      var m = part.match(/^\*\*([^*]+)\*\*$/);
+      if(m){
+        var strong = document.createElement('strong');
+        strong.textContent = m[1];
+        container.appendChild(strong);
+      } else {
+        container.appendChild(document.createTextNode(part));
+      }
+    });
+  }
+
+  // Split into bullet items: break on newlines AND on inline bullet markers like '•' or '- '
+  var rawLines = text.split(/\n+/);
+  var lines = [];
+  rawLines.forEach(function(rl){
+    var pieces = rl.split(/(?=•)|(?=\s-\s)/).map(function(p){ return p.trim(); }).filter(Boolean);
+    if(pieces.length > 1){
+      lines = lines.concat(pieces);
+    } else {
+      lines.push(rl.trim());
+    }
+  });
+
+  var hasBullets = lines.some(function(l){ return l.startsWith('-') || l.startsWith('•') || l.startsWith('*') || /^\d+\./.test(l); });
+
+  if(hasBullets || lines.length > 1){
     lines.forEach(function(line){
-      line = line.trim();
-      if(line.startsWith('-') || line.startsWith('•') || line.startsWith('*') || /^\d+\./.test(line)){
+      line = line.trim().replace(/^#{1,6}\s*/, '');
+      if(!line) return;
+      var isBullet = line.startsWith('-') || line.startsWith('•') || line.startsWith('*') || /^\d+\./.test(line);
+      if(isBullet){
         var li = document.createElement('div');
-        li.style.cssText = 'padding:2px 0 2px 12px;position:relative;';
+        li.style.cssText = 'padding:2px 0 2px 14px;position:relative;';
         var dot = document.createElement('span');
-        dot.style.cssText = 'position:absolute;left:4px;color:#4CAF50;font-weight:bold;';
+        dot.style.cssText = 'position:absolute;left:2px;color:#4CAF50;font-weight:bold;';
         dot.textContent = '•';
         li.appendChild(dot);
-        li.appendChild(document.createTextNode(line.replace(/^[-•*]\s*/,'').replace(/^\d+\.\s*/,'')));
+        var clean = line.replace(/^[-•*]\s*/,'').replace(/^\d+\.\s*/,'');
+        renderInline(li, clean);
         b.appendChild(li);
       } else {
         var p = document.createElement('p');
         p.style.margin = '0 0 4px 0';
-        p.textContent = line;
+        renderInline(p, line);
         b.appendChild(p);
       }
     });
   } else {
-    b.textContent = text;
+    renderInline(b, text.replace(/^#{1,6}\s*/, ''));
   }
   d.appendChild(av);
   d.appendChild(b);
@@ -297,6 +345,7 @@ function doSend(){
   inp.style.height = 'auto';
   sbtn.disabled = true;
   lastQuestion = text;
+  var sentChatId = ci;
   addMsg('u', text);
   addTyping();
   fetch('/ask', {
@@ -304,15 +353,24 @@ function doSend(){
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify({
       question: (text === 'Tell me more' || text === 'Full detailed analysis' || text === 'Kara bayani')
-        ? 'Regarding this topic - ' + lastQuestion + ' - please give more detailed information'
+        ? lastQuestion
         : text,
+      elaborate: (text === 'Tell me more' || text === 'Full detailed analysis' || text === 'Kara bayani'),
       lang: activeLang
     })
   }).then(function(r){ return r.json(); })
     .then(function(data){
+      if(sentChatId !== ci){
+        // User switched chats while this was in flight; save answer into the correct chat silently
+        var ans2 = data.answer || 'Sorry, something went wrong.';
+        if(sentChatId >= 0 && sentChatId < chats.length){
+          chats[sentChatId].html += '<div class="msg b"><div class="av">\ud83c\udf3f</div><div class="bbl">' + ans2.replace(/</g,'&lt;') + '</div></div>';
+        }
+        sbtn.disabled = false;
+        return;
+      }
       removeTyping();
       var ans = data.answer || 'Sorry, something went wrong.';
-      lastAnswer = ans;
       lastAnswer = ans;
       addMsg('b', ans);
       showFollowups(ans);
@@ -358,11 +416,36 @@ function renderHist(){
   h.innerHTML = '';
   chats.forEach(function(c, i){
     if(q && c.label.toLowerCase().indexOf(q) < 0) return;
+    var row = document.createElement('div');
+    row.style.cssText = 'display:flex;align-items:center;gap:4px;';
     var d = document.createElement('div');
     d.className = 'hi' + (i === ci ? ' active' : '');
+    d.style.flex = '1';
     d.textContent = c.label;
-    d.onclick = function(){ saveChat(); ci = i; msgs.innerHTML = chats[i].html; msgs.scrollTop = msgs.scrollHeight; renderHist(); closeSB(); };
-    h.appendChild(d);
+    d.onclick = function(){ saveChat(); ci = i; msgs.innerHTML = chats[i].html; msgs.scrollTop = msgs.scrollHeight; renderHist(); closeSB(); startChat(); };
+    var del = document.createElement('button');
+    del.innerHTML = '&times;';
+    del.title = 'Delete chat';
+    del.style.cssText = 'background:none;border:none;color:#c0392b;font-size:16px;cursor:pointer;padding:2px 8px;';
+    del.onclick = function(e){
+      e.stopPropagation();
+      chats.splice(i, 1);
+      if(ci === i){
+        msgs.innerHTML = '';
+        ci = -1;
+        started = false;
+        welcome.style.display = 'block';
+        chat.style.display = 'none';
+        var cb = document.getElementById('close-chat-btn');
+        if(cb) cb.style.display = 'none';
+      } else if(ci > i){
+        ci = ci - 1;
+      }
+      renderHist();
+    };
+    row.appendChild(d);
+    row.appendChild(del);
+    h.appendChild(row);
   });
 }
 function newChat(){
